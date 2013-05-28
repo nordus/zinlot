@@ -1,6 +1,7 @@
 Zinlot::Application.routes.draw do
-  get "dashboard/index"
-  get "test-drives" => 'historical_trips#latest'
+  get 'dashboard/index'
+  get 'test-drives' => 'historical_trips#index'
+  get 'test-drives/:id' => 'historical_trips#show'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

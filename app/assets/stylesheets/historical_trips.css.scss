@@ -1,3 +1,23 @@
+/* SHOW
+--------------------------------------------------------------------------------------------------*/
+#historical_trips.show {
+  .ui-page-active.ui-page-panel {
+    overflow-y: hidden;
+  }
+  .ui-content {
+    padding: 0;
+  }
+}
+
+
+/* INDEX
+--------------------------------------------------------------------------------------------------*/
+#historical_trips.index {
+  .test-drives-list a {
+    text-decoration: none;
+  }
+}
+
 /* These apply across all breakpoints because they are outside of a media query */
 /* Make the labels light gray all caps across the board */
 .test-drives-list thead th,
