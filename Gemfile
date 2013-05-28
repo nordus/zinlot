@@ -14,6 +14,10 @@ group :development do
   gem 'rack-livereload'
 end
 
+group :production do
+  gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
+end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'
 
