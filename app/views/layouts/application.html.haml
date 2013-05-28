@@ -6,12 +6,12 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-    %div{data: { role:'page' }}
+    %div{data: { role:'page' }, id: "#{controller_name}-#{action_name}"}
       %div.jqm-header{data: { role:'header', theme:'c' }}
         %h1
           %a#logo{href:'/'} ZinLot
-        %a.jqm-navmenu-link{href: '#nav-menu', data: { icon:'bars', iconpos:'notext' }}
-      #nav-menu{data: { role:'panel' }}
+        %a.jqm-navmenu-link{href: "##{controller_name}-#{action_name}-navmenu", data: { icon:'bars', iconpos:'notext' }}
+      .nav-menu{data: { role:'panel' }, id: "#{controller_name}-#{action_name}-navmenu"}
         %ul.jqm-list{data: { icon:'false', role:'listview', theme:'d' }}
           %li
             %a{href:'#'} Dashboard

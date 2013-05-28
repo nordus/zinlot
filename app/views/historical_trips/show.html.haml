@@ -8,8 +8,6 @@
 
   $("#map_canvas").gmap().bind "init", ->
 
-    $('.ui-page').css 'overflow-y', 'hidden'
-
     popupContent = (marker) ->
       ['speed', 'eventCode', 'msgType'].map (k) ->
         ['<b>', k, '</b>:', marker[k]].join ' '
