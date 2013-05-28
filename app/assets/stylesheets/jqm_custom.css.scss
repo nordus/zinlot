@@ -1,0 +1,27 @@
+.jqm-header .jqm-navmenu-link .ui-icon {
+  background-position: -3px 50%;
+}
+.jqm-header > .ui-btn .ui-icon {
+  background-color: transparent;
+  background-image: image-url("jqm_demo-icons-sd.png");
+  height: 31px;
+  margin: 0;
+  width: 31px;
+}
+.jqm-header > .ui-btn, .jqm-header > .ui-btn .ui-icon {
+  box-shadow: none;
+}
+.jqm-header > .ui-btn, .jqm-header > .ui-btn .ui-btn-inner {
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+}
+.jqm-header > .ui-btn {
+  border-radius: 0 0 0 0;
+  height: 31px;
+  width: 31px;
+}
+.ui-focus, .ui-btn:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}

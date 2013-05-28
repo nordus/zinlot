@@ -1,0 +1,16 @@
+/*
+ *= require fonts
+ *= require jquery.mobile-1.3.1
+ *= require jqm_custom
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  font-family: 'Roboto';
+}
+
+#logo {
+  color: #333333;
+  text-decoration: none;
+}
