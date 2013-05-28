@@ -1,14 +1,10 @@
 /* SHOW
 --------------------------------------------------------------------------------------------------*/
-#historical_trips.show {
-  .ui-page-active.ui-page-panel {
-    overflow-y: hidden;
-  }
-  .ui-content {
-    padding: 0;
-  }
+#map_canvas {
+  height: 100%;
+  position: absolute;
+  width: 100%;
 }
-
 
 /* INDEX
 --------------------------------------------------------------------------------------------------*/
