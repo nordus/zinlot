@@ -1,5 +1,26 @@
+.jqm-header {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-bottom: 1px solid #E0E0E0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #777777;
+  text-shadow: 0 1px 0 #FFFFFF;
+}
 .jqm-header .jqm-navmenu-link .ui-icon {
   background-position: -3px 50%;
+}
+.ui-panel-content-wrap-position-left.ui-panel-content-wrap-open .jqm-header .jqm-navmenu-link .ui-icon {
+  background-position: -51px 50%;
+}
+.jqm-list .ui-btn-up-d {
+  background-color: #FFFFFF;
+  background-image: none;
+}
+.jqm-list .ui-btn-up-d, .jqm-list .ui-btn-hover-d, .jqm-list .ui-btn-down-d {
+  border-color: #EEEEEE;
+}
+.jqm-list .ui-btn-hover-d {
+  background-color: #f8f8f8;
+  background-image: none;
 }
 .jqm-header > .ui-btn .ui-icon {
   background-color: transparent;

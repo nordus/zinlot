@@ -12,13 +12,15 @@
           %a#logo{href:'/'} ZinLot
         %a.jqm-navmenu-link{href: '#nav-menu', data: { icon:'bars', iconpos:'notext' }}
       #nav-menu{data: { role:'panel' }}
-        %ul{data: { icon:'false', role:'listview', theme:'d' }}
+        %ul.jqm-list{data: { icon:'false', role:'listview', theme:'d' }}
           %li
             %a{href:'#'} Dashboard
           %li
             %a{href:'#'} Live Location
           %li
-            %a{href:'#'} Alerts
+            %a{href:'#'}
+              Alerts
+              %span.ui-li-count New
           %li
             %a{href:'/test-drives'} Test Drives
           %li
