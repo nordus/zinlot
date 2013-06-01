@@ -2,6 +2,7 @@ class HistoricalTripsController < ApplicationController
 
   def index
     @trips = HistoricalTrip.last(10)
+    render :index, layout: 'plain'
   end
 
   def show
