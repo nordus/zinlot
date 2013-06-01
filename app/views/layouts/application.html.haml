@@ -2,11 +2,12 @@
 %html
   %head
     %title ZinLot
+    = load_netzke theme: 'all-gray'
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-    %div{data: { role:'page' }, id: "#{controller_name}-#{action_name}"}
+    %div{data: { ajax:'false', role:'page' }, id: "#{controller_name}-#{action_name}"}
       %div.jqm-header{data: { role:'header', theme:'c' }}
         %h1
           %a#logo{href:'/'} ZinLot
@@ -14,7 +15,7 @@
       .nav-menu{data: { role:'panel' }, id: "#{controller_name}-#{action_name}-navmenu"}
         %ul.jqm-list{data: { icon:'false', role:'listview', theme:'d' }}
           %li
-            %a{href:'#'} Dashboard
+            %a{href:'/'} Dashboard
           %li
             %a{href:'#'} Live Location
           %li
@@ -29,4 +30,6 @@
             %a{href:'#'} Campaign Manager
           %li
             %a{href:'#'} Setup
+          %li
+            %a{href:'/vehicles'} Vehicle Inventory
       = yield

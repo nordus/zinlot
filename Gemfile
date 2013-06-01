@@ -9,6 +9,12 @@ gem 'rails', '4.0.0.rc1'
 gem 'pg'
 gem 'haml-rails'
 
+gem 'netzke-core', '~>0.8.0'
+gem 'netzke-basepack'
+gem 'protected_attributes'
+
+gem 'mobile-fu'
+
 group :development do
   gem 'guard-livereload'
   gem 'rack-livereload'

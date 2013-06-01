@@ -88,15 +88,27 @@ GEM
     method_source (0.8.1)
     mime-types (1.23)
     minitest (4.7.4)
+    mobile-fu (1.1.1)
+      rack-mobile-detect
+      rails
     multi_json (1.7.4)
+    netzke-basepack (0.8.4)
+      netzke-core (~> 0.8.2)
+    netzke-core (0.8.4)
+      execjs
+      uglifier
     pg (0.15.1)
     polyglot (0.3.3)
+    protected_attributes (1.0.1)
+      activemodel (>= 4.0.0.beta, < 5.0)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
       slop (~> 3.4)
     rack (1.5.2)
     rack-livereload (0.3.15)
+      rack
+    rack-mobile-detect (0.4.0)
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -163,7 +175,11 @@ DEPENDENCIES
   haml-rails
   jbuilder (~> 1.0.1)
   jquery-rails
+  mobile-fu
+  netzke-basepack
+  netzke-core (~> 0.8.0)
   pg
+  protected_attributes
   rack-livereload
   rails (= 4.0.0.rc1)
   rails3_serve_static_assets!

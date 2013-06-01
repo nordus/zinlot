@@ -1,17 +1,2 @@
-%div{data: { role:'content' }}
-  %table#test-drives-table.test-drives-list.table-stroke{data: { mode:'reflow', role:'table' }}
-    %thead
-      %tr
-        %th Trip #
-        %th End
-        %th Duration
-        %th Miles
-    %tbody
-      - for trip in @trips.reverse
-        %tr
-          %th.title= link_to trip[:id], "/test-drives/#{trip[:id]}", data: { ajax:'false' }
-          %td= distance_of_time_in_words(Time.at(trip[:end_at]), Time.now)
-          - time = Time.at(trip[:duration]/1000).utc.strftime('%H:%M:%S')
-          - time_str = time.sub(/^00:/, '')
-          %td= time_str
-          %td= trip[:miles].round(2)
+%div{data: { role:'content'}}
+  = netzke :historical_trips

@@ -1,6 +1,9 @@
 #= require jquery
 #= require jquery_ujs
+#= require jqm_custom
+#= require jquery.mobile-1.3.1
 #= require_tree .
+#= require_self
 
 $(document).on 'pageinit', ->
 

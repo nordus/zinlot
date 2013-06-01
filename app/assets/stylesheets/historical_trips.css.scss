@@ -2,6 +2,10 @@
 --------------------------------------------------------------------------------------------------*/
 #historical_trips-show {
   overflow-y: hidden;
+
+  .ui-content {
+    padding: 0;
+  }
 }
 #map_canvas {
   height: 100%;
@@ -11,6 +15,12 @@
 
 /* INDEX
 --------------------------------------------------------------------------------------------------*/
+#historical_trips-index {
+  .ui-content {
+    padding: 0;
+  }
+}
+
 /* These apply across all breakpoints because they are outside of a media query */
 /* Make the labels light gray all caps across the board */
 .test-drives-list thead th,
