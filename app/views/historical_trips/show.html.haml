@@ -6,20 +6,31 @@
 :coffeescript
   google.maps.visualRefresh = true
 
-  $("#map_canvas").gmap().bind "init", ->
-
-    popupContent = (marker) ->
-      ['speed', 'eventCode', 'msgType'].map (k) ->
-        ['<b>', k, '</b>:', marker[k]].join ' '
-      .join '<br>'
+  $('#map_canvas').gmap().bind 'init', ->
 
     $.getJSON "https://api.mongohq.com/databases/gateway/collections/readings/documents?_apikey=3ivyp1chsvvas6kz8gsz&limit=100&q={mobileId:'#{@device_id}',updateTime:{$gte:#{@start_at},$lte:#{@end_at}}}", (data) ->
+      points = []
+
       $.each data, (i, marker) ->
         [longitude, latitude] = marker.geo.coordinates
-        $("#map_canvas").gmap("addMarker",
-          position: new google.maps.LatLng(latitude, longitude)
-          bounds: true
-        ).click ->
-          $("#map_canvas").gmap "openInfoWindow",
-            content: popupContent(marker)
-          , this
+        points[i] = new google.maps.LatLng(latitude, longitude)
+        markerAttrs =
+          animation : google.maps.Animation.DROP
+          bounds    : true
+          position  : points[i]
+
+        if i is 0
+          markerAttrs.icon = 'https://mts.googleapis.com/vt/icon/name=icons/spotlight/spotlight-waypoint-a.png&text=On&psize=13&font=fonts/Roboto-Regular.ttf&color=ff333333&ax=44&ay=51&scale=1'
+          markerAttrs.zIndex = 300
+        else if i is data.length-1
+          markerAttrs.icon = 'https://mts.googleapis.com/vt/icon/name=icons/spotlight/spotlight-waypoint-b.png&text=Off&psize=13&font=fonts/Roboto-Regular.ttf&color=ff333333&ax=41&ay=51&scale=1'
+          markerAttrs.zIndex = 300
+        else if mapIcon(marker.eventCode)
+          markerAttrs.icon = mapIcon(marker.eventCode, marker.speed)
+
+        if markerAttrs.icon
+          $('#map_canvas').gmap 'addMarker', markerAttrs
+
+      $('#map_canvas').gmap 'addShape', 'Polyline',
+        path        : points
+        strokeColor : '#00B3FD'
