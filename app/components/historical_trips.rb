@@ -7,49 +7,113 @@ class HistoricalTrips < Netzke::Basepack::Viewport
     c.bbar = [:search]
     c.columns = [
                   {
-                    :name => :map,
-                    :header => "",
-                    :getter => lambda { |t|
-                      "<a href='/test-drives/#{t[:id]}'>map</a>"
-                    }
-                  },
-                  :device_id,
-                  {
-                    :name => :end,
-                    :header => "Time ago",
-                    :getter => lambda { |t|
-                      t.time_ago
-                    }
+                      :name => :id,
+                      :width => '40px',
+                      :header => 'ID',
+                      :hidden => false
                   },
                   {
-                    :name => :duration_time,
-                    :header => "Duration",
-                    :getter => lambda { |t|
-                      t.duration_time
-                    }
+                      :name => :device_id,
+                      :width => '70px',
+                      :header => "Device"
                   },
                   {
-                    :name => :miles_rounded,
-                    :header => "Miles",
-                    :getter => lambda { |t|
-                      t.miles_rounded
-                    }
+                      :name => :miles,
+                      :width => '50px',
+                      :header => "Mi"
                   },
-                  :start_at,
-                  :end_at,
-                  :num_hard_brake,
-                  :num_hard_accel,
-                  :num_speed_event,
-                  :num_rpm_event,
-                  :ending_mileage,
-                  :highest_speed,
-                  :idle_seconds,
-                  :num_corner_l,
-                  :num_corner_r,
-                  :num_very_hard_brake,
-                  :num_very_hard_accel,
-                  :num_hard_corner_l,
-                  :num_hard_corner_r
+                  {
+                      :name => :highest_speed,
+                      :width => '40px',
+                      :header => "Max speed"
+                  },
+                  {
+                      :name => :num_speed_event,
+                      :width => '40px',
+                      :header => "# speed"
+                  },
+                  {
+                      :name => :num_rpm_event,
+                      :width => '40px',
+                      :header => "RPM"
+                  },
+                  {
+                      :name => :num_hard_brake,
+                      :width => '40px',
+                      :header => "Brake"
+                  },
+                  {
+                      :name => :num_very_hard_brake,
+                      :width => '40px',
+                      :header => "! Brake"
+                  },
+                  {
+                      :name => :num_hard_accel,
+                      :width => '40px',
+                      :header => "Accel"
+                  },
+                  {
+                      :name => :num_very_hard_accel,
+                      :width => '40px',
+                      :header => "! Accel"
+                  },
+                  {
+                      :name => :num_corner_l,
+                      :width => '40px',
+                      :header => "Left"
+                  },
+                  {
+                      :name => :num_hard_corner_l,
+                      :width => '40px',
+                      :header => "! Left"
+                  },
+                  {
+                      :name => :num_corner_r,
+                      :width => '40px',
+                      :header => "Right"
+                  },
+                  {
+                      :name => :num_hard_corner_r,
+                      :width => '40px',
+                      :header => "! Right"
+                  },
+                  {
+                      :name => :ending_mileage,
+                      :width => '40px',
+                      :header => "Mileage"
+                  },
+                  {
+                      :name => :idle_seconds,
+                      :width => '50px',
+                      :header => "Idle sec"
+                  },
+                  {
+                      :name => :end,
+                      :width => '80px',
+                      :menu_disabled => true,
+                      :header => "",
+                      :getter => lambda { |t|
+                        t.time_ago
+                      }
+                  },
+                  {
+                      :name => :duration_time,
+                      :width => '50px',
+                      :menu_disabled => true,
+                      :header => "",
+                      :getter => lambda { |t|
+                        t.duration_time
+                      }
+                  },
+                  {
+                      :name => :map,
+                      :width => '40px',
+                      :menu_disabled => true,
+                      :header => "",
+                      :getter => lambda { |t|
+                        "<a href='/test-drives/#{t[:id]}' target='_'>map</a>"
+                      }
+                  }
                 ]
   end
 

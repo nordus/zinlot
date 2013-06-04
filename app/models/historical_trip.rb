@@ -1,8 +1,10 @@
 class HistoricalTrip < ActiveRecord::Base
   include ActionView::Helpers
 
+  default_scope :order => 'id DESC'
+
   def time_ago
-    time_ago_in_words(Time.at(self.end_at))
+    time_ago_in_words(Time.at(self.end_at)) + ' ago'
   end
 
   def duration_time
