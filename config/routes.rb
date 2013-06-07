@@ -1,4 +1,7 @@
 Zinlot::Application.routes.draw do
+  get "live-location" => "live_location#index"
+  get "map/index"
+  get "devices" => "devices#index"
   get "vehicles" => 'vehicles#index'
   match "/netzke/:action(.:format)", to: 'netzke', as: 'netzke', via: :all
   get 'dashboard/index'

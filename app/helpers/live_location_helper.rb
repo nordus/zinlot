@@ -1,0 +1,2 @@
+module LiveLocationHelper
+end
