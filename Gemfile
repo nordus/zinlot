@@ -15,9 +15,9 @@ gem 'protected_attributes'
 
 gem 'mobile-fu'
 
-gem 'comfortable_mexican_sofa'
+gem 'comfortable_mexican_sofa', github: 'easierbycode/comfortable_mexican_sofa'
 
-group :development do
+    group :development do
   gem 'guard-livereload'
   gem 'rack-livereload'
 end
