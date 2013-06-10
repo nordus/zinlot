@@ -1,8 +1,8 @@
-class Vehicles < Netzke::Basepack::Viewport
+class Cars < Netzke::Basepack::Viewport
 
-  component :vehicles do |c|
+  component :cars do |c|
     c.klass = Netzke::Basepack::Grid
-    c.model = "Vehicle"
+    c.model = "Car"
     c.columns = [
         {
             :name => :id,
@@ -10,10 +10,9 @@ class Vehicles < Netzke::Basepack::Viewport
             :header => 'ID',
             :hidden => false
         },
-        :vehicle_mileage,
-        :car_color,
-        {:name => :car__name, :header => 'Car', width: '200px'},
-        {:name => :vehicle_usage__name, :header => 'Usage'}
+        :year,
+        :make,
+        :model
     ]
   end
 
@@ -26,7 +25,7 @@ class Vehicles < Netzke::Basepack::Viewport
     c.items = [
         { region: :west, item_id: :navigation, width: 150, split: false },
         { region: :center, layout: :border, border: false, items: [
-            { border:false, region:'center', layout:'fit', items:[:vehicles] }
+            { border:false, region:'center', layout:'fit', items:[:cars] }
         ]}
     ]
   end

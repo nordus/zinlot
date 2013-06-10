@@ -3,6 +3,8 @@ class HistoricalTrip < ActiveRecord::Base
 
   default_scope :order => 'id DESC'
 
+  belongs_to :device
+
   def time_ago
     time_ago_in_words(Time.at(self.end_at)) + ' ago'
   end
@@ -13,4 +15,23 @@ class HistoricalTrip < ActiveRecord::Base
   end
 
   def miles_rounded; miles.round(2); end
+
+  def style
+    total_events = num_hard_brake + num_hard_accel + num_speed_event + num_rpm_event + num_corner_l + num_corner_r + num_very_hard_brake + num_very_hard_accel + num_hard_corner_l + num_hard_corner_r
+    if total_events < 5
+      'Safe'
+    elsif total_events < 9
+      'Agressive'
+    else
+      'Very Agressive'
+    end
+  end
+
+  def idle_minutes
+    if idle_seconds == 0
+      return ''
+    end
+    time = Time.at(idle_seconds).utc.strftime('%H:%M:%S')
+    time.sub(/^00:/, '')
+  end
 end

@@ -3,6 +3,32 @@ class Devices < Netzke::Basepack::Viewport
   component :devices do |c|
     c.klass = Netzke::Basepack::Grid
     c.model = "Device"
+    c.columns = [
+        {
+            :name => :id,
+            :width => '90px',
+            :header => 'ID',
+            :hidden => false
+        },
+        :device_type,
+        :car_id,
+        {
+            :name => :vehicle,
+            :width => '90px',
+            :header => 'Vehicle',
+            :hidden => false,
+            :getter => lambda { |d|
+              d.vehicle && d.vehicle.friendly_name
+            }
+        },
+        :imei,
+        :name,
+        :sim_status,
+        :activated_at,
+        :created_at,
+        :updated_at,
+        :latest_history_id
+    ]
   end
 
   js_configure do |c|
@@ -12,19 +38,8 @@ class Devices < Netzke::Basepack::Viewport
   def configure(c)
     super
     c.items = [
-        { border:false, region:'north', html:header_html },
+        { border:false, region:'north', html:'' },
         { border:false, region:'center', layout:'fit', items:[:devices] }
     ]
-  end
-
-  def header_html
-    %Q{
-      <div data-theme="c" data-role="header" class="jqm-header ui-header ui-bar-c" role="banner">
-        <h1 class="ui-title" role="heading" aria-level="1">
-          <a id="logo" href="/" class="ui-link">ZinLot</a>
-        </h1>
-        <a href="#historical_trips-index-navmenu" data-iconpos="notext" data-icon="bars" class="jqm-navmenu-link ui-btn-left ui-btn ui-btn-up-c ui-shadow ui-btn-corner-all ui-btn-icon-notext" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" title=""><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-bars ui-icon-shadow">&nbsp;</span></span></a>
-      </div>
-    }
   end
 end

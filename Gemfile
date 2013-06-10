@@ -8,6 +8,7 @@ gem 'rails', '4.0.0.rc1'
 # Use postgresql as the database for Active Record
 gem 'pg'
 gem 'haml-rails'
+gem 'devise', '3.0.0.rc'
 
 gem 'netzke-core', '~>0.8.0'
 gem 'netzke-basepack'

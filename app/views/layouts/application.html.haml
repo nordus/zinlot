@@ -2,6 +2,7 @@
 %html
   %head
     %title ZinLot
+    %meta{name:'viewport', content:'width=device-width, initial-scale=1.0'}
     = cms_snippet_content(:fonts, Cms::Site.find_by_hostname('zinlot.com'))
     = load_netzke theme: 'all-gray'
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
@@ -15,6 +16,8 @@
       #main.pure-u
         %a#menuLink.pure-menu-link
           %img{ width:20, src:'http://dl.dropbox.com/u/20868114/threelines_vw.png' }
+        %p.notice= notice
+        %p.alert= alert
 
         #menu.pure-u
           .pure-menu.pure-menu-open
@@ -40,8 +43,12 @@
               %li
                 %a{href:'/vehicles'} Vehicle Inventory
               %li
+                %a{href:'/live-location'} Live Location
+              %li.menu-item-divided
+                %a{href:'/cars'} Cars
+              %li
                 %a{href:'/devices'} Devices
               %li
-                %a{href:'/live-location'} Live Location
+                %a{href:'/geofences'} Geofences
         = yield
         = cms_snippet_content(:application_js, Cms::Site.find_by_hostname('zinlot.com'))

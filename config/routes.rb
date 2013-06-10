@@ -1,4 +1,5 @@
 Zinlot::Application.routes.draw do
+  get "cars" => 'cars#index'
   get "live-location" => "live_location#index"
   get "map/index"
   get "devices" => "devices#index"

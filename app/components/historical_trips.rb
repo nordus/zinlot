@@ -13,101 +13,54 @@ class HistoricalTrips < Netzke::Basepack::Viewport
                       :hidden => false
                   },
                   {
-                      :name => :device_id,
-                      :width => '70px',
-                      :header => "Device"
+                      :name => :vehicle,
+                      :width => '120px',
+                      :header => "Vehicle",
+                      :getter => lambda {|t| t.device && t.device.vehicle && t.device.vehicle.car && t.device.vehicle.car.name }
                   },
                   {
                       :name => :miles,
                       :width => '50px',
-                      :header => "Mi"
+                      :menu_disabled => true,
+                      :header => "Miles",
+                      :getter => lambda {|t| t.miles_rounded }
                   },
                   {
-                      :name => :highest_speed,
-                      :width => '40px',
-                      :header => "Max speed"
+                      :name => :style,
+                      :width => '110px',
+                      :menu_disabled => true,
+                      :header => "Style",
+                      :getter => lambda { |t|
+                        t.style
+                      }
                   },
                   {
-                      :name => :num_speed_event,
-                      :width => '40px',
-                      :header => "# speed"
-                  },
-                  {
-                      :name => :num_rpm_event,
-                      :width => '40px',
-                      :header => "RPM"
-                  },
-                  {
-                      :name => :num_hard_brake,
-                      :width => '40px',
-                      :header => "Brake"
-                  },
-                  {
-                      :name => :num_very_hard_brake,
-                      :width => '40px',
-                      :header => "! Brake"
-                  },
-                  {
-                      :name => :num_hard_accel,
-                      :width => '40px',
-                      :header => "Accel"
-                  },
-                  {
-                      :name => :num_very_hard_accel,
-                      :width => '40px',
-                      :header => "! Accel"
-                  },
-                  {
-                      :name => :num_corner_l,
-                      :width => '40px',
-                      :header => "Left"
-                  },
-                  {
-                      :name => :num_hard_corner_l,
-                      :width => '40px',
-                      :header => "! Left"
-                  },
-                  {
-                      :name => :num_corner_r,
-                      :width => '40px',
-                      :header => "Right"
-                  },
-                  {
-                      :name => :num_hard_corner_r,
-                      :width => '40px',
-                      :header => "! Right"
-                  },
-                  {
-                      :name => :ending_mileage,
-                      :width => '40px',
-                      :header => "Mileage"
-                  },
-                  {
-                      :name => :idle_seconds,
-                      :width => '50px',
-                      :header => "Idle sec"
+                      :name => :idle_minutes,
+                      :width => '70px',
+                      :header => "Idle",
+                      :getter => lambda {|t| t.idle_minutes}
                   },
                   {
                       :name => :end,
-                      :width => '80px',
+                      :width => '120px',
                       :menu_disabled => true,
-                      :header => "",
+                      :header => "Age",
                       :getter => lambda { |t|
                         t.time_ago
                       }
                   },
                   {
                       :name => :duration_time,
-                      :width => '50px',
+                      :width => '60px',
                       :menu_disabled => true,
-                      :header => "",
+                      :header => "Duration",
                       :getter => lambda { |t|
                         t.duration_time
                       }
                   },
                   {
                       :name => :map,
-                      :width => '40px',
+                      :width => '50px',
                       :menu_disabled => true,
                       :header => "",
                       :getter => lambda { |t|
@@ -124,7 +77,7 @@ class HistoricalTrips < Netzke::Basepack::Viewport
   def configure(c)
     super
     c.items = [
-      { region: :west, item_id: :navigation, width: 150, split: false, html:'foo' },
+      { region: :west, item_id: :navigation, width: 150, split: false },
       { region: :center, layout: :border, border: false, items: [
         { border:false, region:'center', layout:'fit', items:[:historical_trips] }
       ]}
