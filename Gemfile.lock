@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/easierbycode/comfortable_mexican_sofa.git
-  revision: 94bd07c6b697af72c6d32e2960d6ad2f0bfda306
+  revision: 5f4d65f790015856fa6b663bb981fb1c9a9db013
   specs:
-    comfortable_mexican_sofa (1.8.1)
+    comfortable_mexican_sofa (1.8.2)
       active_link_to (>= 1.0.0)
       coffee-rails (>= 3.1.0)
       formatted_form (>= 2.1.0)
@@ -210,7 +210,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
-  comfortable_mexican_sofa!
+  comfortable_mexican_sofa (~> 1.8.2)!
   devise (= 3.0.0.rc)
   guard-livereload
   haml-rails
