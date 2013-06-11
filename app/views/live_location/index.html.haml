@@ -6,18 +6,21 @@
 :coffeescript
   google.maps.visualRefresh = true
   gateway = new Pusher("f513119581ede36ac6c4").subscribe "gateway"
+  carNames = #{@car_names.to_json}
 
   createPoint = (reading) ->
     [longitude, latitude] = reading.geo.coordinates
     new google.maps.LatLng(latitude, longitude)
 
   addMarker = (i, reading) ->
+    carName = carNames[reading.mobileId]
+
     $('#map_canvas').gmap 'addMarker',
       animation : google.maps.Animation.DROP
       bounds    : true
       mobileId  : [reading.mobileId]
       position  : createPoint(reading)
-      icon      : 'http://chart.googleapis.com/chart?chst=d_simple_text_icon_above&chld=Terjes%20Acadia|16|bf6410|car-dealer|16|bf6410|FFF'
+      icon      : 'http://chart.googleapis.com/chart?chst=d_simple_text_icon_above&chld=' + carName + '|16|bf6410|car-dealer|16|bf6410|FFF'
 
   gateway.bind 'message', (reading) ->
     $('#map_canvas').gmap 'find', 'markers', { 'property':'mobileId', 'value':reading.mobileId }, (marker, found) ->
