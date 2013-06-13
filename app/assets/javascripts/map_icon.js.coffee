@@ -4,6 +4,9 @@
   icons =
     '23':
       color:  'f2c229'
+    '25':
+      color : 'cca069'
+      text  : 'Idle'
     '40':
       color : 'f2f06c'
       text  : 'Accel'
