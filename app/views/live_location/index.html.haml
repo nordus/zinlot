@@ -27,7 +27,7 @@
   gateway.bind 'message', (reading) ->
     $('#map_canvas').gmap 'find', 'markers', { 'property':'mobileId', 'value':reading.mobileId }, (marker, found) ->
       if found
-        marker.setPosition (new google.maps.LatLng(reading.geo.latitude, reading.geo.longitude))
+        marker.setPosition (new google.maps.LatLng(reading.geo.coordinates[1], reading.geo.coordinates[0]))
       else
         addMarker(null, reading)
 
