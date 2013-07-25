@@ -31,8 +31,6 @@
       else
         addMarker(null, reading)
 
-      $('#map_canvas').gmap('get', 'map').panTo createPoint(reading)
-
   $('#map_canvas').gmap().bind 'init', ->
 
     latestReadings.forEach addMarker
