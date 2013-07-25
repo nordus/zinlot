@@ -7,19 +7,21 @@
   google.maps.visualRefresh = true
   gateway = new Pusher("f513119581ede36ac6c4").subscribe "gateway"
   carNames = #{@car_names.to_json}
+  latestReadings = #{@latest_readings.to_json}
 
-  createPoint = (reading) ->
-    [longitude, latitude] = reading.geo.coordinates
-    new google.maps.LatLng(latitude, longitude)
 
-  addMarker = (i, reading) ->
-    carName = carNames[reading.mobileId]
+  addMarker = (reading) ->
+    for k,v of reading
+      longitude = v[0]
+      latitude = v[1]
+      mobileId = k
+      carName = carNames[String(k)]
 
     $('#map_canvas').gmap 'addMarker',
       animation : google.maps.Animation.DROP
       bounds    : true
-      mobileId  : [reading.mobileId]
-      position  : createPoint(reading)
+      mobileId  : [mobileId]
+      position  : (new google.maps.LatLng(latitude, longitude))
       icon      : 'http://chart.googleapis.com/chart?chst=d_simple_text_icon_above&chld=' + carName + '|16|bf6410|car-dealer|16|bf6410|FFF'
 
   gateway.bind 'message', (reading) ->
@@ -33,5 +35,4 @@
 
   $('#map_canvas').gmap().bind 'init', ->
 
-    $.getJSON "https://api.mongohq.com/databases/gateway/collections/readings/documents?_apikey=3ivyp1chsvvas6kz8gsz&limit=1&q={mobileId:'4531004944'}&sort={_id:-1}", (data) ->
-      $.each data, addMarker
+    latestReadings.forEach addMarker

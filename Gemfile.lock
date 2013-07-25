@@ -51,6 +51,9 @@ GEM
     arel (4.0.0)
     atomic (1.1.9)
     bcrypt-ruby (3.0.1)
+    bson (1.9.1)
+    bson_ext (1.9.1)
+      bson (~> 1.9.1)
     builder (3.1.4)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -120,6 +123,8 @@ GEM
     mobile-fu (1.2.1)
       rack-mobile-detect
       rails
+    mongo (1.9.1)
+      bson (~> 1.9.1)
     multi_json (1.7.6)
     netzke-basepack (0.8.4)
       netzke-core (~> 0.8.2)
@@ -209,6 +214,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bson_ext
   coffee-rails (~> 4.0.0)
   comfortable_mexican_sofa (~> 1.8.2)!
   devise (= 3.0.0.rc)
@@ -217,6 +223,7 @@ DEPENDENCIES
   jbuilder (~> 1.0.1)
   jquery-rails
   mobile-fu
+  mongo
   netzke-basepack
   netzke-core (~> 0.8.0)
   pg

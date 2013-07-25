@@ -7,6 +7,8 @@ gem 'rails', '4.0.0.rc1'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
+gem 'mongo'
+gem 'bson_ext'
 gem 'haml-rails'
 gem 'devise', '3.0.0.rc'
 
