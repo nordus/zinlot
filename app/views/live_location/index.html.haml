@@ -9,31 +9,23 @@
   carNames = #{@car_names.to_json}
   latestReadings = #{@latest_readings.to_json}
 
-
   addMarker = (reading) ->
     for k,v of reading
-      longitude = v[0]
-      latitude = v[1]
-      mobileId = k
-      carName = carNames[String(k)]
+      [latitude, longitude] = [v[1], v[0]]
+      mobileId = String(k)
 
     $('#map_canvas').gmap 'addMarker',
       animation : google.maps.Animation.DROP
       bounds    : true
       mobileId  : [mobileId]
       position  : (new google.maps.LatLng(latitude, longitude))
-      icon      : 'http://chart.googleapis.com/chart?chst=d_simple_text_icon_above&chld=' + carName + '|16|bf6410|car-dealer|16|bf6410|FFF'
+      icon      : 'http://chart.googleapis.com/chart?chst=d_simple_text_icon_above&chld=' + carNames[mobileId] + '|16|bf6410|car-dealer|16|bf6410|FFF'
 
   gateway.bind 'message', (reading) ->
+    window.latestReading = reading
     $('#map_canvas').gmap 'find', 'markers', { 'property':'mobileId', 'value':reading.mobileId }, (marker, found) ->
       if found
-        console.log reading
         marker.setPosition(new google.maps.LatLng(reading.geo.coordinates[1], reading.geo.coordinates[0]))
-      else
-        console.log 'not found'
-        console.log reading
-        addMarker(null, reading)
 
   $('#map_canvas').gmap().bind 'init', ->
-
     latestReadings.forEach addMarker
