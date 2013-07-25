@@ -22,7 +22,6 @@
       icon      : 'http://chart.googleapis.com/chart?chst=d_simple_text_icon_above&chld=' + carNames[mobileId] + '|16|bf6410|car-dealer|16|bf6410|FFF'
 
   gateway.bind 'message', (reading) ->
-    window.latestReading = reading
     $('#map_canvas').gmap 'find', 'markers', { 'property':'mobileId', 'value':reading.mobileId }, (marker, found) ->
       if found
         marker.setPosition(new google.maps.LatLng(reading.geo.coordinates[1], reading.geo.coordinates[0]))
