@@ -17,13 +17,19 @@ class HistoricalTrip < ActiveRecord::Base
   def miles_rounded; miles.round(2); end
 
   def style
-    total_events = num_hard_brake + num_hard_accel + num_speed_event + num_rpm_event + num_corner_l + num_corner_r + num_very_hard_brake + num_very_hard_accel + num_hard_corner_l + num_hard_corner_r
+    total_events = 0
+    [:num_hard_brake, :num_hard_accel, :num_speed_event, :num_rpm_event, :num_corner_l, :num_corner_r, :num_very_hard_brake, :num_very_hard_accel, :num_hard_corner_l, :num_hard_corner_r].each do |attr|
+      if self[attr] && self[attr] > 0
+        total_events += self[attr]
+      end
+    end
+
     if total_events < 5
-      'Safe'
+      return 'Safe'
     elsif total_events < 9
-      'Agressive'
+      return 'Agressive'
     else
-      'Very Agressive'
+      return 'Very Agressive'
     end
   end
 

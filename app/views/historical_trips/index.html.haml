@@ -1,1 +1,24 @@
-= netzke :historical_trips
+%table#test-drives.pure-table.pure-table-striped
+  %thead
+    %tr
+      %th Map
+      %th Age
+      %th Vehicle
+      %th Miles
+      %th Style
+      %th Idle
+      %th Duration
+      %th Left Test Drive Area
+      %th # of Test Drives
+  - for trip in @trips.reverse
+    %tr
+      %td
+        %a{href: "/test-drives/#{trip.id}"} show
+      %td= trip.time_ago
+      %td= trip.device.vehicle.car.name rescue trip.device_id
+      %td= trip.miles_rounded
+      %td{class: "style-#{trip.style.tr(' ', '-')}"}= trip.style
+      %td= trip.idle_minutes
+      %td= trip.duration_time
+      %td
+      %td= trip.trip_number

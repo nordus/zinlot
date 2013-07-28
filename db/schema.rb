@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130724031319) do
+ActiveRecord::Schema.define(version: 20130728003520) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -305,6 +305,12 @@ ActiveRecord::Schema.define(version: 20130724031319) do
 
   add_index "enterprises", ["email"], name: "index_enterprises_on_email", unique: true, using: :btree
   add_index "enterprises", ["reset_password_token"], name: "index_enterprises_on_reset_password_token", unique: true, using: :btree
+
+  create_table "geofence_violations", force: true do |t|
+    t.string  "device_id"
+    t.integer "trip_start_at"
+    t.integer "geofence_id"
+  end
 
   create_table "historical_trips", force: true do |t|
     t.integer  "status",              default: 0
