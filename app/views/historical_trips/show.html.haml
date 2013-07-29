@@ -5,31 +5,35 @@
 
 :coffeescript
   google.maps.visualRefresh = true
+  points = []
+
+  createPoint = (reading) ->
+    latitude = undefined
+    longitude = undefined
+    markerAttrs = undefined
+    _ref = undefined
+    _ref = reading.geo.coordinates
+    longitude = _ref[0]
+    latitude = _ref[1]
+
+    new google.maps.LatLng(latitude, longitude)
+
+  drawMarker = (i, reading) ->
+    if reading.geo
+      points.push createPoint(reading)
+      markerAttrs =
+        bounds: true
+        animation: google.maps.Animation.DROP
+        position: points[points.length - 1]
+        icon: mapIcon(reading.eventCode, reading.speed)
+
+      $("#map_canvas").gmap "addMarker", markerAttrs  if markerAttrs.icon
 
   $('#map_canvas').gmap().bind 'init', ->
 
     $.getJSON "https://api.mongohq.com/databases/gateway/collections/readings/documents?_apikey=3ivyp1chsvvas6kz8gsz&limit=100&q={mobileId:'#{@device_id}',updateTime:{$gte:#{@start_at},$lte:#{@end_at}}}", (data) ->
-      points = []
 
-      $.each data, (i, marker) ->
-        [longitude, latitude] = marker.geo.coordinates
-        points[i] = new google.maps.LatLng(latitude, longitude)
-        markerAttrs =
-          animation : google.maps.Animation.DROP
-          bounds    : true
-          position  : points[i]
-
-        if i is 0
-          markerAttrs.icon = 'https://mts.googleapis.com/vt/icon/name=icons/spotlight/spotlight-waypoint-a.png&text=On&psize=13&font=fonts/Roboto-Regular.ttf&color=ff333333&ax=44&ay=51&scale=1'
-          markerAttrs.zIndex = 300
-        else if i is data.length-1
-          markerAttrs.icon = 'https://mts.googleapis.com/vt/icon/name=icons/spotlight/spotlight-waypoint-b.png&text=Off&psize=13&font=fonts/Roboto-Regular.ttf&color=ff333333&ax=41&ay=51&scale=1'
-          markerAttrs.zIndex = 300
-        else if mapIcon(marker.eventCode)
-          markerAttrs.icon = mapIcon(marker.eventCode, marker.speed)
-
-        if markerAttrs.icon
-          $('#map_canvas').gmap 'addMarker', markerAttrs
+      $.each data, drawMarker
 
       $('#map_canvas').gmap 'addShape', 'Polyline',
         path        : points
