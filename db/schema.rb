@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130728003520) do
+ActiveRecord::Schema.define(version: 20130728041443) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -313,36 +313,38 @@ ActiveRecord::Schema.define(version: 20130728003520) do
   end
 
   create_table "historical_trips", force: true do |t|
-    t.integer  "status",              default: 0
+    t.integer  "status",                  default: 0
     t.string   "device_id"
-    t.integer  "key_fob_id",          default: 0
-    t.integer  "start_at",            default: 0
-    t.integer  "end_at",              default: 0
-    t.integer  "duration",            default: 0
-    t.float    "miles",               default: 0.0
-    t.integer  "num_hard_brake",      default: 0
-    t.integer  "num_hard_accel",      default: 0
-    t.integer  "num_speed_event",     default: 0
-    t.integer  "num_rpm_event",       default: 0
-    t.float    "ending_mileage",      default: 0.0
+    t.integer  "key_fob_id",              default: 0
+    t.integer  "start_at",                default: 0
+    t.integer  "end_at",                  default: 0
+    t.integer  "duration",                default: 0
+    t.float    "miles",                   default: 0.0
+    t.integer  "num_hard_brake",          default: 0
+    t.integer  "num_hard_accel",          default: 0
+    t.integer  "num_speed_event",         default: 0
+    t.integer  "num_rpm_event",           default: 0
+    t.float    "ending_mileage",          default: 0.0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.date     "start_date"
-    t.float    "highest_speed",       default: 0.0
-    t.integer  "idle_seconds",        default: 0
+    t.float    "highest_speed",           default: 0.0
+    t.integer  "idle_seconds",            default: 0
     t.string   "time_zone"
     t.date     "end_date"
-    t.integer  "qos_flags",           default: 0
+    t.integer  "qos_flags",               default: 0
     t.integer  "num_corner_l"
     t.integer  "num_corner_r"
-    t.integer  "num_very_hard_brake", default: 0
-    t.integer  "num_very_hard_accel", default: 0
+    t.integer  "num_very_hard_brake",     default: 0
+    t.integer  "num_very_hard_accel",     default: 0
     t.integer  "num_hard_corner_l"
     t.integer  "num_hard_corner_r"
     t.float    "fuel_gal_start"
     t.float    "fuel_gal_end"
     t.integer  "num_enter_geo_zone"
     t.integer  "num_exit_geo_zone"
+    t.integer  "trip_number"
+    t.boolean  "has_geofence_violations"
   end
 
   create_table "users", force: true do |t|
