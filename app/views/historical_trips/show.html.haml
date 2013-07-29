@@ -5,7 +5,8 @@
 
 :coffeescript
   google.maps.visualRefresh = true
-  points = []
+  window.points = []
+  window.geofenceNames = {}
 
   createPoint = (reading) ->
     latitude = undefined
@@ -38,3 +39,28 @@
       $('#map_canvas').gmap 'addShape', 'Polyline',
         path        : points
         strokeColor : '#00B3FD'
+
+      setGeofencePaths = (geofencesJSON) ->
+        geofenceNames = _.zipObject(_.unique(_.pluck(geofencesJSON, "geofenceid")), _.unique(_.pluck(geofencesJSON, "friendlyname")))
+        groupedGeofences = _.groupBy(geofencesJSON, "geofenceid")
+        window.geofencePaths = _.map(groupedGeofences, (geofencePoints) ->
+          _.map geofencePoints, (point) ->
+            new google.maps.LatLng(point.latitude, point.longitude)
+        )
+
+      drawGeofences = ->
+        _.each geofencePaths, (geofencePath) ->
+          $("#map_canvas").gmap "addShape", "Polygon",
+            paths: geofencePath
+            fillColor: "#FDB02A"
+            fillOpacity: 0.1
+            strokeColor: "#d88a02"
+            strokeOpacity: 0.4
+            strokeWeight: 3
+
+      Tabletop.init
+        key: "0AgIQldiiakH7dG1RR2JLN2pCLXZiMm15cm4ybzhwUEE"
+        simpleSheet: true
+        callback: (geofencePaths) ->
+          setGeofencePaths geofencePaths
+          drawGeofences()
