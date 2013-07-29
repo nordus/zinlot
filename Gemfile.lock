@@ -120,6 +120,7 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.1)
     mime-types (1.23)
+    mini_portile (0.5.1)
     minitest (4.7.5)
     mobile-fu (1.2.1)
       rack-mobile-detect
@@ -132,6 +133,8 @@ GEM
     netzke-core (0.8.4)
       execjs
       uglifier
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
     orm_adapter (0.4.0)
     paperclip (3.5.0)
       activemodel (>= 3.0.0)
@@ -230,6 +233,7 @@ DEPENDENCIES
   mongo
   netzke-basepack
   netzke-core (~> 0.8.0)
+  nokogiri
   pg
   protected_attributes
   rack-livereload

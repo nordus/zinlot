@@ -18,6 +18,8 @@ gem 'netzke-core', '~>0.8.0'
 gem 'netzke-basepack'
 gem 'protected_attributes'
 
+gem 'nokogiri'
+
 gem 'mobile-fu'
 
 gem 'comfortable_mexican_sofa', '~> 1.8.2', github: 'easierbycode/comfortable_mexican_sofa'
