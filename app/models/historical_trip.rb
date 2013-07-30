@@ -9,12 +9,12 @@ class HistoricalTrip < ActiveRecord::Base
     time_ago_in_words(Time.at(self.end_at)) + ' ago'
   end
 
-  def duration_time
+  def duration_time(duration: duration)
     time = Time.at(duration/1000).utc.strftime('%H:%M:%S')
     time.sub(/^00:/, '')
   end
 
-  def miles_rounded; miles.round(2); end
+  def miles_rounded(miles: miles); miles.round(2); end
 
   def style
     total_events = 0

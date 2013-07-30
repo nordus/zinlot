@@ -1,7 +1,11 @@
 class HistoricalTripsController < ApplicationController
 
   def index
-    @trips = HistoricalTrip.last(10)
+    @trips = HistoricalTrip.where('end_at > ?', Date.yesterday.beginning_of_day.to_i)
+    @trip = @trips.first
+    @total_trips = @trips.length
+    @total_miles = @trip.miles_rounded(miles: @trips.sum('miles'))
+    @total_duration = @trip.duration_time(duration: @trips.sum('duration'))
   end
 
   def show
