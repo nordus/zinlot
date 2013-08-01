@@ -33,5 +33,5 @@
       %td{class: "style-#{trip.style.tr(' ', '-')}"}= trip.style
       %td= trip.idle_minutes
       %td= trip.duration_time
-      %td
+      %td= trip.has_geofence_violations
       %td= trip.trip_number
