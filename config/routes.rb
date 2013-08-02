@@ -7,6 +7,7 @@ Zinlot::Application.routes.draw do
   match "/netzke/:action(.:format)", to: 'netzke', as: 'netzke', via: :all
   get 'dashboard/index'
   get 'test-drives' => 'historical_trips#index'
+  get 'test-drives/week' => 'historical_trips#week'
   get 'test-drives/:id' => 'historical_trips#show'
   get 'dtc-codes/:code' => 'dtc_codes#show'
   # The priority is based upon order of creation: first created -> highest priority.
