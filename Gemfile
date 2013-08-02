@@ -22,6 +22,8 @@ gem 'nokogiri'
 
 gem 'mobile-fu'
 
+gem 'active_link_to'
+
 gem 'comfortable_mexican_sofa', '~> 1.8.2', github: 'easierbycode/comfortable_mexican_sofa'
 
     group :development do

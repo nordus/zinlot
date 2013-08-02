@@ -1,7 +1,8 @@
 class HistoricalTripsController < ApplicationController
 
   def index
-    @trips = HistoricalTrip.where('end_at > ?', Date.today.beginning_of_day.to_i)
+    @earliest_trip_time ||= Date.today.beginning_of_day.to_i
+    @trips = HistoricalTrip.where('end_at > ?', @earliest_trip_time)
     @total_miles = 0
     @total_duration = 0
     if @trips.count > 0
@@ -10,6 +11,12 @@ class HistoricalTripsController < ApplicationController
       @total_miles = @trip.miles_rounded(miles: @trips.sum('miles'))
       @total_duration = @trip.duration_time(duration: @trips.sum('duration'))
     end
+  end
+
+  def week
+    @earliest_trip_time = Date.today.beginning_of_week.beginning_of_day.to_i
+    index
+    render :index
   end
 
   def show

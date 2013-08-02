@@ -221,6 +221,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_link_to
   bson_ext
   coffee-rails (~> 4.0.0)
   comfortable_mexican_sofa (~> 1.8.2)!
