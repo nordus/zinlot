@@ -23,7 +23,7 @@
       %th Duration
       %th Left Test Drive Area
       %th # of Test Drives
-  - for trip in @trips.reverse
+  - for trip in @trips
     %tr
       %td
         %a{href: "/test-drives/#{trip.id}"} show
