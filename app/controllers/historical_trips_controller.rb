@@ -1,6 +1,7 @@
 class HistoricalTripsController < ApplicationController
 
   def index
+    ENV["TZ"] = 'US/Arizona'
     @earliest_trip_time ||= Date.today.beginning_of_day.to_i
     @trips = HistoricalTrip.where('end_at > ?', @earliest_trip_time)
     @total_miles = 0
@@ -11,6 +12,7 @@ class HistoricalTripsController < ApplicationController
       @total_miles = @trip.miles_rounded(miles: @trips.sum('miles'))
       @total_duration = @trip.duration_time(duration: @trips.sum('duration'))
     end
+    ENV["TZ"] = 'UTC'
   end
 
   def week
