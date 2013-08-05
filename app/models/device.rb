@@ -6,11 +6,11 @@ class Device < ActiveRecord::Base
 
   has_one :car
 
-  def imei=(imei)
-    self.id = String(imei)
-  end
-
-  def imei
-    id
-  end
+  #def imei=(imei)
+  #  self.id = String(imei)
+  #end
+  #
+  #def imei
+  #  id
+  #end
 end
