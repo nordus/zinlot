@@ -2,7 +2,7 @@ require 'mongo'
 require 'uri'
 
 class Reading
-  def latest_readings
+  def self.latest_readings
     db = get_connection
     coll = db.collection('readings')
 
@@ -13,7 +13,7 @@ class Reading
                    ]).map {|r| {"#{r['_id']}" => r['latest']['coordinates']}}
   end
 
-  def get_connection
+  def self.get_connection
     return @db_connection if @db_connection
     db = URI.parse('mongodb://adhd360:5tekapU3@dharma.mongohq.com:10071/gateway')
     db_name = db.path.gsub(/^\//, '')
@@ -22,7 +22,7 @@ class Reading
     @db_connection
   end
 
-  def where(params)
+  def self.where(params)
     db = get_connection
     coll = db.collection('readings')
 
