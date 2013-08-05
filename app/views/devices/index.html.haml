@@ -26,7 +26,14 @@
         = f.label :vehicle_car_color_cont, "Color"
         = f.text_field :vehicle_car_color_cont
 
-    = f.submit 'Search', class: 'pure-button pure-button-primary'
+    .pure-u-3-5
+      = link_to 'Reset', '#', class: 'pure-button', id: 'resetForm'
+      = f.submit 'Search', class: 'pure-button pure-button-primary'
+
+:coffeescript
+  $('#resetForm').on 'click', ->
+    $('#device_search input[type=text]').val ''
+
 
 %table.pure-table.pure-table-striped
   %thead
