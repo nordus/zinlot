@@ -1,4 +1,6 @@
 Zinlot::Application.routes.draw do
+  resources :devices
+
   get "cars" => 'cars#index'
   get "live-inventory" => "live_location#index"
   get "map/index"

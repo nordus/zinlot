@@ -1,1 +1,21 @@
-= netzke :devices
+%h1 Listing devices
+
+%table.pure-table.pure-table-striped
+  %tr
+    %th
+    %th
+    %th
+
+  - @devices.each do |device|
+    %tr
+      %td= device.vehicle.car.name
+      %td= device.vehicle.vehicle_usage.name
+      %td= device.vehicle.vin
+      %td= device.vehicle.car_color
+      %td= link_to 'Show', device
+      %td= link_to 'Edit', edit_device_path(device)
+      %td= link_to 'Destroy', device, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Device', new_device_path
