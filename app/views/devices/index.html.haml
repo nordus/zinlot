@@ -1,10 +1,40 @@
-%h1 Listing devices
+= search_form_for @search, {html:{class:'pure-form pure-form-stacked'}} do |f|
+  .pure-g-r{style:'background-color:#939CA1; padding:10px 0 10px 12px'}
+    .pure-g-r{style:'color:white; font-size:14px; text-shadow:0 1px 0 #02375F'}
+      .pure-u-1-5
+        = f.label :vehicle_car_year_cont, "Year"
+        = f.text_field :vehicle_car_year_cont
+
+      .pure-u-1-5
+        = f.label :vehicle_car_make_cont, "Make"
+        = f.text_field :vehicle_car_make_cont
+
+      .pure-u-1-5
+        = f.label :vehicle_car_model_cont, "Model"
+        = f.text_field :vehicle_car_model_cont
+
+    .pure-g-r{style:'color:white; font-size:14px; text-shadow:0 1px 0 #02375F'}
+      .pure-u-1-5
+        = f.label :vehicle_vehicle_usage_name_cont, "Usage"
+        = f.text_field :vehicle_vehicle_usage_name_cont
+
+      .pure-u-1-5
+        = f.label :vehicle_vin_cont, "VIN"
+        = f.text_field :vehicle_vin_cont
+
+      .pure-u-1-5
+        = f.label :vehicle_car_color_cont, "Color"
+        = f.text_field :vehicle_car_color_cont
+
+    = f.submit 'Search', class: 'pure-button pure-button-primary'
 
 %table.pure-table.pure-table-striped
-  %tr
-    %th
-    %th
-    %th
+  %thead
+    %tr
+      %th Year Make Model
+      %th Usage
+      %th VIN
+      %th Color
 
   - @devices.each do |device|
     %tr
@@ -12,10 +42,3 @@
       %td= device.vehicle.vehicle_usage.name
       %td= device.vehicle.vin
       %td= device.vehicle.car_color
-      %td= link_to 'Show', device
-      %td= link_to 'Edit', edit_device_path(device)
-      %td= link_to 'Destroy', device, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Device', new_device_path
