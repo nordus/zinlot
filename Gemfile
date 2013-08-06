@@ -24,11 +24,14 @@ gem 'mobile-fu'
 
 gem 'active_link_to'
 
-gem "ransack", github: "ernie/ransack", branch: "rails-4"
+gem 'formtastic', '~> 2.3.0.rc2'
+gem "activeadmin", github: "gregbell/active_admin", branch: "rails4"
 
 gem 'comfortable_mexican_sofa', '~> 1.8.2', github: 'easierbycode/comfortable_mexican_sofa'
 
-    group :development do
+gem "ransack", github: "ernie/ransack", branch: "rails-4"
+
+group :development do
   gem 'guard-livereload'
   gem 'rack-livereload'
 end

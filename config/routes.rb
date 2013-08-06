@@ -15,8 +15,15 @@ Zinlot::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
+  resources :historical_trips, :only => [:create]
+  resources :geofence_violations, :only => [:create]
+  resources :alerts, :only => [:create]
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   # You can have the root of your site routed with "root"
   root 'dashboard#index'
+  ActiveAdmin.routes(self)
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

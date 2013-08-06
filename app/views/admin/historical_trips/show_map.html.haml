@@ -1,0 +1,22 @@
+%script{src: 'http://maps.google.com/maps/api/js?sensor=true'}
+
+#map_canvas{style: 'height:400px'}
+
+:coffeescript
+  $("#map_canvas").gmap().bind "init", ->
+
+    popupContent = (marker) ->
+      ['speed', 'eventCode', 'msgType'].map (k) ->
+        ['<b>', k, '</b>:', marker[k]].join ' '
+      .join '<br>'
+
+    $.getJSON "https://api.mongohq.com/databases/gateway/collections/readings/documents?_apikey=3ivyp1chsvvas6kz8gsz&limit=100&q={mobileId:'#{@device_id}',updateTime:{$gte:#{@start_at},$lte:#{@end_at}}}", (data) ->
+      $.each data, (i, marker) ->
+        [longitude, latitude] = marker.geo.coordinates
+        $("#map_canvas").gmap("addMarker",
+          position: new google.maps.LatLng(latitude, longitude)
+          bounds: true
+        ).click ->
+          $("#map_canvas").gmap "openInfoWindow",
+            content: popupContent(marker)
+          , this
