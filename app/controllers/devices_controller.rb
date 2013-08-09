@@ -16,7 +16,12 @@ class DevicesController < ApplicationController
     @engine_hours = Device.duration_time(duration: trips.sum('duration'))
     @total_trips = trips.count
     @total_miles = trips.last && Device.miles_rounded(miles: trips.last[:ending_mileage])
-    @current_vbatt = Reading.find_one(mobileId: @device[:imei], eventCode: 26)['vBatt']
+    @vbatt_readings = Reading.where(mobileId: @device[:imei], eventCode: 26).to_a
+    @vbatt_chart_hash = {}
+    @vbatt_readings.each do |reading|
+      @vbatt_chart_hash[Time.at((reading['updateTime']/1000).round)] = reading['vBatt']
+    end
+    @current_vbatt = @vbatt_readings[@vbatt_readings.count-1]['vBatt']
     readings_with_dtc_codes = Reading.where(mobileId: @device.imei, dtcCount: {:"$gt" => 0})
     @previous_dtc_codes = {}
     readings_with_dtc_codes.each do |reading|

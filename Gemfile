@@ -32,6 +32,9 @@ gem 'comfortable_mexican_sofa', '~> 1.8.2', github: 'easierbycode/comfortable_me
 
 gem "ransack", github: "ernie/ransack", branch: "rails-4"
 
+gem 'highcharts-rails', '~> 3.0.0'
+gem 'chartkick'
+
 group :development do
   gem 'guard-livereload'
   gem 'rack-livereload'

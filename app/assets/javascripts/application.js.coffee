@@ -5,3 +5,5 @@
 #= require jquery.ui.map.overlays
 #= require map_icon
 #= require tabletop
+#= require highcharts
+#= require chartkick
