@@ -12,6 +12,21 @@ class DevicesController < ApplicationController
   # GET /devices/1
   # GET /devices/1.json
   def show
+    trips = @device.historical_trips
+    @engine_hours = Device.duration_time(duration: trips.sum('duration'))
+    @total_trips = trips.count
+    @total_miles = trips.last && Device.miles_rounded(miles: trips.last[:ending_mileage])
+    @current_vbatt = Reading.find_one(mobileId: @device[:imei], eventCode: 26)['vBatt']
+    readings_with_dtc_codes = Reading.where(mobileId: @device.imei, dtcCount: {:"$gt" => 0})
+    @previous_dtc_codes = {}
+    readings_with_dtc_codes.each do |reading|
+      time = Time.at(reading['updateTime']/1000).strftime('%m/%d %I:%M %p')
+      @previous_dtc_codes[time] = []
+      dtc_codes = reading['dtcCodes'].split(',')
+      for dtc_code in dtc_codes
+        @previous_dtc_codes[time].push(Reading.dtc_description(dtc_code))
+      end
+    end
   end
 
   # GET /devices/new

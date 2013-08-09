@@ -1,6 +1,43 @@
-%p#notice= notice
+.pure-g-r
+  .pure-u-1-3
+    .dashboard-panel-header
+      Summary
 
+    %p
+      %strong Engine Hours:
+      = @engine_hours
 
-= link_to 'Edit', edit_device_path(@device)
-\|
-= link_to 'Back', devices_path
+    %p
+      %strong Trips:
+      = @total_trips
+
+    %p
+      %strong Miles Driven:
+      = @total_miles
+
+  .pure-u-1-3
+    .dashboard-panel-header
+      Engine Issues
+
+    - @previous_dtc_codes.each_pair do |date, codes|
+      %h3= date
+      - for code in codes
+        %p= code[:description]
+
+    - if @previous_dtc_codes.count == 0
+      No issues.
+
+  .pure-u-1-3
+    .dashboard-panel-header
+      Connectivity Issues
+
+    No issues.
+
+.pure-g-r
+  .pure-u-1-3
+    .dashboard-panel-header
+      Battery Issues
+      %p
+        %em
+          current:
+          = @current_vbatt

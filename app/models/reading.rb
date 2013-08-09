@@ -1,7 +1,30 @@
 require 'mongo'
 require 'uri'
+require 'nokogiri'
+require 'open-uri'
 
 class Reading
+
+  def self.scrape_dtc_description(code)
+    doc = Nokogiri::HTML(open("http://www.obd-codes.com/#{code}"))
+    bulletLists = doc.css('.KonaBody ul')
+
+    return({
+        description: doc.css('title')[0].text,
+        causes: bulletLists[0].to_html.gsub!(/\s+/, ' '),
+        solutions: bulletLists[1].to_html.gsub!(/\s+/, ' ')
+    })
+  end
+
+  def self.dtc_description(dtc_code)
+    @dtc_descriptions ||= {}
+
+    return @dtc_descriptions[dtc_code]  if @dtc_descriptions[dtc_code]
+
+    @dtc_descriptions[dtc_code] = scrape_dtc_description(dtc_code)
+    return @dtc_descriptions[dtc_code]
+  end
+
   def self.latest_readings
     db = get_connection
     coll = db.collection('readings')
@@ -27,5 +50,12 @@ class Reading
     coll = db.collection('readings')
 
     coll.find(params)
+  end
+
+  def self.find_one(params)
+    db = get_connection
+    coll = db.collection('readings')
+
+    coll.find(params).sort(updateTime: :desc).limit(1).first
   end
 end

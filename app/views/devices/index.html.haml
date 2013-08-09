@@ -41,11 +41,12 @@
       %th Year Make Model
       %th Usage
       %th VIN
-      %th Color
+      %th Car Color
 
   - @devices.each do |device|
     %tr
-      %td= device.vehicle.car.name
+      %td
+        = link_to device.vehicle.car.name, device_path(device)
       %td= device.vehicle.vehicle_usage.name
       %td= device.vehicle.vin
       %td= device.vehicle.car_color
