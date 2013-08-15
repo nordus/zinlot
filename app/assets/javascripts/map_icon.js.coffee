@@ -1,3 +1,9 @@
+@mapIconMsgType5 = (reading) ->
+  if reading.dtcCodes
+    "https://chart.googleapis.com/chart?chst=d_simple_text_icon_above&chld=Engine|9|000|caution|12|C21B16|FFF"
+  else
+    "https://mts0.google.com/vt/icon/name=icons/spotlight/directions_decision_point_6px.png&scale=1"
+
 @mapIcon = (eventCode, speed) ->
   eventCode = String(eventCode)
   iconUrl   = switch eventCode
