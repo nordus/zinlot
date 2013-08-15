@@ -41,7 +41,8 @@
       %th Status
       %th Year Make Model
       %th Usage
-      %th Issues
+      %th Battery
+      %th DTC
       %th VIN
       %th Car Color
 
@@ -52,6 +53,7 @@
       %td
         = link_to device.vehicle.car.name, device_path(device)
       %td= device.vehicle.vehicle_usage.name
-      %td No issues.
+      %td{style: device.battery_issue && 'color:red'}= device.latest_history && "#{device.latest_history.vbatt}v"
+      %td= device.dtc_issue ? link_to('active', device_path(device)) : ''
       %td= device.vehicle.vin
       %td= device.vehicle.car_color

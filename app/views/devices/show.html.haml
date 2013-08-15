@@ -26,7 +26,29 @@
       Current Issues
 
     %strong Engine:
-    No issues.
+
+    - if @device.dtc_issue
+      %ul{style: 'list-style-type:none; padding-left:0'}
+        - @device.latest_history.dtc_codes.split(',').each do |dtc_code|
+          - dtc_details = Reading.dtc_description(dtc_code)
+          %li{style:'padding-bottom:10px'}
+            %a.toggler{id: dtc_code}= dtc_details[:description]
+
+            %div{id: "#{dtc_code}-details", style: 'display:none; padding-top:10px'}
+              %strong Causes
+              = raw(dtc_details[:causes])
+              %strong Solutions
+              = raw(dtc_details[:solutions])
+
+      :coffeescript
+        $('a.toggler').bind 'click', (e) ->
+          $('#' + e.target.id + '-details').toggle()
+
+        window.toggleDtcDetails = (divId) ->
+          $('#' + divId).toggle()
+
+    - else
+      No issues.
 
     %br
     %br
@@ -39,8 +61,7 @@
       - for code in codes
         -#%p= code[:description]
 
-    - if @previous_dtc_codes.count == 0
-      No issues.
+
 
   .pure-u-1-3
     .dashboard-panel-header

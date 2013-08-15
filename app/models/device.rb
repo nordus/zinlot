@@ -23,6 +23,14 @@ class Device < ActiveRecord::Base
     end
   end
 
+  def battery_issue
+    latest_history && latest_history[:has_low_batt]
+  end
+
+  def dtc_issue
+    latest_history && latest_history[:has_dtc]
+  end
+
   def latest_history
     if latest_history_id
       DeviceHistory.find(latest_history_id)

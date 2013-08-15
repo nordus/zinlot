@@ -1,5 +1,3 @@
-@import 'font_awesome_icon_extracted';
-
 /*
  *= require fonts
  *= require historical_trips
@@ -7,6 +5,8 @@
  *= require devices
  *= require_self
  */
+
+@import 'font_awesome_icon_extracted';
 
 body {
   font-family: 'Roboto local';
