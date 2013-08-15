@@ -1,3 +1,3 @@
-class Alert < ActiveRecord::Base
-  attr_protected :created_at
+ActiveAdmin.register Device do
+
 end
