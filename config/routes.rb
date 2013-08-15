@@ -6,7 +6,6 @@ Zinlot::Application.routes.draw do
   get "map/index"
   get "devices" => "devices#index"
   get "vehicles" => 'vehicles#index'
-  match "/netzke/:action(.:format)", to: 'netzke', as: 'netzke', via: :all
   get 'dashboard/index'
   get 'test-drives' => 'historical_trips#index'
   get 'test-drives/week' => 'historical_trips#week'
