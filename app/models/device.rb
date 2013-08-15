@@ -18,8 +18,24 @@ class Device < ActiveRecord::Base
   def self.miles_rounded(miles: miles); miles.round(2); end
 
   def latest_vbatt
-    if latest_history = device_histories.last
+    if latest_history
       latest_history[:vbatt]
+    end
+  end
+
+  def latest_history
+    if latest_history_id
+      DeviceHistory.find(latest_history_id)
+    end
+  end
+
+  def status
+    heartbeats_in_last_24 = device_histories.where('created_at > ?', 1.day.ago).count
+
+    if heartbeats_in_last_24 > 0
+      'icon-ok'
+    else
+      'icon-remove'
     end
   end
 end

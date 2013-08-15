@@ -1,35 +1,37 @@
 class DeviceHistory < ActiveRecord::Base
 
+  attr_protected :created_at
+
   belongs_to :device, primary_key: :imei
 
-  def self.create_if_change_in_dtc_or_vbatt(incoming, has_low_batt, has_dtc)
-    previous = where({device_id: incoming[:device_id]}).last
+  after_save :add_device_history_id_to_device
 
-    if previous
-      if incoming['dtc_codes'] != previous['dtc_codes']
-        create_new_device_history(incoming, has_low_batt, has_dtc)
-      end
+  before_save :set_has_low_batt_and_has_dtc
 
-      if incoming['has_low_batt'] != previous['has_low_batt']
-        create_new_device_history(incoming, has_low_batt, has_dtc)
-      end
-    else
-      create_new_device_history(incoming, has_low_batt, has_dtc)
+  def add_device_history_id_to_device
+    if device
+      device.update_attribute('latest_history_id', id)
     end
   end
 
-  def self.create_new_device_history(incoming, has_low_batt, has_dtc)
-    dh = new
-    dh.has_low_batt = has_low_batt
-    dh.has_dtc = has_dtc
-    dh.device_id = incoming[:device_id]
-    if incoming[:dtc_codes]
-      dh.dtc_codes = incoming[:dtc_codes]
+  def status
+    heartbeats_in_last_24_hours = device_histories.where('created_at > ?', 1.day.ago).count > 0
+
+    if heartbeats_in_last_24_hours > 0
+      'icon-ok'
+    else
+      'icon-remove'
     end
-    if incoming[:vbatt]
-      dh.vbatt = incoming[:vbatt]
+  end
+
+  def set_has_low_batt_and_has_dtc
+    if dtc_codes
+      self.has_dtc = 1
     end
-    dh.save
+
+    if vbatt.to_f < 12.5
+      self.has_low_batt = 1
+    end
   end
 
 end

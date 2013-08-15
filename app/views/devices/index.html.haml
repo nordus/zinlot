@@ -38,15 +38,20 @@
 %table.pure-table.pure-table-striped
   %thead
     %tr
+      %th Status
       %th Year Make Model
       %th Usage
+      %th Issues
       %th VIN
       %th Car Color
 
   - @devices.each do |device|
     %tr
       %td
+        %i{class: device.status}
+      %td
         = link_to device.vehicle.car.name, device_path(device)
       %td= device.vehicle.vehicle_usage.name
+      %td No issues.
       %td= device.vehicle.vin
       %td= device.vehicle.car_color
