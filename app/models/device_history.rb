@@ -3,7 +3,7 @@ class DeviceHistory < ActiveRecord::Base
   belongs_to :device, primary_key: :imei
 
   def self.create_if_change_in_dtc_or_vbatt(incoming, has_low_batt, has_dtc)
-    previous = where({device_id: incoming[:device_id]}).limit(1).first
+    previous = where({device_id: incoming[:device_id]}).last
 
     if previous
       if incoming['dtc_codes'] != previous['dtc_codes']
