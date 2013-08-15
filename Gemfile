@@ -12,10 +12,9 @@ gem 'pg'
 gem 'mongo'
 gem 'bson_ext'
 gem 'haml-rails'
+gem 'slim', '~> 2.0.1'
 gem 'devise', '3.0.0.rc'
 
-gem 'netzke-core', '~>0.8.0'
-gem 'netzke-basepack'
 gem 'protected_attributes'
 
 gem 'nokogiri'
@@ -34,6 +33,11 @@ gem "ransack", github: "ernie/ransack", branch: "rails-4"
 
 gem 'highcharts-rails', '~> 3.0.0'
 gem 'chartkick'
+
+group :development, :test do
+  gem 'sqlite3'
+  gem 'rspec-rails', '~> 2.0'
+end
 
 group :development do
   gem 'guard-livereload'

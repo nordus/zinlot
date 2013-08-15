@@ -4,7 +4,6 @@
     %title ZinLot
     %meta{name:'viewport', content:'width=device-width, initial-scale=1.0'}
     = cms_snippet_content(:fonts, Cms::Site.find_by_hostname('zinlot.com'))
-    -#= load_netzke theme: 'all-gray'
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = cms_snippet_content(:pure, Cms::Site.find_by_hostname('zinlot.com'))
     = cms_snippet_content(:pure_sites_css, Cms::Site.find_by_hostname('zinlot.com'))
