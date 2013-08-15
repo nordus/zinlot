@@ -1,7 +1,7 @@
 class HistoricalTrip < ActiveRecord::Base
   include ActionView::Helpers
 
-  default_scope :order => 'id DESC'
+  default_scope -> { order('id DESC') }
 
   belongs_to :device
 
