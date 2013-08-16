@@ -1,4 +1,5 @@
 Zinlot::Application.routes.draw do
+  devise_for :users
   resources :devices
 
   get "cars" => 'cars#index'

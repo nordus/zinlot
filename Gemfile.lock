@@ -80,7 +80,7 @@ GEM
     arbre (1.0.1)
       activesupport (>= 3.0.0)
     arel (4.0.0)
-    atomic (1.1.12)
+    atomic (1.1.13)
     bcrypt-ruby (3.1.1)
     bourbon (3.1.8)
       sass (>= 3.2.0)
@@ -103,11 +103,12 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     country_select (1.2.0)
-    devise (3.0.0.rc)
+    devise (3.1.0.rc)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
-      warden (~> 1.2.1)
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     diff-lcs (1.2.4)
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
@@ -146,7 +147,7 @@ GEM
       railties (>= 3.1)
     hike (1.2.3)
     http_parser.rb (0.5.3)
-    i18n (0.6.4)
+    i18n (0.6.5)
     inherited_resources (1.4.1)
       has_scope (~> 0.6.0.rc)
       responders (~> 1.0.0.rc)
@@ -180,7 +181,7 @@ GEM
       rails
     mongo (1.9.1)
       bson (~> 1.9.1)
-    multi_json (1.7.8)
+    multi_json (1.7.9)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
     orm_adapter (0.4.0)
@@ -296,7 +297,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   comfortable_mexican_sofa (~> 1.8.2)!
   country_select
-  devise (= 3.0.0.rc)
+  devise (~> 3.1.0.rc)
   formtastic (~> 2.3.0.rc2)
   guard-livereload
   haml-rails

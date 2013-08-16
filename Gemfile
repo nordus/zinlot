@@ -13,7 +13,7 @@ gem 'mongo'
 gem 'bson_ext'
 gem 'haml-rails'
 gem 'slim', '~> 2.0.1'
-gem 'devise', '3.0.0.rc'
+gem 'devise', '~> 3.1.0.rc'
 
 gem 'protected_attributes'
 
