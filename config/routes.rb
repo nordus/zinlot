@@ -1,4 +1,7 @@
 Zinlot::Application.routes.draw do
+
+  match 'account' => 'users#communications_set_up', :via => [:get, :patch]
+
   devise_for :users
   resources :devices
 

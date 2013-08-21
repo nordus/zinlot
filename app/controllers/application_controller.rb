@@ -6,6 +6,9 @@ class ApplicationController < ActionController::Base
   #has_mobile_fu
   #
   #before_filter :set_request_format
+
+  before_filter :authenticate_user!
+
   #
   #def set_request_format
   #  request.format = :mobile if is_mobile_device? || is_tablet_device?
