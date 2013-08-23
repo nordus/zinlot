@@ -25,12 +25,12 @@ class Reading
     return @dtc_descriptions[dtc_code]
   end
 
-  def self.latest_readings
+  def self.latest_readings(mobile_ids: ['4531019793','4531010358','4531010353','4531004944'])
     db = get_connection
     coll = db.collection('readings')
 
     coll.aggregate([
-                       {"$match" => {mobileId: {"$in" => ['4531019793','4531010358','4531010353','4531004944']}}},
+                       {"$match" => {mobileId: {"$in" => mobile_ids}}},
                        {"$sort" => {updateTime: 1}},
                        {"$group" => {_id: "$mobileId", latest: {"$last" => "$geo"}}}
                    ]).map {|r| {"#{r['_id']}" => r['latest']['coordinates']}}

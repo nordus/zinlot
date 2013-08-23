@@ -12,6 +12,8 @@ gem 'pg'
 gem 'mongo'
 gem 'bson_ext'
 gem 'haml-rails'
+gem 'therubyracer'
+gem 'less-rails-bootstrap'
 gem 'slim', '~> 2.0.1'
 gem 'devise', '~> 3.1.0.rc'
 

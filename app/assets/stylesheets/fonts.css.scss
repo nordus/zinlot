@@ -1,6 +1,13 @@
 @font-face {
-  font-family: 'Roboto local';
+  font-family: 'proximanova';
   font-style: normal;
   font-weight: 100;
-  src: font-url('roboto.woff') format('woff');
+  src: font-url('proximanova-regular-webfont.woff') format('woff'), font-url('proximanova-regular-webfont.svg') format('svg'), font-url('proximanova-regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'proximanova-light';
+  font-style: normal;
+  font-weight: 100;
+  src: font-url('proximanova-light-webfont.woff') format('woff'), font-url('proximanova-light-webfont.svg') format('svg'), font-url('proximanova-light-webfont.ttf') format('truetype');
 }

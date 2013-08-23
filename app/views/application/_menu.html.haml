@@ -1,0 +1,48 @@
+- if current_user
+  %ul.nav
+    %li
+      %a.dropdown-toggle{href: '#', data: {toggle: 'dropdown'}}
+        %img{width:'20', height:'20', src:'https://secure.gravatar.com/avatar/7bca6c9925e770a98cf1767e36977348?s=140&amp;d=https%3A%2F%2Fidenticons.github.com%2Ffacff577dd680a1bfc1174ed41576960.png'}
+        easierbycode
+        %span.caret
+      %ul.dropdown-menu
+        %li
+          %a{href: '/account'} Account
+        %li
+          = link_to 'Log out', destroy_user_session_path, method: 'DELETE'
+    %li.active
+      %a{:href => '/'}
+        %i.glyphicon.glyphicon-dashboard
+        &nbsp;Dashboard
+    %li
+      %a{:href => '/devices'}
+        %i.glyphicon.glyphicon-eye-open
+        &nbsp;Live Inventory
+    %li
+      %a{:href => '/test-drives'} 
+        %i.glyphicon.glyphicon-road
+        &nbsp;Trips
+    %li
+      %a{:href => '#'}
+        %i.glyphicon.glyphicon-bell
+        &nbsp;Alerts
+    %li
+      %a{:href => '#'}
+        %i.glyphicon.glyphicon-stats
+        &nbsp;Reports
+    %li
+      %a{:href => '#'}
+        %i.glyphicon.glyphicon-cog
+        &nbsp;Settings
+- else
+  %ul.nav
+    %li
+      %a{href: '/users/sign_in'}
+        %i.glyphicon.glyphicon-log-in
+        &nbsp;Log in
+    %li.active
+      %a{:href => '#'} About Us
+    %li
+      %a{:href => '#'} Partners
+    %li
+      %a{:href => '#'} Connect

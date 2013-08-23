@@ -7,6 +7,11 @@ class DevicesController < ApplicationController
     @search = Device.search(params[:q])
     #@devices = Device.all
     @devices = @search.result
+    @mobile_ids = @devices.pluck('imei')
+    
+    @car_names = {}
+    @devices.each {|d| @car_names["#{d['imei']}"] = "#{d['name']}"}
+    @latest_readings = Reading.latest_readings(mobile_ids: @mobile_ids)
   end
 
   # GET /devices/1

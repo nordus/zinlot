@@ -3,46 +3,19 @@
   %head
     %title ZinLot
     %meta{name:'viewport', content:'width=device-width, initial-scale=1.0'}
-    = cms_snippet_content(:fonts, Cms::Site.find_by_hostname('zinlot.com'))
+    = stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Ubuntu+Condensed", media: "all"
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
-    = cms_snippet_content(:pure, Cms::Site.find_by_hostname('zinlot.com'))
-    = cms_snippet_content(:pure_sites_css, Cms::Site.find_by_hostname('zinlot.com'))
-    = cms_snippet_content(:application_css, Cms::Site.find_by_hostname('zinlot.com'))
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-    #layout.pure-g-r
-      #main.pure-u
-        %a#menuLink.pure-menu-link
-          %img{ width:20, src:'http://dl.dropbox.com/u/20868114/threelines_vw.png' }
-        -#%p.notice= notice
-        -#%p.alert= alert
+    #layout
+      #menu
+        .row{style: 'margin-left:0'}
+          %a.navbar-brand{href: '/', style: "color:#ddd; font-family:'Ubuntu Condensed'"}
+            ZINL
+            %i.glyphicon.glyphicon-map-marker{style: 'margin-left:-6px; margin-right:-4px'}
+            T
+        = render 'menu'
 
-        #menu.pure-u
-          .pure-menu.pure-menu-open
-            %a.pure-menu-heading{href:'/'} ZinLot
-
-            %ul.accordion
-              %li.section
-                %a.section-head{href:'/account'}
-                  %img{width:'20', height:'20', src:'https://secure.gravatar.com/avatar/7bca6c9925e770a98cf1767e36977348?s=140&amp;d=https%3A%2F%2Fidenticons.github.com%2Ffacff577dd680a1bfc1174ed41576960.png'}
-                  easierbycode
-              %li
-                %a{href:'/'} Dashboard
-              %li
-                %a{href:'/live-inventory'} Live Inventory
-              %li
-                %a{href:'/devices'} Vehicles
-              %li
-                %a{href:'#'}
-                  Alerts
-              %li
-                %a{href:'/test-drives'} Test Drives
-              %li
-                %a{href:'#'} Reports
-              %li
-                %a{href:'#'} Campaign Manager
-              %li
-                %a{href:'#'} Setup
+      .col-xs-12{style: 'height:100%'}
         = yield
-        = cms_snippet_content(:application_js, Cms::Site.find_by_hostname('zinlot.com'))

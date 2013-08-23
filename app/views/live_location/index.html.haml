@@ -1,9 +1,73 @@
 %script{src:'http://maps.google.com/maps/api/js?sensor=false&libraries=visualization,geometry,places'}
+%script{src:'http://jquery-ui-map.googlecode.com/svn/trunk/ui/jquery.ui.map.js'}
 %script{src:"http://js.pusher.com/1.12/pusher.min.js"}
+
+#map-controls.panel.panel-default
+  .panel-heading
+    %h4.panel-title
+      %a.btn.btn-default{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseOne"}
+        %i.glyphicon.glyphicon-filter
+        Filters
+  #collapseOne.panel-collapse.collapse.in
+    .panel-body
+      = search_form_for @search, {html:{class:'form-inline'}} do |f|
+        .form-group
+          = f.text_field :vehicle_car_year_cont, placeholder: "Year", class: 'form-control'
+        .form-group
+          = f.text_field :vehicle_car_make_cont, placeholder: "Make", class: 'form-control'
+        .form-group
+          = f.text_field :vehicle_car_model_cont, placeholder: "Model", class: 'form-control'
+
+        .row{style: 'margin-left:0'}
+          .form-group
+            = f.text_field :vehicle_vehicle_usage_name_cont, placeholder: "Usage", class: 'form-control'
+          .form-group
+            = f.text_field :vehicle_vin_cont, placeholder: "VIN", class: 'form-control'
+          .form-group
+            = f.text_field :vehicle_car_color_cont, placeholder: "Color", class: 'form-control'
+          .form-group
+            %button{type: 'submit', class: 'btn btn-primary'}
+              %i.glyphicon.glyphicon-search
+          .form-group
+            = link_to 'Clear', '#', id: 'resetForm'
+
+  .panel-heading
+    %h4.panel-title
+      %a.btn.btn-default{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseTwo"}
+        %i.glyphicon.glyphicon-th-list
+        Vehicles
+  #collapseTwo.panel-collapse.collapse.in
+    .panel-body
+      %table.table.table-condensed
+        %thead
+          %tr
+            %th Status
+            %th Year Make Model
+            %th Usage
+            %th Battery
+            %th DTC
+            %th VIN
+            %th Car Color
+
+        - @devices.each do |device|
+          %tr
+            %td.ac
+              %i{class: device.status}
+            %td
+              = link_to device.vehicle.car.name, device_path(device)
+            %td= device.vehicle.vehicle_usage.name
+            %td{class: device.battery_issue && 'dk-red'}= device.latest_history && "#{device.latest_history.vbatt}v"
+            %td= device.dtc_issue ? link_to('active', device_path(device)) : ''
+            %td= device.vehicle.vin
+            %td= device.vehicle.car_color
 
 #map_canvas
 
 :coffeescript
+  $('#resetForm').click ->
+    $('#device_search input[type=text]').val ''
+    $('#device_search').submit()
+
   google.maps.visualRefresh = true
   gateway = new Pusher("f513119581ede36ac6c4").subscribe "gateway"
   carNames = #{@car_names.to_json}

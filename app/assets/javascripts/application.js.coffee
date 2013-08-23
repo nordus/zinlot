@@ -6,3 +6,4 @@
 #= require highcharts
 #= require chartkick
 #= require emails-and-phone-nbrs
+#= require twitter/bootstrap

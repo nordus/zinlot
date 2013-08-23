@@ -7,11 +7,13 @@ Zin.Form = ((fn) ->
   _addEmailTip = "Add email"
   initEmailEditor: ->
     _origEmailEditor = $("#emailsInput")
-    _origEmailEditor.addClass "hidden hide"
-    _origEmailInput = $("#user_notification_emails")
-    _origEmailValue = $("#user_notification_emails").val().replace(/^\s+|\s+$/g, "")
-    @createEmailEditor()
-    @calculateEmails()
+
+    if _origEmailEditor.length
+      _origEmailEditor.addClass "hidden hide"
+      _origEmailInput = $("#user_notification_emails")
+      _origEmailValue = $("#user_notification_emails").val().replace(/^\s+|\s+$/g, "")
+      @createEmailEditor()
+      @calculateEmails()
 
   handleKeyUp: (event) ->
     ele = event.target
@@ -47,13 +49,13 @@ Zin.Form = ((fn) ->
     $(_emailEditor).insertAfter _origEmailEditor
 
   createNewEmail: (emailValue, ele) ->
-    newEmailDiv = $("<div></div>").addClass("inputRow email").attr(id: "emailInput" + _emailInputId)
+    newEmailDiv = $("<div></div>").addClass("input-group").attr(id: "emailInput" + _emailInputId)
     newEmailInput = $("<input>").attr(
       type: "text"
       name: "email" + _emailInputId
       id: "email" + _emailInputId
       title: _addEmailTip
-    ).addClass("text control-group").keyup((event) ->
+    ).addClass("form-control").keyup((event) ->
       Zin.Form.handleKeyUp event
     ).blur((event) ->
       Zin.Form.handleBlur event
@@ -78,10 +80,14 @@ Zin.Form = ((fn) ->
 
   createDelete: (newEmailDiv, newEmailInput, _emailInputId) ->
     _emailInputId = $(newEmailInput).attr("id").charAt(3)  unless _emailInputId
-    deleteBttn = $("<a></a>").attr(id: "delete" + _emailInputId).addClass("delete-txt").text("Delete").click(->
+    deleteBttnWrapper = $("<span></span>").addClass('input-group-btn')
+    deleteBttn = $("<btn></btn>").attr(id: "delete" + _emailInputId).addClass("btn btn-default").click(->
       Zin.Form.deleteEmail this
     )
-    $(newEmailDiv).append deleteBttn
+    deleteBttnHtml = "<i class='glyphicon glyphicon-remove-sign'></i>"
+    deleteBttn.html deleteBttnHtml
+    $(deleteBttnWrapper).append deleteBttn
+    $(newEmailDiv).append deleteBttnWrapper
 
   divToDelete: false
   deleteEmail: (deleteBttn) ->

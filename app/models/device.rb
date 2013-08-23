@@ -41,9 +41,9 @@ class Device < ActiveRecord::Base
     heartbeats_in_last_24 = device_histories.where('created_at > ?', 1.day.ago).count
 
     if heartbeats_in_last_24 > 0
-      'icon-ok'
+      'glyphicon glyphicon-ok'
     else
-      'icon-remove'
+      'glyphicon glyphicon-warning-sign'
     end
   end
 end

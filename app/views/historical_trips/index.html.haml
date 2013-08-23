@@ -1,42 +1,42 @@
-%table.pure-table{cellpadding:'0', cellspacing:'0', style:'background-color:#939ca1;border:0 none'}
+.panel.panel-default
+  .panel-heading
+    .btn-group{style: 'margin-right:15px'}
+      = active_link_to 'Today', '/test-drives', class: 'btn btn-default btn-sm', class_active: 'btn-success', active: :exclusive
+      = active_link_to 'This week', '/test-drives/week', class: 'btn btn-default btn-sm', class_active: 'btn-success', active: :exclusive
+
+    %span.heading-stats
+      = @trips.count
+      %em Trips
+
+      = @total_miles
+      %em Miles
+
+      = @total_duration
+      %em Time
 
 
-%table#test-drives.pure-table.pure-table-horizontal
-  %thead
-    %tr
-      %td.trip-stat-banner{colspan:'9'}
-        %div{style:'padding:10px 0'}
-          %span{style:'margin-right:25px; text-shadow:none'}
-            = active_link_to 'Today', '/test-drives', class: 'pure-button pure-button-small', class_active: 'pure-button-success', active: :exclusive
-            = active_link_to 'This week', '/test-drives/week', class: 'pure-button pure-button-small', class_active: 'pure-button-success', active: :exclusive
-
-          = @trips.count
-          %em Trips
-
-          = @total_miles
-          %em Miles
-
-          = @total_duration
-          %em Time
-    %tr
-      %th Map
-      %th Age
-      %th Vehicle
-      %th Miles
-      %th Style
-      %th Idle
-      %th Duration
-      %th Left Test Drive Area
-      %th # of Test Drives
-  - for trip in @trips
-    %tr
-      %td
-        %a{href: "/test-drives/#{trip.id}"} show
-      %td= trip.time_ago
-      %td= trip.device.vehicle.car.name rescue trip.device_id
-      %td= trip.miles_rounded
-      %td{class: "style-#{trip.style.tr(' ', '-')}"}= trip.style
-      %td= trip.idle_minutes
-      %td= trip.duration_time
-      %td= trip.has_geofence_violations
-      %td= trip.trip_number
+  .panel-body
+    %table.table
+      %thead
+        %tr
+          %th Map
+          %th Age
+          %th Vehicle
+          %th Miles
+          %th Style
+          %th Idle
+          %th Duration
+          %th Left Test Area
+          %th Test Drives
+      - for trip in @trips
+        %tr
+          %td
+            %a{href: "/test-drives/#{trip.id}"} show
+          %td= trip.time_ago
+          %td= trip.device.vehicle.car.name rescue trip.device_id
+          %td= trip.miles_rounded
+          %td{class: "style-#{trip.style.tr(' ', '-')}"}= trip.style
+          %td= trip.idle_minutes
+          %td= trip.duration_time
+          %td= trip.has_geofence_violations
+          %td= trip.trip_number

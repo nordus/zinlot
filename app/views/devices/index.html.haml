@@ -1,59 +1,116 @@
-= search_form_for @search, {html:{class:'pure-form pure-form-stacked'}} do |f|
-  .pure-g-r{style:'background-color:#939CA1; padding:10px 0 10px 12px'}
-    .pure-g-r{style:'color:white; font-size:14px; text-shadow:0 1px 0 #02375F'}
-      .pure-u-1-5
-        = f.label :vehicle_car_year_cont, "Year"
-        = f.text_field :vehicle_car_year_cont
+%script{src:'http://maps.google.com/maps/api/js?sensor=false&libraries=visualization,geometry,places'}
+%script{src:'http://jquery-ui-map.googlecode.com/svn/trunk/ui/jquery.ui.map.js'}
+%script{src:"http://js.pusher.com/1.12/pusher.min.js"}
 
-      .pure-u-1-5
-        = f.label :vehicle_car_make_cont, "Make"
-        = f.text_field :vehicle_car_make_cont
+#map-controls.panel.panel-default{style: 'position:absolute; z-index:1000002'}
+  .panel-heading{style: 'padding-top:10px'}
+    .btn-group
+      %button#zoom-out.btn.btn-default
+        %i.glyphicon.glyphicon-zoom-out
+      %button#zoom-in.btn.btn-default
+        %i.glyphicon.glyphicon-zoom-in
+        
+    .btn-group#map-type-select{data: {toggle: 'buttons'}}
+      %label.active.btn.btn-default
+        %input{type: 'radio', name: 'map-type', id: 'ROADMAP'}
+        %i.glyphicon.glyphicon-road
+      %label.btn.btn-default
+        %input{type: 'radio', name: 'map-type', id: 'SATELLITE'}
+        %i.glyphicon.glyphicon-globe
+  .panel-heading
+    %h4.panel-title
+      %a.btn.btn-default{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseOne"}
+        %i.glyphicon.glyphicon-filter
+        Filters
+  #collapseOne.panel-collapse.collapse{class: params[:q] && 'in'}
+    .panel-body
+      = search_form_for @search, {html:{class:'form-inline'}} do |f|
+        .form-group
+          = f.text_field :vehicle_car_year_cont, placeholder: "Year", class: 'form-control'
+        .form-group
+          = f.text_field :vehicle_car_make_cont, placeholder: "Make", class: 'form-control'
+        .form-group
+          = f.text_field :vehicle_car_model_cont, placeholder: "Model", class: 'form-control'
 
-      .pure-u-1-5
-        = f.label :vehicle_car_model_cont, "Model"
-        = f.text_field :vehicle_car_model_cont
+        .row{style: 'margin-left:0'}
+          .form-group
+            = f.text_field :vehicle_vehicle_usage_name_cont, placeholder: "Usage", class: 'form-control'
+          .form-group
+            = f.text_field :vehicle_vin_cont, placeholder: "VIN", class: 'form-control'
+          .form-group
+            = f.text_field :vehicle_car_color_cont, placeholder: "Color", class: 'form-control'
+          .form-group
+            %button{type: 'submit', class: 'btn btn-primary'}
+              %i.glyphicon.glyphicon-search
+          .form-group
+            = link_to 'Clear', '/devices'
 
-    .pure-g-r{style:'color:white; font-size:14px; text-shadow:0 1px 0 #02375F'}
-      .pure-u-1-5
-        = f.label :vehicle_vehicle_usage_name_cont, "Usage"
-        = f.text_field :vehicle_vehicle_usage_name_cont
+  .panel-heading
+    %h4.panel-title
+      %a.btn.btn-default{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseTwo"}
+        %i.glyphicon.glyphicon-th-list
+        Vehicles
+  #collapseTwo.panel-collapse.collapse{class: params[:q] && 'in'}
+    .panel-body
+      %table.table.table-condensed
+        %thead
+          %tr
+            %th Status
+            %th Year Make Model
+            %th Usage
+            %th Battery
+            %th DTC
+            %th VIN
+            %th Car Color
 
-      .pure-u-1-5
-        = f.label :vehicle_vin_cont, "VIN"
-        = f.text_field :vehicle_vin_cont
+        - @devices.each do |device|
+          %tr
+            %td.ac
+              %i{class: device.status}
+            %td
+              = link_to device.vehicle.car.name, device_path(device)
+            %td= device.vehicle.vehicle_usage.name
+            %td{class: device.battery_issue && 'dk-red'}= device.latest_history && "#{device.latest_history.vbatt}v"
+            %td= device.dtc_issue ? link_to('active', device_path(device)) : ''
+            %td= device.vehicle.vin
+            %td= device.vehicle.car_color
 
-      .pure-u-1-5
-        = f.label :vehicle_car_color_cont, "Color"
-        = f.text_field :vehicle_car_color_cont
-
-    .pure-u-3-5
-      = link_to 'Reset', '#', class: 'pure-button', id: 'resetForm'
-      = f.submit 'Search', class: 'pure-button pure-button-primary'
+#map_canvas
 
 :coffeescript
-  $('#resetForm').on 'click', ->
-    $('#device_search input[type=text]').val ''
+  $('#zoom-in').click ->
+    map = $('#map_canvas').gmap('get', 'map')
+    map.setZoom(map.getZoom()+1)
+  
+  $('#zoom-out').click ->
+    map = $('#map_canvas').gmap('get', 'map')
+    map.setZoom(map.getZoom()-1)
 
+  $('#map-type-select input').on 'change', ->
+    map = $('#map_canvas').gmap('get', 'map')
+    map.setMapTypeId google.maps.MapTypeId[$('#map-type-select input:checked')[0].id]
 
-%table.pure-table.pure-table-horizontal
-  %thead
-    %tr
-      %th Status
-      %th Year Make Model
-      %th Usage
-      %th Battery
-      %th DTC
-      %th VIN
-      %th Car Color
+  google.maps.visualRefresh = true
+  gateway = new Pusher("f513119581ede36ac6c4").subscribe "gateway"
+  carNames = #{@car_names.to_json}
+  latestReadings = #{@latest_readings.to_json}
 
-  - @devices.each do |device|
-    %tr
-      %td
-        %i{class: device.status}
-      %td
-        = link_to device.vehicle.car.name, device_path(device)
-      %td= device.vehicle.vehicle_usage.name
-      %td{style: device.battery_issue && 'color:red'}= device.latest_history && "#{device.latest_history.vbatt}v"
-      %td= device.dtc_issue ? link_to('active', device_path(device)) : ''
-      %td= device.vehicle.vin
-      %td= device.vehicle.car_color
+  addMarker = (reading) ->
+    for k,v of reading
+      [latitude, longitude] = [v[1], v[0]]
+      mobileId = String(k)
+
+    $('#map_canvas').gmap 'addMarker',
+      animation : google.maps.Animation.DROP
+      bounds    : true
+      mobileId  : [mobileId]
+      position  : (new google.maps.LatLng(latitude, longitude))
+      icon      : 'http://chart.googleapis.com/chart?chst=d_simple_text_icon_above&chld=' + carNames[mobileId] + '|16|bf6410|car-dealer|16|bf6410|FFF'
+
+  gateway.bind 'message', (reading) ->
+    $('#map_canvas').gmap 'find', 'markers', { 'property':'mobileId', 'value':reading.mobileId }, (marker, found) ->
+      if found
+        marker.setPosition(new google.maps.LatLng(reading.geo.coordinates[1], reading.geo.coordinates[0]))
+
+  $('#map_canvas').gmap({disableDefaultUI: true}).bind 'init', ->
+    latestReadings.forEach addMarker

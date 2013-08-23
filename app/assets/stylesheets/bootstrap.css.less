@@ -1,0 +1,74 @@
+@import "twitter/bootstrap";
+@import "variables";
+
+#menu {
+
+  background-color:#222;
+  bottom:0;
+  font-family: 'Ubuntu Condensed';
+  height:100%;
+  left:0;
+  padding:0;
+  position:fixed;
+  top:0;
+  width:165px;
+
+  .nav > li > a {
+    border-bottom: 1px solid #151515;
+    border-top: 1px solid #2A2A2A;
+    color: #999999;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .nav > li > a > .caret {
+    border-bottom-color: #999999;
+    border-top-color: #999999;
+  }
+
+  .nav > li > a:hover > .caret {
+    border-bottom-color: #999999;
+    border-top-color: #999999;
+    color: #FFFFFF;
+  }
+
+  .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  .nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent;
+  }
+
+  .nav > li.active > a {
+    color: #FFFFFF;
+  }
+
+  .nav > li > a:hover, .primary-sidebar .nav > li > a:focus {
+    background-image: linear-gradient(#272727, #1F1F1F);
+  }
+
+  .nav > li:hover > a {
+    color: #FFFFFF;
+  }
+}
+
+.box .box-header .nav-tabs > .active > a, .box .box-header .nav-tabs > .active > a:hover {
+  background-color: #fbfbfb;
+}
+
+.form-signin {
+  max-width: 330px;
+}
+
+.btn {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.32);
+}
+
+.btn-lg {
+  font-size: 16px;
+  padding: 8px 24px;
+}
+
+.btn-primary {
+  background-image: linear-gradient(#6AA5CF, #5791BB);
+}
