@@ -1,10 +1,9 @@
 Zinlot::Application.routes.draw do
 
   get "marketing/index"
+  devise_for :users
   resources :users
   get 'settings' => 'users#index'
-
-  devise_for :users
   
   resources :devices
 
