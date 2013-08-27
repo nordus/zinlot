@@ -5,6 +5,6 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  attr_accessible :notification_emails
+  attr_accessible :notification_emails, :notification_phone_nbrs
 
 end

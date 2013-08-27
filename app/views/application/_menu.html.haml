@@ -1,15 +1,17 @@
 - if current_user
   %ul.nav
     %li
-      %a.dropdown-toggle{href: '#', data: {toggle: 'dropdown'}}
-        %img{width:'20', height:'20', src:'https://secure.gravatar.com/avatar/7bca6c9925e770a98cf1767e36977348?s=140&amp;d=https%3A%2F%2Fidenticons.github.com%2Ffacff577dd680a1bfc1174ed41576960.png'}
-        easierbycode
+      %a#avatar-list-item.dropdown-toggle{href: '#', data: {toggle: 'dropdown'}}
+        = gravatar_image_tag(current_user.email)
+        = current_user.email
         %span.caret
       %ul.dropdown-menu
         %li
-          %a{href: '/account'} Account
+          %a{href: '/settings'}
+            %i.glyphicon.glyphicon-cog
+            Settings
         %li
-          = link_to 'Log out', destroy_user_session_path, method: 'DELETE'
+          = link_to raw("<i class='glyphicon glyphicon-log-out'></i> Log out"), destroy_user_session_path, method: 'DELETE'
     %li.active
       %a{:href => '/'}
         %i.glyphicon.glyphicon-dashboard
@@ -30,10 +32,6 @@
       %a{:href => '#'}
         %i.glyphicon.glyphicon-stats
         &nbsp;Reports
-    %li
-      %a{:href => '#'}
-        %i.glyphicon.glyphicon-cog
-        &nbsp;Settings
 - else
   %ul.nav
     %li

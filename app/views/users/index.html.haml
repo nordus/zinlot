@@ -1,0 +1,105 @@
+- content_for :ng_app, 'zin'
+
+.form-signin{ng: {controller: "UserCtrl"}}
+
+  %legend General
+
+  .form-group
+    %label Phone numbers
+
+    .input-group{ng: {repeat: "phoneNumber in phoneNumbers()"}}
+      %input.form-control{value: "{{ phoneNumber | tel }}"}
+
+      %span.input-group-btn
+        %button.btn.btn-default{ng: {click: "removePhoneNumber({{ $index }})"}}
+          %i.glyphicon.glyphicon-remove-sign
+
+    %form.form{name: "addPhoneNumberForm", ng: {submit: "addPhoneNumber(addPhoneNumberForm)"}}
+      .input-group
+        %input.form-control{type: "number", ng: {minlength: "10", model: "newPhoneNumber"}, placeholder: "Add phone number"}
+
+        %span.input-group-btn
+          %button.btn.btn-default{type: "submit"}
+            %i.glyphicon.glyphicon-plus
+
+      %p.help-block{ng: {show: "addPhoneNumberForm.$error.minlength"}} Enter a 10-digit phone number
+
+
+  .form-group
+    %label Email addresses
+
+    .input-group{ng: {repeat: "email in emails()"}}
+      %input.form-control{value: "{{ email }}"}
+
+      %span.input-group-btn
+        %button.btn.btn-default{ng: {click: "removeEmail({{ $index }})"}}
+          %i.glyphicon.glyphicon-remove-sign
+
+    %form.form{name: "addEmailForm", ng: {submit: "addEmail(addEmailForm)"}}
+      .input-group
+        %input.form-control{type: "email", ng: {model: "newEmail"}, placeholder: "Add email"}
+
+        %span.input-group-btn
+          %button.btn.btn-default{type: "submit"}
+            %i.glyphicon.glyphicon-plus
+
+      %p.help-block{ng: {show: "addEmailForm.$error.email"}} Enter a valid email
+
+
+  %legend
+    Notifications&nbsp;
+    %a#notifications-info{data: {trigger: 'hover', toggle: 'popover', placement: 'right', content: 'Subscribe to Geofence, Low Battery, and Engine Health alerts.'}}
+      %i.glyphicon.glyphicon-info-sign
+
+  %ul.list-group#notification-setup
+    %li.list-group-item
+      .row
+        Geofence Enter
+        .btn-group.pull-right{data: {toggle: 'buttons'}}
+          %label.btn
+            %input{type: 'checkbox'}
+              %i.glyphicon.glyphicon-envelope
+
+          %label.btn
+            %input{type: 'checkbox'}
+              %i.glyphicon.glyphicon-phone
+
+    %li.list-group-item
+      .row
+        Geofence Exit
+        .btn-group.pull-right{data: {toggle: 'buttons'}}
+          %label.btn
+            %input{type: 'checkbox'}
+              %i.glyphicon.glyphicon-envelope
+
+          %label.btn
+            %input{type: 'checkbox'}
+              %i.glyphicon.glyphicon-phone
+
+    %li.list-group-item
+      .row
+        Engine Trouble Codes
+        .btn-group.pull-right{data: {toggle: 'buttons'}}
+          %label.btn
+            %input{type: 'checkbox'}
+              %i.glyphicon.glyphicon-envelope
+
+          %label.btn
+            %input{type: 'checkbox'}
+              %i.glyphicon.glyphicon-phone
+
+    %li.list-group-item
+      .row
+        Low Battery
+        .btn-group.pull-right{data: {toggle: 'buttons'}}
+          %label.btn
+            %input{type: 'checkbox'}
+              %i.glyphicon.glyphicon-envelope
+
+          %label.btn
+            %input{type: 'checkbox'}
+              %i.glyphicon.glyphicon-phone
+
+
+:coffeescript
+  $('#notifications-info').popover()

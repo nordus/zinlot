@@ -25,7 +25,7 @@ class Reading
     return @dtc_descriptions[dtc_code]
   end
 
-  def self.latest_readings(mobile_ids: ['4531019793','4531010358','4531010353','4531004944'])
+  def self.latest_readings(mobile_ids: ['4531010358','4531010353','4531004944'])
     db = get_connection
     coll = db.collection('readings')
 

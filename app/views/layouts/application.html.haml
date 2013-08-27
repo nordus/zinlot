@@ -1,10 +1,11 @@
 !!!
-%html
+%html{ng: {app: "#{yield :ng_app}"}}
   %head
     %title ZinLot
     %meta{name:'viewport', content:'width=device-width, initial-scale=1.0'}
     = stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Ubuntu+Condensed", media: "all"
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "https://d3dy5gmtp8yhk7.cloudfront.net/2.1/pusher.min.js"
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
@@ -13,7 +14,7 @@
         .row{style: 'margin-left:0'}
           %a.navbar-brand{href: '/', style: "color:#ddd; font-family:'Ubuntu Condensed'"}
             ZINL
-            %i.glyphicon.glyphicon-map-marker{style: 'margin-left:-6px; margin-right:-4px'}
+            %i.glyphicon.glyphicon-map-marker{style: 'color:#6AA5CF; margin-left:-6px; margin-right:-4px'}
             T
         = render 'menu'
 

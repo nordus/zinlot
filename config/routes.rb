@@ -1,7 +1,8 @@
 Zinlot::Application.routes.draw do
 
   get "marketing/index"
-  match 'account' => 'users#communications_set_up', :via => [:get, :patch]
+  resources :users
+  get 'settings' => 'users#index'
 
   devise_for :users
   

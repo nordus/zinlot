@@ -25,6 +25,8 @@ gem 'mobile-fu'
 
 gem 'active_link_to'
 
+gem 'gravatar_image_tag'
+
 gem 'country_select'
 gem 'formtastic', '~> 2.3.0.rc2'
 gem "activeadmin", github: "gregbell/active_admin", branch: "rails4"
@@ -42,8 +44,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'guard-livereload'
-  gem 'rack-livereload'
+  gem 'guard-pusher'
 end
 
 group :production do
