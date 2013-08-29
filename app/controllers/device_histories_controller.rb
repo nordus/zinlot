@@ -1,9 +1,10 @@
 class DeviceHistoriesController < ApplicationController
 
   skip_before_filter :verify_authenticity_token
-  respond_to :json
+  skip_before_filter :authenticate_user!
+  respond_to :html, :json
 
   def create
-    respond_with DeviceHistory.create(params[:device_history])
+    respond_with DeviceHistory.create(params.permit(:device_id, :dtc_codes, :vbatt))
   end
 end

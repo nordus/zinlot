@@ -1,5 +1,13 @@
 class HistoricalTripsController < ApplicationController
 
+  skip_before_filter :verify_authenticity_token
+  skip_before_filter :authenticate_user!
+  respond_to :html, :json
+
+  def create
+    respond_with HistoricalTrip.create(params.permit(:start_at, :device_id, :end_at, :duration, :idle_seconds, :miles, :ending_mileage, :highest_speed, :start_date, :end_date, :num_hard_brake, :num_hard_accel, :num_speed_event, :num_rpm_event, :num_corner_l, :num_corner_r, :num_very_hard_brake, :num_very_hard_accel, :num_hard_corner_l, :num_hard_corner_r, :num_enter_geo_zone, :num_exit_geo_zone))
+  end
+  
   def index
     ENV["TZ"] = 'US/Arizona'
     @earliest_trip_time ||= Date.today.beginning_of_day.to_i

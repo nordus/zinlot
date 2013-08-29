@@ -20,9 +20,9 @@ Zinlot::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  resources :historical_trips, :only => [:create]
-  resources :geofence_violations, :only => [:create]
-  resources :device_histories, :only => [:create]
+  resources :historical_trips
+  resources :geofence_violations
+  resources :device_histories
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 

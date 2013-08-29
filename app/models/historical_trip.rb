@@ -3,7 +3,7 @@ class HistoricalTrip < ActiveRecord::Base
 
   default_scope -> { order('id DESC') }
 
-  belongs_to :device
+  belongs_to :device, primary_key: :imei
 
   attr_protected :created_at
 

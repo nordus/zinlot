@@ -2,11 +2,27 @@ class Alert < ActiveRecord::Base
   attr_protected :created_at
 
   after_save :send_sms
+  
+  after_save :send_alert_to_subscribed_users
 
   belongs_to :device, primary_key: :imei
 
   EVENTS = %w[GEOFENCE_ENTER GEOFENCE_EXIT LOW_BATT DTC]
 
+  def send_alert_to_subscribed_users
+    # send SMS
+    users_with_sms_notification = User.with_sms_notification(event)
+    users_with_email_notification = User.with_email_notification(event)
+    
+    for user in users_with_sms_notification
+      # send SMS
+    end
+    
+    for user in users_with_email_notification
+      # send Email
+    end
+  end
+  
   def event=(event)
     self.event_type = EVENTS.index(event)
   end
