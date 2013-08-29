@@ -39,6 +39,13 @@ body                { background-image:linear-gradient(#FAFAFA, #E0E0E0); backgr
   text-shadow: 0 1px #FFFFFF;
 }
 
+/* USER NOTIFICATIONS SETUP */
+
+#notification-setup .btn-group button {
+  background-color: transparent;
+  padding: 0;
+}
+
 /* MAPS */
 
 #map_canvas {

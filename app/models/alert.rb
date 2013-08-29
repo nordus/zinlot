@@ -5,31 +5,27 @@ class Alert < ActiveRecord::Base
 
   belongs_to :device, primary_key: :imei
 
-  GEOFENCE_ENTER = 0
-  GEOFENCE_EXIT = 1
-  LOW_BATTERY = 3
+  EVENTS = %w[GEOFENCE_ENTER GEOFENCE_EXIT LOW_BATT DTC]
 
-  def event
-    case self.event_type
-      when GEOFENCE_ENTER
-        'GEOFENCE_ENTER'
-      when GEOFENCE_EXIT
-        'GEOFENCE_EXIT'
-      when LOW_BATTERY
-        'LOW_BATTERY'
-    end
+  def event=(event)
+    self.event_type = EVENTS.index(event)
   end
-
+  
+  def event
+    EVENTS[event_type]
+  end
+  
   def send_sms
     return unless Rails.env == 'production'
 
-    if event_type = GEOFENCE_EXIT
+    if event = GEOFENCE_EXIT
       message = geofence_exit_message
-    elsif event_type = LOW_BATTERY
-      message = battery_low_message
+    elsif event = LOW_BATT
+      message = low_batt_message
+    elsif event = DTC
+      message = dtc_message
     end
 
-    #return unless geofence_id
     return unless message
 
     # put your own credentials here
@@ -50,9 +46,15 @@ class Alert < ActiveRecord::Base
     "EXIT Geofence: #{device_id} left geofence #{Geofence.friendly_name(geofence_id)}"
   end
 
-  def battery_low_message
+  def low_batt_message
     if device
       "#{device.imei} has a low battery (#{device.latest_vbatt} volts)"
+    end
+  end
+
+  def dtc_message
+    if device
+      "#{device.imei} has engine trouble code #{device.latest_dtc}"
     end
   end
 end

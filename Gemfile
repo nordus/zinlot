@@ -15,7 +15,9 @@ gem 'haml-rails'
 gem 'therubyracer'
 gem 'less-rails-bootstrap'
 gem 'slim', '~> 2.0.1'
-gem 'devise', '~> 3.1.0.rc'
+gem 'devise', '~> 3.1.0.rc2'
+
+gem 'rabl'
 
 gem 'protected_attributes'
 
@@ -29,11 +31,10 @@ gem 'gravatar_image_tag'
 
 gem 'country_select'
 gem 'formtastic', '~> 2.3.0.rc2'
+gem "ransack"
 gem "activeadmin", github: "gregbell/active_admin", branch: "rails4"
 
 gem 'comfortable_mexican_sofa', '~> 1.8.2', github: 'easierbycode/comfortable_mexican_sofa'
-
-gem "ransack", github: "ernie/ransack", branch: "rails-4"
 
 gem 'highcharts-rails', '~> 3.0.0'
 gem 'chartkick'

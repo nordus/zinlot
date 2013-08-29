@@ -23,6 +23,12 @@ class Device < ActiveRecord::Base
     end
   end
 
+  def latest_dtc
+    if latest_history
+      latest_history[:dtc_codes]
+    end
+  end
+
   def battery_issue
     latest_history && latest_history[:has_low_batt]
   end

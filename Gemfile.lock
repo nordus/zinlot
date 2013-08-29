@@ -14,32 +14,22 @@ GIT
       sass-rails (>= 3.1.0)
 
 GIT
-  remote: git://github.com/ernie/ransack.git
-  revision: 8db7a3c1f4242305488a541267dd87c5397f5707
-  branch: rails-4
-  specs:
-    ransack (0.7.3)
-      actionpack (~> 4.0.0)
-      activerecord (~> 4.0.0)
-      polyamorous (~> 0.6.0)
-
-GIT
   remote: git://github.com/gregbell/active_admin.git
-  revision: a9949c1524205928b18597f840e83478ba97c2ef
+  revision: 72a9c30cef47b3f38c38039de021aaa3194c188b
   branch: rails4
   specs:
     activeadmin (0.6.0)
       arbre (>= 1.0.1)
       bourbon (>= 1.0.0)
       coffee-rails (>= 3.2.0)
-      devise (>= 3.0.0.rc)
-      formtastic (>= 2.0.0)
-      inherited_resources (>= 1.3.1)
+      devise (>= 3.0.2)
+      formtastic (>= 2.3.0.rc2)
+      inherited_resources (>= 1.4.1)
       jquery-rails (>= 3.0.0)
       jquery-ui-rails (>= 4.0.0)
       kaminari (>= 0.13.0)
       rails (>= 3.2.0)
-      ransack (>= 0.7.0)
+      ransack (>= 1.0.0)
       sass-rails (>= 3.2.0)
 
 GIT
@@ -81,13 +71,13 @@ GEM
       activesupport (>= 3.0.0)
     arel (4.0.0)
     atomic (1.1.13)
-    bcrypt-ruby (3.1.1)
+    bcrypt-ruby (3.1.2)
     bourbon (3.1.8)
       sass (>= 3.2.0)
       thor
-    bson (1.9.1)
-    bson_ext (1.9.1)
-      bson (~> 1.9.1)
+    bson (1.9.2)
+    bson_ext (1.9.2)
+      bson (~> 1.9.2)
     builder (3.1.4)
     chartkick (1.2.0)
     climate_control (0.0.3)
@@ -104,7 +94,7 @@ GEM
     coffee-script-source (1.6.3)
     commonjs (0.2.6)
     country_select (1.2.0)
-    devise (3.1.0.rc)
+    devise (3.1.0.rc2)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
@@ -112,8 +102,7 @@ GEM
       warden (~> 1.2.3)
     diff-lcs (1.2.4)
     erubis (2.7.0)
-    execjs (1.4.0)
-      multi_json (~> 1.0)
+    execjs (2.0.1)
     ffi (1.9.0)
     formatador (0.2.4)
     formatted_form (2.1.1)
@@ -178,19 +167,19 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     method_source (0.8.2)
-    mime-types (1.23)
+    mime-types (1.24)
     mini_portile (0.5.1)
     minitest (4.7.5)
     mobile-fu (1.2.1)
       rack-mobile-detect
       rails
-    mongo (1.9.1)
-      bson (~> 1.9.1)
+    mongo (1.9.2)
+      bson (~> 1.9.2)
     multi_json (1.7.9)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
     orm_adapter (0.4.0)
-    paperclip (3.5.0)
+    paperclip (3.5.1)
       activemodel (>= 3.0.0)
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.0)
@@ -209,6 +198,8 @@ GEM
       httpclient (~> 2.3.0)
       multi_json (~> 1.0)
       signature (~> 0.1.6)
+    rabl (0.8.6)
+      activesupport (>= 2.3.14)
     rack (1.5.2)
     rack-mobile-detect (0.4.0)
       rack
@@ -229,6 +220,10 @@ GEM
       thor (>= 0.18.1, < 2.0)
     raindrops (0.11.0)
     rake (10.1.0)
+    ransack (1.0.0)
+      actionpack (>= 3.0)
+      activerecord (>= 3.0)
+      polyamorous (~> 0.6.0)
     rb-fsevent (0.9.3)
     rb-inotify (0.9.1)
       ffi (>= 0.5.0)
@@ -240,8 +235,8 @@ GEM
     ref (1.0.5)
     responders (1.0.0.rc)
       railties (>= 3.2, < 5)
-    rspec-core (2.14.4)
-    rspec-expectations (2.14.1)
+    rspec-core (2.14.5)
+    rspec-expectations (2.14.2)
       diff-lcs (>= 1.1.3, < 2.0)
     rspec-mocks (2.14.3)
     rspec-rails (2.14.0)
@@ -273,7 +268,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
-    sqlite3 (1.3.7)
+    sqlite3 (1.3.8)
     temple (0.6.6)
     therubyracer (0.12.0)
       libv8 (~> 3.16.14.0)
@@ -282,16 +277,16 @@ GEM
     thread_safe (0.1.2)
       atomic
     tilt (1.4.1)
-    treetop (1.4.14)
+    treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
     turbolinks (1.3.0)
       coffee-rails
     tzinfo (0.3.37)
-    uglifier (2.1.2)
+    uglifier (2.2.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
-    unicorn (4.6.2)
+    unicorn (4.6.3)
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
@@ -309,7 +304,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   comfortable_mexican_sofa (~> 1.8.2)!
   country_select
-  devise (~> 3.1.0.rc)
+  devise (~> 3.1.0.rc2)
   formtastic (~> 2.3.0.rc2)
   gravatar_image_tag
   guard-pusher
@@ -323,9 +318,10 @@ DEPENDENCIES
   nokogiri
   pg
   protected_attributes
+  rabl
   rails (= 4.0.0)
   rails3_serve_static_assets!
-  ransack!
+  ransack
   rspec-rails (~> 2.0)
   sass-rails (~> 4.0.0)
   sdoc

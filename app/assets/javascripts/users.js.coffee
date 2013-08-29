@@ -11,8 +11,8 @@ Zin.controller 'UserCtrl', ($scope, User) ->
     $scope.phoneNumbers = ->
       $scope.current_user.notification_phone_nbrs && $scope.current_user.notification_phone_nbrs.split(',') || []
     $scope.emails = ->
-      $scope.current_user.notification_emails && $scope.current_user.notification_emails.split(',') || []
-
+      $scope.current_user.notification_emails && $scope.current_user.notification_emails.split(',') || []  
+  
   $scope.addPhoneNumber = (addPhoneNumberForm) ->
     if addPhoneNumberForm.$valid
       if @current_user.notification_phone_nbrs
@@ -42,4 +42,16 @@ Zin.controller 'UserCtrl', ($scope, User) ->
     emails.splice(index, 1)
     @current_user.notification_emails = emails.toString()
     @current_user.$update()
+
+  $scope.toggleNotification = (value, type) ->
+    checkedNotifications = @current_user["#{type}_notifications"]
+    indexOfValue = checkedNotifications.indexOf(value)
+    
+    if indexOfValue is -1
+      @current_user["#{type}_notifications"].push value
+    else
+      @current_user["#{type}_notifications"].splice(Number(indexOfValue), 1)
+      
+    @current_user.$update()
+
 

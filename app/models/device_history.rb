@@ -5,6 +5,8 @@ class DeviceHistory < ActiveRecord::Base
   belongs_to :device, primary_key: :imei
 
   after_save :add_device_history_id_to_device
+  
+  after_save :create_alert_if_low_batt_or_dtc
 
   before_save :set_has_low_batt_and_has_dtc
 
@@ -13,9 +15,19 @@ class DeviceHistory < ActiveRecord::Base
       device.update_attribute('latest_history_id', id)
     end
   end
+  
+  def create_alert_if_low_batt_or_dtc
+    if has_low_batt
+      Alert.create({event: 'LOW_BATT', device_id: device_id})
+    end
+    
+    if has_dtc
+      Alert.create({event: 'DTC', device_id: device_id})
+    end
+  end
 
   def status
-    heartbeats_in_last_24_hours = device_histories.where('created_at > ?', 1.day.ago).count > 0
+    heartbeats_in_last_24_hours = device_histories.where('created_at > ?', 1.day.ago).count
 
     if heartbeats_in_last_24_hours > 0
       'icon-ok'

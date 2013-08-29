@@ -52,16 +52,17 @@
       %i.glyphicon.glyphicon-info-sign
 
   %ul.list-group#notification-setup
+
     %li.list-group-item
       .row
         Geofence Enter
         .btn-group.pull-right{data: {toggle: 'buttons'}}
           %label.btn
-            %input{type: 'checkbox'}
+            %button.btn{ng: {click: "toggleNotification('GEOFENCE_ENTER', 'email')"}, class: @current_user.email_notifications.include?('GEOFENCE_ENTER') && 'active'}
               %i.glyphicon.glyphicon-envelope
 
           %label.btn
-            %input{type: 'checkbox'}
+            %button.btn{ng: {click: "toggleNotification('GEOFENCE_ENTER', 'sms')"}, class: @current_user.sms_notifications.include?('GEOFENCE_ENTER') && 'active'}
               %i.glyphicon.glyphicon-phone
 
     %li.list-group-item
@@ -69,11 +70,11 @@
         Geofence Exit
         .btn-group.pull-right{data: {toggle: 'buttons'}}
           %label.btn
-            %input{type: 'checkbox'}
+            %button.btn{ng: {click: "toggleNotification('GEOFENCE_EXIT', 'email')"}, class: @current_user.email_notifications.include?('GEOFENCE_EXIT') && 'active'}   
               %i.glyphicon.glyphicon-envelope
 
           %label.btn
-            %input{type: 'checkbox'}
+            %button.btn{ng: {click: "toggleNotification('GEOFENCE_EXIT', 'sms')"}, class: @current_user.sms_notifications.include?('GEOFENCE_EXIT') && 'active'}   
               %i.glyphicon.glyphicon-phone
 
     %li.list-group-item
@@ -81,11 +82,11 @@
         Engine Trouble Codes
         .btn-group.pull-right{data: {toggle: 'buttons'}}
           %label.btn
-            %input{type: 'checkbox'}
+            %button.btn{ng: {click: "toggleNotification('DTC', 'email')"}, class: @current_user.email_notifications.include?('DTC') && 'active'}
               %i.glyphicon.glyphicon-envelope
 
           %label.btn
-            %input{type: 'checkbox'}
+            %button.btn{ng: {click: "toggleNotification('DTC', 'sms')"}, class: @current_user.sms_notifications.include?('DTC') && 'active'}
               %i.glyphicon.glyphicon-phone
 
     %li.list-group-item
@@ -93,11 +94,11 @@
         Low Battery
         .btn-group.pull-right{data: {toggle: 'buttons'}}
           %label.btn
-            %input{type: 'checkbox'}
+            %button.btn{ng: {click: "toggleNotification('LOW_BATT', 'email')"}, class: @current_user.email_notifications.include?('LOW_BATT') && 'active'}
               %i.glyphicon.glyphicon-envelope
 
           %label.btn
-            %input{type: 'checkbox'}
+            %button.btn{ng: {click: "toggleNotification('LOW_BATT', 'sms')"}, class: @current_user.sms_notifications.include?('LOW_BATT') && 'active'}
               %i.glyphicon.glyphicon-phone
 
 
