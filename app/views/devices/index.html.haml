@@ -43,6 +43,12 @@
               %i.glyphicon.glyphicon-search
           .form-group
             = link_to 'Clear', '/devices'
+            
+        .row{style: 'margin-left:0'}
+          .form-group
+            %label.checkbox-inline
+              = f.check_box :has_open_issue_true
+              ONLY open issues
 
   .panel-heading
     %h4.panel-title

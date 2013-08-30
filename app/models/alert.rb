@@ -28,7 +28,11 @@ class Alert < ActiveRecord::Base
   end
   
   def event
-    EVENTS[event_type]
+    if event_type
+      EVENTS[event_type]
+    else
+      ''
+    end
   end
   
   def send_sms
@@ -70,7 +74,9 @@ class Alert < ActiveRecord::Base
 
   def dtc_message
     if device
-      "#{device.imei} has engine trouble code #{device.latest_dtc}"
+      dtc_codes = device.latest_dtc && device.latest_dtc.split(',')
+      s_if_plural = (dtc_codes && dtc_codes.length > 1) ? 's' : ''
+      "#{device.imei} reported engine trouble code#{s_if_plural} #{device.latest_dtc}"
     end
   end
 end

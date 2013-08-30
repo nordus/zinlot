@@ -1,0 +1,84 @@
+.panel.panel-default
+  .panel-heading
+    %h3 Alerts
+    = search_form_for @search, url: alerts_path, html: {class:'form-inline', style: 'margin-bottom:20px'} do |f|
+      .row{style: 'margin-bottom:10px; margin-left:0'}               
+        .btn-group#alert-type-toggler{"data-toggle" => "buttons"}
+          %label.btn.btn-default{class: @low_batt_checked && 'active'}
+            = f.check_box :has_low_batt_true
+            %i.glyphicon.glyphicon-flash
+            Low battery
+          %label.btn.btn-default{class: @dtc_checked && 'active'}
+            = f.check_box :has_dtc_true
+            %i.glyphicon.glyphicon-warning-sign
+            DTC
+    
+      .row{style: 'margin-bottom:10px; margin-left:0'} 
+        .form-group
+          = f.text_field :vehicle_car_year_cont, placeholder: "Year", class: 'form-control'
+        .form-group
+          = f.text_field :vehicle_car_make_cont, placeholder: "Make", class: 'form-control'
+        .form-group
+          = f.text_field :vehicle_car_model_cont, placeholder: "Model", class: 'form-control'
+    
+      .row{style: 'margin-left:0'}
+        .form-group
+          = f.text_field :vehicle_vehicle_usage_name_cont, placeholder: "Usage", class: 'form-control'
+        .form-group
+          = f.text_field :vehicle_vin_cont, placeholder: "VIN", class: 'form-control'
+        .form-group
+          = f.text_field :vehicle_car_color_cont, placeholder: "Color", class: 'form-control'
+        .form-group
+          %button{type: 'submit', class: 'btn btn-primary'}
+            %i.glyphicon.glyphicon-search
+        .form-group
+          = link_to 'Clear', '/alerts'
+  .box-header
+    %ul.nav.nav-tabs
+      %li.active
+        %a{href: '#open-issues', data: {toggle: 'tab'}} Open issues
+      %li
+        %a{href: '#resolved-issues', data: {toggle: 'tab'}} Resolved issues
+  .panel-body
+    .tab-content
+      .tab-pane.active#open-issues
+        %table.table
+          %thead
+            %tr
+              %th Vehicle
+              %th Issues  
+              %th Usage
+              %th VIN
+              %th Time
+        
+          %tbody
+            - for device in @devices
+              %tr
+                %td= device.vehicle.name
+                %td
+                  %a{href: "/devices/#{device.id}"}= device.latest_history && device.latest_history.formatted_issues
+                %td= device.vehicle.vehicle_usage.name
+                %td= device.vehicle.vin
+                %td= device.latest_history && distance_of_time_in_words(Time.now, device.latest_history && device.latest_history.created_at)
+
+      .tab-pane#resolved-issues
+        %table.table
+          %thead
+            %tr
+              %th Vehicle
+              %th Issues  
+              %th Usage
+              %th VIN
+              %th Time
+        
+          %tbody
+            - for alert in @alerts
+              - if device = alert.device
+                %tr
+                  %td= device.vehicle.name
+                  %td
+                    %a{href: "/devices/#{device.id}"}= device.latest_history && device.latest_history.formatted_issues
+                  %td= device.vehicle.vehicle_usage.name
+                  %td= device.vehicle.vin
+                  %td= device.latest_history && distance_of_time_in_words(Time.now, device.latest_history && device.latest_history.created_at)
+              

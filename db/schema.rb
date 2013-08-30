@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130829220222) do
+ActiveRecord::Schema.define(version: 20130830051148) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -271,6 +271,9 @@ ActiveRecord::Schema.define(version: 20130829220222) do
     t.string   "name"
     t.integer  "latest_history_id"
     t.integer  "vehicle_id"
+    t.boolean  "has_open_issue"
+    t.boolean  "has_dtc"
+    t.boolean  "has_low_batt"
   end
 
   create_table "drivers", force: true do |t|

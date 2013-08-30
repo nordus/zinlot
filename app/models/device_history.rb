@@ -4,19 +4,33 @@ class DeviceHistory < ActiveRecord::Base
 
   belongs_to :device, primary_key: :imei
 
-  after_save :add_device_history_id_to_device
+  after_save :update_device
   
-  after_save :create_alert_if_low_batt_or_dtc
+  after_save :create_alert_if_has_open_issue
 
   before_save :set_has_low_batt_and_has_dtc
+  
+  scope :not_in, lambda { |device_ids| { :conditions => ['device_id NOT IN [?]', device_ids] } }
 
-  def add_device_history_id_to_device
+  def update_device
+    has_open_issue = (has_low_batt || has_dtc) ?  1 : 0
+    
     if device
-      device.update_attribute('latest_history_id', id)
+      device.update({latest_history_id: id, has_open_issue: has_open_issue, has_low_batt: has_low_batt, has_dtc: has_dtc})
     end
   end
-  
-  def create_alert_if_low_batt_or_dtc
+  def formatted_issues
+    issues = []
+    if has_low_batt
+      issues.push 'Low battery'
+    end
+    if has_dtc
+      issues.push 'DTC'
+    end
+
+    issues.join(', ')
+  end
+  def create_alert_if_has_open_issue
     if has_low_batt
       Alert.create({event: 'LOW_BATT', device_id: device_id})
     end
@@ -37,7 +51,7 @@ class DeviceHistory < ActiveRecord::Base
   end
 
   def set_has_low_batt_and_has_dtc
-    if dtc_codes
+    if dtc_codes.present?
       self.has_dtc = 1
     end
 

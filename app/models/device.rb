@@ -4,15 +4,28 @@ class Device < ActiveRecord::Base
   belongs_to :vehicle
 
   has_many :historical_trips, primary_key: :imei
-  has_many :alerts, primary_key: :imei
-
+  has_many :alert
   has_one :car
 
   has_many :device_histories, primary_key: :imei
+  
+  scope :has_open_issues, -> { where(has_open_issue: true) }
 
   def self.duration_time(duration: duration)
     time = Time.at(duration/1000).utc.strftime('%H:%M:%S')
     time.sub(/^00:/, '')
+  end
+
+  def formatted_issues
+    issues = []
+    if battery_issue
+      issues.push 'Low battery'
+    end
+    if dtc_issue
+      issues.push 'DTC'
+    end
+
+    issues.join(', ')
   end
 
   def self.miles_rounded(miles: miles); miles.round(2); end

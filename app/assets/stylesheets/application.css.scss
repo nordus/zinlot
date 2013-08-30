@@ -7,6 +7,10 @@
 html, body, #layout { height:100% }
 body                { background-image:linear-gradient(#FAFAFA, #E0E0E0); background-repeat:no-repeat; background-attachment:fixed }
 
+/* get rid of system generated borders */
+a:active { outline:none; }
+:focus { -moz-outline-style:none; outline:0 none !important; }
+
 #layout { padding-left:165px }
 
 .box {
@@ -17,18 +21,18 @@ body                { background-image:linear-gradient(#FAFAFA, #E0E0E0); backgr
   margin-bottom: 18px;
 }
 
-.box .box-header {
+.box-header {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   padding-left: 9px;
 }
-.box .box-header, .box .box-footer {
+.box-header, .box-footer {
   background-image: linear-gradient(#FAFAFA, #F2F2F2);
   border-bottom: 1px solid #CDCDCD;
   color: #555555;
   text-shadow: 0 1px #FFFFFF;
 }
-.box .box-header .nav-tabs {
+.box-header .nav-tabs {
   border-bottom: medium none;
   margin-left: -9px;
 }
@@ -56,9 +60,6 @@ body                { background-image:linear-gradient(#FAFAFA, #E0E0E0); backgr
   width: 100%;
 }
 
-.google-map-canvas,
-.google-map-canvas * { .box-sizing(content-box); }
-
 /* Optional responsive image override */
 #map_canvas img { max-width: none; }
 
@@ -82,8 +83,13 @@ body                { background-image:linear-gradient(#FAFAFA, #E0E0E0); backgr
 
 /* TYPOGRAPHY */
 .ac { text-align:center }
-.glyphicon-warning-sign, .dk-red { color:#a61120 }
-.glyphicon-ok { color:forestgreen }
+td > .glyphicon-warning-sign, .dk-red, #alert-type-toggler .btn.active .glyphicon-warning-sign { color:#a61120 }
+
+#alert-type-toggler .btn.active {
+  .glyphicon-screenshot { color:#6AA5CF }
+  .glyphicon-flash { color:#d6bb30 }
+  .glyphicon-ok { color:forestgreen }
+}
 
 /* HEADING STATS */
 
