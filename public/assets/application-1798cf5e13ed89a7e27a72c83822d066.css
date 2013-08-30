@@ -5919,6 +5919,11 @@ td.visible-print {
   top: 0;
   width: 165px;
 }
+#menu #avatar-list-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 #menu .nav > li > a {
   border-bottom: 1px solid #151515;
   border-top: 1px solid #2A2A2A;
@@ -5971,6 +5976,16 @@ td.visible-print {
 .btn-primary {
   background-image: linear-gradient(#6aa5cf, #5791bb);
 }
+/* ALERT SETUP */
+#notification-setup .row {
+  line-height: 34px;
+  margin-left: 0;
+}
+#notification-setup .btn:active,
+#notification-setup .btn.active {
+  box-shadow: none;
+  color: #6AA5CF;
+}
 @font-face {
   font-family: 'proximanova';
   font-style: normal;
@@ -5987,83 +6002,108 @@ td.visible-print {
 
 
  */
+html, body, #layout {
+  height: 100%; }
 
+body {
+  background-image: linear-gradient(#fafafa, #e0e0e0);
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
-html, body, #layout { height:100% }
-body                { background-image:linear-gradient(#FAFAFA, #E0E0E0); background-repeat:no-repeat; background-attachment:fixed }
+/* get rid of system generated borders */
+a:active {
+  outline: none; }
 
-#layout { padding-left:165px }
+:focus {
+  -moz-outline-style: none;
+  outline: 0 none !important; }
+
+#layout {
+  padding-left: 165px; }
 
 .box {
   background: none repeat scroll 0 0 #FBFBFB;
   border: 1px solid #CDCDCD;
   border-radius: 3px 3px 3px 3px;
   box-shadow: 0 2px 2px -2px #CCCCCC;
-  margin-bottom: 18px;
-}
+  margin-bottom: 18px; }
 
-.box .box-header {
+.box-header {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  padding-left: 9px;
-}
-.box .box-header, .box .box-footer {
-  background-image: linear-gradient(#FAFAFA, #F2F2F2);
+  padding-left: 9px; }
+
+.box-header, .box-footer {
+  background-image: linear-gradient(#fafafa, #f2f2f2);
   border-bottom: 1px solid #CDCDCD;
   color: #555555;
-  text-shadow: 0 1px #FFFFFF;
-}
-.box .box-header .nav-tabs {
+  text-shadow: 0 1px #FFFFFF; }
+
+.box-header .nav-tabs {
   border-bottom: medium none;
-  margin-left: -9px;
-}
+  margin-left: -9px; }
+
 .table-header {
-  background: linear-gradient(#FBFBFB, #F1F1F1);
+  background: linear-gradient(#fbfbfb, #f1f1f1);
   border-bottom: 1px solid #D1D2DA;
   padding-top: 18px;
-  text-shadow: 0 1px #FFFFFF;
-}
+  text-shadow: 0 1px #FFFFFF; }
+
+/* USER NOTIFICATIONS SETUP */
+#notification-setup .btn-group button {
+  background-color: transparent;
+  padding: 0; }
 
 /* MAPS */
-
 #map_canvas {
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
-  width: 100%;
-}
-
-.google-map-canvas,
-.google-map-canvas * { .box-sizing(content-box); }
+  width: 100%; }
 
 /* Optional responsive image override */
-#map_canvas img { max-width: none; }
+#map_canvas img {
+  max-width: none; }
 
 #map-controls.panel {
   background-color: transparent;
-  box-shadow: none;
-}
+  box-shadow: none; }
 
 #map-controls .panel-heading {
   background-color: transparent;
   border-color: transparent;
-  padding: 0 15px 10px;
-}
+  padding: 0 15px 10px; }
+
 #map-controls.panel-default {
-  border-color: transparent;
-}
+  border-color: transparent; }
+
 #map-controls .panel-body {
   margin-bottom: 10px;
-  background-color: rgba(255,255,255,0.8);
-}
+  background-color: rgba(255, 255, 255, 0.8); }
 
 /* TYPOGRAPHY */
-.ac { text-align:center }
-.glyphicon-warning-sign, .dk-red { color:#a61120 }
-.glyphicon-ok { color:forestgreen }
+.ac {
+  text-align: center; }
+
+td > .glyphicon-warning-sign, .dk-red, #alert-type-toggler .btn.active .glyphicon-warning-sign {
+  color: #a61120; }
+
+#alert-type-toggler .btn.active .glyphicon-screenshot {
+  color: #6aa5cf; }
+#alert-type-toggler .btn.active .glyphicon-flash {
+  color: #d6bb30; }
+#alert-type-toggler .btn.active .glyphicon-ok {
+  color: forestgreen; }
 
 /* HEADING STATS */
+.heading-stats {
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(255, 255, 255, 0.5); }
 
-.heading-stats { font-size:16px; font-weight:bold; text-shadow:0px 1px rgba(255, 255, 255, 0.5); }
-.heading-stats em { font-weight:normal; font-size:14px; margin-right:15px; text-transform:uppercase }
+.heading-stats em {
+  font-weight: normal;
+  font-size: 14px;
+  margin-right: 15px;
+  text-transform: uppercase; }
