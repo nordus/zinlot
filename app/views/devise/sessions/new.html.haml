@@ -1,8 +1,8 @@
 %h2 Sign in
 
-= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => 'form-signin'}) do |f|
+= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => 'form-signin', :id => 'signin'}) do |f|
   %div
-    = f.email_field :email, :autofocus => true, :class => 'form-control', :placeholder => 'Email'
+    = f.email_field :email, :autofocus => true, :class => 'form-control', :placeholder => "Email"
   %div
     = f.password_field :password, :class => 'form-control', :placeholder => 'Password'
   - if devise_mapping.rememberable?

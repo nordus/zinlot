@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130830051148) do
+ActiveRecord::Schema.define(version: 20130912023845) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -62,6 +62,26 @@ ActiveRecord::Schema.define(version: 20130830051148) do
     t.integer  "time_inside_geofence"
     t.datetime "created_at",                                                     null: false
     t.datetime "updated_at",                                                     null: false
+  end
+
+  create_table "campaigns", force: true do |t|
+    t.string   "name"
+    t.date     "start_date"
+    t.date     "end_date"
+    t.integer  "nbr_of_emails_sent"
+    t.string   "status"
+    t.string   "coupon_codes"
+    t.time     "email_time"
+    t.string   "time_zone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "dealer_lot_id"
+    t.integer  "odometer_gte"
+    t.integer  "distance_to_dealer_below"
+    t.integer  "service_notifications_mask"
+    t.string   "trigger"
+    t.integer  "mileage_interval"
+    t.float    "mileage_interval_pct"
   end
 
   create_table "cars", force: true do |t|
@@ -204,6 +224,14 @@ ActiveRecord::Schema.define(version: 20130830051148) do
 
   add_index "cms_snippets", ["site_id", "identifier"], name: "index_cms_snippets_on_site_id_and_identifier", unique: true, using: :btree
   add_index "cms_snippets", ["site_id", "position"], name: "index_cms_snippets_on_site_id_and_position", using: :btree
+
+  create_table "customers", force: true do |t|
+    t.string   "email"
+    t.integer  "device_id"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "dealer_companies", force: true do |t|
     t.string   "name"
@@ -353,6 +381,19 @@ ActiveRecord::Schema.define(version: 20130830051148) do
     t.boolean  "has_geofence_violations"
   end
 
+  create_table "reports", force: true do |t|
+    t.string   "q"
+    t.integer  "interval"
+    t.string   "format"
+    t.integer  "user_id"
+    t.string   "name"
+    t.string   "time_zone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.time     "time"
+    t.string   "emails"
+  end
+
   create_table "users", force: true do |t|
     t.string    "email",                                  default: "", null: false
     t.string    "encrypted_password",                     default: "", null: false
@@ -368,6 +409,7 @@ ActiveRecord::Schema.define(version: 20130830051148) do
     t.string    "notification_phone_nbrs"
     t.integer   "email_notifications_mask"
     t.integer   "sms_notifications_mask"
+    t.string    "report_emails"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

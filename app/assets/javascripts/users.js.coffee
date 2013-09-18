@@ -43,15 +43,17 @@ Zin.controller 'UserCtrl', ($scope, User) ->
     @current_user.notification_emails = emails.toString()
     @current_user.$update()
 
-  $scope.toggleNotification = (value, type) ->
+  $scope.notificationIsChecked = (value, type) ->
     checkedNotifications = @current_user["#{type}_notifications"]
     indexOfValue = checkedNotifications.indexOf(value)
-    
-    if indexOfValue is -1
-      @current_user["#{type}_notifications"].push value
-    else
+    Boolean(indexOfValue >= 0)
+
+  $scope.toggleNotification = (value, type) ->
+    if $scope.notificationIsChecked(value, type)
       @current_user["#{type}_notifications"].splice(Number(indexOfValue), 1)
-      
+    else
+      @current_user["#{type}_notifications"].push value
+
     @current_user.$update()
 
 

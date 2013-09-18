@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   include AngularController
 
   def index
+    @reports = Report.all
     @users = User.where(id: current_user)
     @current_user = User.find(current_user)
     respond_with @users

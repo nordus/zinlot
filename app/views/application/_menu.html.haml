@@ -7,10 +7,6 @@
         %span.caret
       %ul.dropdown-menu
         %li
-          %a{href: '/settings'}
-            %i.glyphicon.glyphicon-cog
-            Settings
-        %li
           = link_to raw("<i class='glyphicon glyphicon-log-out'></i> Log out"), destroy_user_session_path, method: 'DELETE'
     %li.active
       %a{:href => '/'}
@@ -29,9 +25,13 @@
         %i.glyphicon.glyphicon-bell
         &nbsp;Alerts
     %li
-      %a{:href => '#'}
-        %i.glyphicon.glyphicon-stats
-        &nbsp;Reports
+      %a{href: '/settings'}
+        %i.glyphicon.glyphicon-cog
+        Account
+    %li
+      %a{href: '/campaigns'}
+        %i.glyphicon.glyphicon-bullhorn
+        &nbsp;Campaigns
 - else
   %ul.nav
     %li

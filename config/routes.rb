@@ -1,5 +1,9 @@
 Zinlot::Application.routes.draw do
 
+  resources :campaigns
+
+  resources :reports
+
   get "marketing/index"
   devise_for :users
   resources :users

@@ -1,0 +1,57 @@
+= form_for @report, remote: true, html: {class: 'form form-signin'} do |f|
+  - if @report.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@report.errors.count, "error")} prohibited this report from being saved:"
+      %ul
+        - @report.errors.full_messages.each do |msg|
+          %li= msg
+  .form-group
+    -#= f.text_field :name, class: 'form-control', placeholder: 'Name'
+    .btn-group{"data-toggle" => "buttons"}
+      %label.btn.btn-default
+        = f.radio_button :name, 'Inventory'
+        Inventory
+      %label.btn.btn-default.active
+        = f.radio_button :name, 'Service', checked: true
+        Service
+      %label.btn.btn-default
+        = f.radio_button :name, 'Logistic'
+        Logistic
+      %label.btn.btn-default
+        = f.radio_button :name, 'Exceptions'
+        Exceptions
+    
+  .form-group
+    .form-inline
+      .form-group
+        = f.select :interval, options_for_select([['Daily', 1], ['Weekly', 7]]), {}, {class: 'input-sm form-control'}
+      .form-group
+        = f.time_select :time, {ampm: true, minute_step: 15}
+      .form-group
+        = f.select :time_zone, options_for_select([ActiveSupport::TimeZone['Pacific Time (US & Canada)'], ActiveSupport::TimeZone['Arizona'], ActiveSupport::TimeZone['Mountain Time (US & Canada)'], ActiveSupport::TimeZone['Central Time (US & Canada)'], ActiveSupport::TimeZone['Eastern Time (US & Canada)']], '(GMT-07:00) Arizona'), {}, {style: 'max-width:100px'}
+  .form-group
+    .btn-group#alert-type-toggler{"data-toggle" => "buttons"}
+      %label.btn.btn-default.active
+        = f.radio_button :format, 'xls', {checked: true}
+        %i.icon-file-excel
+        Excel
+      %label.btn.btn-default
+        = f.radio_button :format, 'pdf'
+        %i.icon-file-pdf
+        PDF
+  .form-group.hidden
+    = f.label :user_id
+    = f.number_field :user_id, value: current_user.id
+  
+  .form-inline
+    .form-group
+      -#= f.submit 'Save', class: 'btn btn-primary'
+      .btn-group
+        %button.btn.btn-primary{:type => "button"} Save
+        %button.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :type => "button"}
+          %span.caret
+        %ul.dropdown-menu{:role => "menu"}
+          %li
+            %a{:href => "#"} Preview
+    .form-group
+      = link_to 'Back', reports_path, class: 'btn'

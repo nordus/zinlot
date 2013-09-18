@@ -1,10 +1,15 @@
 #= require jquery
 
+#= require_tree ./templates
+
 #= require angular
 #= require angular-resource
+#= require angular-route
 #= require_self
 #= require filters
+#= require global
 
+#= require gauge
 #= require lodash
 #= require jquery_ujs
 #= require map_icon
@@ -12,9 +17,12 @@
 #= require highcharts
 #= require chartkick
 #= require users
+#= require reports
+#= require dashboard
+#= require campaigns
 #= require twitter/bootstrap
 
-@Zin ?= angular.module('zin', ['ngResource'])
+@Zin ?= angular.module('zin', ['ngResource', 'ngRoute'])
 
 Zin.config ["$httpProvider", ($httpProvider) ->
   # Inject the CSRF token

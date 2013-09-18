@@ -10,8 +10,9 @@ class HistoricalTripsController < ApplicationController
   
   def index
     ENV["TZ"] = 'US/Arizona'
-    @earliest_trip_time ||= Date.today.beginning_of_day.to_i
-    @trips = HistoricalTrip.where('end_at > ?', @earliest_trip_time)
+    #@earliest_trip_time ||= Date.today.beginning_of_day.to_i
+    #@trips = HistoricalTrip.where('end_at > ?', @earliest_trip_time)
+    @trips = HistoricalTrip.where('duration > ?', 0).order('created_at DESC').limit(10)
     @total_miles = 0
     @total_duration = 0
     if @trips.count > 0

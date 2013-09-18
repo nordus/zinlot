@@ -1,7 +1,16 @@
 @import "twitter/bootstrap";
 @import "variables";
 
+/* panels */
+
+.panel-heading h4 {
+  display: inline-block;
+  margin: 0;
+}
+
 #menu {
+  
+  z-index: 1;
 
   #avatar-list-item {
     overflow: hidden;
@@ -66,10 +75,6 @@
   max-width: 330px;
 }
 
-.btn {
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.32);
-}
-
 .btn-lg {
   font-size: 16px;
   padding: 8px 24px;
@@ -77,6 +82,7 @@
 
 .btn-primary {
   background-image: linear-gradient(#6AA5CF, #5791BB);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.32);
 }
 
 /* ALERT SETUP */

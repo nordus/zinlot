@@ -1,0 +1,22 @@
+%div{ng: {controller: 'CampaignCtrl'}}
+  .panel.panel-default
+  
+    .box-header
+  
+      %ul#myTab.nav.nav-tabs
+        %li.active
+          %a{data: {toggle: 'tab'}, :href => "#new_campaign"}
+            %span{ng: {hide: 'currentlyEditing'}} Create
+            %span{ng: {show: 'currentlyEditing'}} Editing&nbsp;
+            %span{ng: {class: '{red: currentlyEditing}'}} {{ campaign.name }}
+        %li
+          %a{data: {toggle: 'tab'}, :href => "#run_campaign"} Run Campaign
+        %li
+          %a{data: {toggle: 'tab'}, :href => "#campaign_analytics"} Campaign Analytics
+    .panel-body
+      .tab-content
+        #campaign_analytics.tab-pane ANALYTICS!
+        #run_campaign.tab-pane= render 'run_campaign'
+        #new_campaign.tab-pane.active= render 'form'
+          
+  %div{ng: {view: ''}}

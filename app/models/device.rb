@@ -6,6 +6,8 @@ class Device < ActiveRecord::Base
   has_many :historical_trips, primary_key: :imei
   has_many :alert
   has_one :car
+  
+  has_one :customer
 
   has_many :device_histories, primary_key: :imei
   

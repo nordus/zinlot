@@ -1,0 +1,7 @@
+#campaigns {
+  &.index, &.edit {
+    .row + .row {
+      margin-top: 10px;
+    }
+  }
+}

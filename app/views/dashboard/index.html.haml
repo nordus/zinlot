@@ -1,3 +1,196 @@
-%div{data: { role:'content'}}
-  %h1 Dashboard#index
-  %p Find me in app/views/dashboard/index.html.haml
+- content_for :ng_app, 'zin'
+
+.row{style: 'padding-top:30px'}
+  .col-xs-4
+    .panel.panel-default
+      .panel-heading
+        %i.glyphicon.glyphicon-bullhorn
+        &nbsp;
+        %h4 Campaigns
+      .row
+        .col-xs-12
+          
+          %a{href: '#', class: 'panel-body', style: 'text-decoration:none'}
+            .ac
+              %i.glyphicon.glyphicon-bullhorn{style: 'color:#666; font-size:50px'}
+              %h2{style: 'margin-top:0px'} 82 campaigns
+        
+  .col-xs-4
+    .panel.panel-info
+      .panel-heading
+        %h4
+          %i.glyphicon.glyphicon-road
+          &nbsp;
+          Trips
+      .row
+        .col-xs-12      
+          %a{"data-toggle" => "modal", :href => "#tripsModal", :class => 'panel-body', style: 'text-decoration:none'}
+      
+
+         
+            %canvas#foo.col-xs-12
+              
+            .ac{ng: {controller: 'DashCtrl'}, style: 'font-size:50px; margin-top:-35%'}
+              
+              %i.glyphicon.glyphicon-road{style: 'color: #666'}
+    
+              %h2{style: 'margin-top:-10px'} {{ testDriveCount }}
+                      
+                  
+              %h6{style: 'font-size: 10px', ng: {class: "{'dk-red': testDrivePercentageDelta() < 0, 'dk-green': testDrivePercentageDelta() > 0}"}}
+                %i.glyphicon{ng: {class: "{'glyphicon-arrow-down': testDrivePercentageDelta() < 0, 'glyphicon-arrow-up': testDrivePercentageDelta() > 0}"}}
+                {{ testDrivePercentageDelta() | number:0 | percentDelta }}
+            
+
+  .col-xs-4
+    .row
+      .col-xs-12
+        .panel.panel-warning{style: 'height:128px; min-height:128px'}
+          .panel-heading
+            %i.glyphicon.glyphicon-eye-open
+            &nbsp;
+            %h4 Inventory
+          .row
+            .col-xs-12
+              %a{"data-toggle" => "modal", href: '#inventoryModal', class: 'panel-body'}
+              
+                .col-xs-4.ac
+                  %h2{style: 'margin-top:0'} 141
+                  %h6 For sale
+                .col-xs-4.ac
+                  %h2{style: 'margin-top:0'} 251
+                  %h6 Rental 
+                .col-xs-4.ac
+                  %h2{style: 'margin-top:0'} 84
+                  %h6 Fleet
+
+    .row
+      .col-xs-12
+
+
+
+        .panel.panel-danger{style: 'height:128px; min-height:128px'}
+          .panel-heading
+            %i.glyphicon.glyphicon-bell
+            &nbsp;
+            %h4 Service Issues
+          .row
+            .col-xs-12
+              %a{"data-toggle" => "modal", :href => "#myModal", class: 'panel-body'}
+                .col-xs-6.ac
+                  %h2{style: 'margin-top:0'} 2
+                  %h6 OPEN
+                .col-xs-6.ac
+                  %h2{style: 'margin-top:0'} 31
+                  %h6 RESOLVED
+        
+                  
+      
+
+.row
+  
+
+            
+            
+  .col-xs-4{ng: {controller: 'DashCtrl'}}
+       
+    .panel.panel-success
+      .panel-heading
+        %i.glyphicon.glyphicon-heart-empty
+        &nbsp;
+        %h4 Compliance
+      .row
+        .col-xs-12
+          %a{href: '#', class: 'panel-body', style: 'text-decoration:none'}  
+            %canvas#compliance-gauge.col-xs-12
+            .ac{style: 'font-size:50px; margin-top:-35%'}
+              
+    
+              %i.glyphicon.glyphicon-heart-empty{style: 'color:#666'}
+    
+              %h2{style: 'margin-top:-10px'} 481/500
+              %h6 VEHICLES ONLINE
+  
+            
+      -#.col-xs-6
+        .panel.panel-default
+          .panel-heading High Mileage
+          .panel-body
+            = pie_chart HistoricalTrip.group(:device_id).maximum(:ending_mileage)
+            
+  .col-xs-4
+    .panel.panel-default
+      .panel-heading
+        %i.icomoon.icon-trophy
+        &nbsp;
+        %h4 Top Dealership
+      .row
+        .col-xs-12
+          %a{href: '#', class: 'panel-body', style: 'text-decoration: none'}
+            .ac
+              
+              %i.icomoon.icon-trophy-star{style: 'color: #666; font-size:50px'}
+              %h2{style: 'margin-top:0px'} 72 test drives
+              %h6{style: 'padding-bottom: 10px'} August 2013
+            
+
+  .col-xs-4
+    .panel.panel-default
+      .panel-heading
+        %i.glyphicon.glyphicon-map-marker
+        &nbsp;
+        %h4 Location
+      .row.ac{style: 'height:200px'}
+        .col-xs-12
+          %a{href: '#', class: 'panel-body', style: 'text-decoration:none'}
+            = pie_chart({'On lot' => 274, 'On trip' => 22, 'Offline' => 4}, {library: {chart: {height: 200}, plotOptions: {pie: {dataLabels: {format: '<b>{point.name}</b>: {point.y}'}}}}})
+
+            
+#inventoryModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+        %h4.modal-title Open issues
+      .modal-body 
+        #container
+                    
+          
+#tripsModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+        %h4.modal-title Open issues
+      .modal-body
+        = line_chart HistoricalTrip.group_by_day(:created_at).count, library: {chart: {height: 185}}
+
+/ Modal
+#myModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+        %h4.modal-title Open issues
+      .modal-body
+        %table.table
+          %thead
+            %tr
+              %th Vehicle
+              %th Issues  
+              %th Usage
+              %th VIN
+              %th Time
+        
+          %tbody
+            - for device in @devices
+              %tr
+                %td= device.vehicle.name
+                %td
+                  %a{href: "/devices/#{device.id}"}= device.latest_history && device.latest_history.formatted_issues
+                %td= device.vehicle.vehicle_usage.name
+                %td= device.vehicle.vin
+                %td= device.latest_history && distance_of_time_in_words(Time.now, device.latest_history && device.latest_history.created_at)
+    / /.modal-content
+  / /.modal-dialog
+/ /.modal

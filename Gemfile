@@ -7,6 +7,14 @@ gem 'rails', '4.0.0'
 
 gem 'unicorn'
 
+gem 'quiet_assets'
+
+gem 'sendgrid'
+
+gem 'letter_opener'
+
+gem "animate-rails"
+
 # Use postgresql as the database for Active Record
 gem 'pg'
 gem 'mongo'
@@ -37,7 +45,12 @@ gem "activeadmin", github: "gregbell/active_admin", branch: "rails4"
 gem 'comfortable_mexican_sofa', '~> 1.8.2', github: 'easierbycode/comfortable_mexican_sofa'
 
 gem 'highcharts-rails', '~> 3.0.0'
+gem 'groupdate'
 gem 'chartkick'
+
+
+gem 'haml_coffee_assets'
+gem 'execjs'
 
 group :development, :test do
   gem 'sqlite3'

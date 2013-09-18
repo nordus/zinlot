@@ -1,8 +1,10 @@
 - content_for :ng_app, 'zin'
 
-.form-signin{ng: {controller: "UserCtrl"}}
+#settings-index{ng: {controller: "UserCtrl"}, style: 'max-width: 400px'}
 
-  %legend General
+  %legend
+    %i.glyphicon.glyphicon-user
+    Contact Information
 
   .form-group
     %label Phone numbers
@@ -47,9 +49,8 @@
 
 
   %legend
-    Notifications&nbsp;
-    %a#notifications-info{data: {trigger: 'hover', toggle: 'popover', placement: 'right', content: 'Subscribe to Geofence, Low Battery, and Engine Health alerts.'}}
-      %i.glyphicon.glyphicon-info-sign
+    %i.glyphicon.glyphicon-warning-sign
+    &nbsp;Alert Subscriptions
 
   %ul.list-group#notification-setup
 
@@ -58,6 +59,7 @@
         Geofence Enter
         .btn-group.pull-right{data: {toggle: 'buttons'}}
           %label.btn
+            -# TODO: implement ng-class instead of Ruby hack
             %button.btn{ng: {click: "toggleNotification('GEOFENCE_ENTER', 'email')"}, class: @current_user.email_notifications.include?('GEOFENCE_ENTER') && 'active'}
               %i.glyphicon.glyphicon-envelope
 
@@ -100,7 +102,37 @@
           %label.btn
             %button.btn{ng: {click: "toggleNotification('LOW_BATT', 'sms')"}, class: @current_user.sms_notifications.include?('LOW_BATT') && 'active'}
               %i.glyphicon.glyphicon-phone
-
-
+  %legend
+    %i.glyphicon.glyphicon-list-alt
+    &nbsp;Report Subscriptions
+  
+  .panel.panel-default             
+  
+    .panel-body
+      %table.table.table-hover
+        %thead
+          %tr
+            %th Name       
+            %th Frequency
+            %th
+        %tbody
+        - @reports.each do |report|
+          %tr{class: 'clickToShow', id: "#{report.id}"}
+            %td
+              %i{class: file_format_icon(report.format)}
+              &nbsp;
+              = report.name
+            %td= frequency_formatted(report.interval) + ' @ ' + report.time.strftime('%l:%M %p')
+            %td.action-icons
+              = link_to(edit_report_path(report), {}) do
+                %i.glyphicon.glyphicon-pencil  
+                
+              = link_to(report, {:method => :delete, :data => { :confirm => 'Are you sure?' }}) do
+                %i.glyphicon.glyphicon-minus-sign
+      
+      = link_to 'New', new_report_path, class: 'btn btn-success'
+      
 :coffeescript
-  $('#notifications-info').popover()
+  $ ->
+    $('.clickToShow').on 'click', (e) ->
+      window.location = window.location.protocol + '//' + window.location.host + '/reports/' + e.currentTarget.id + '/edit'

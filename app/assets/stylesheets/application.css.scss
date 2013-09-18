@@ -1,11 +1,74 @@
 /*
  *= require bootstrap
  *= require fonts
+ *= require icomoon
+ *= require campaigns
+ *= require animate
  *= require_self
  */
 
 html, body, #layout { height:100% }
 body                { background-image:linear-gradient(#FAFAFA, #E0E0E0); background-repeat:no-repeat; background-attachment:fixed }
+
+/* dashboard#index */
+#dashboard {
+  &.index {
+    .panel-body h1 {
+      margin-top: 0
+    }
+    
+    .panel {
+      
+      min-height: 275px;
+      
+      .row {
+        padding: 15px 0 5px;
+      }
+
+      .panel-body {
+        padding: 0;
+        /*min-height: 255px;
+        height: 255px;*/
+      }
+
+    }
+  }
+}
+
+/* settings#index */
+
+#settings-index {
+  .list-group-item {
+    padding: 0 15px;
+  }
+  
+  .table-hover tr {
+    cursor: pointer;
+  }
+}
+/* action icons */
+
+.action-icons {
+  a + a {
+    margin-left: 7px;
+  }
+}
+
+/* pretty signin inputs */
+
+#signin {
+  input[type="email"] {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: -1px;
+  }
+
+  input[type="password"] {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      margin-bottom: 10px;
+  }
+}
 
 /* get rid of system generated borders */
 a:active { outline:none; }
@@ -83,7 +146,9 @@ a:active { outline:none; }
 
 /* TYPOGRAPHY */
 .ac { text-align:center }
-td > .glyphicon-warning-sign, .dk-red, #alert-type-toggler .btn.active .glyphicon-warning-sign { color:#a61120 }
+td > .glyphicon-warning-sign, .dk-red, #alert-type-toggler .btn.active .glyphicon-warning-sign { color:#B94A48 }
+.red { color: #B94A48 !important }
+.dk-green { color: #468847 }
 
 #alert-type-toggler .btn.active {
   .glyphicon-screenshot { color:#6AA5CF }

@@ -4,4 +4,10 @@ class DealerLot < ActiveRecord::Base
   #belongs_to :dealer_group
 
   has_many :vehicles
+  
+  has_many :campaigns
+  
+  def to_s
+    name
+  end
 end

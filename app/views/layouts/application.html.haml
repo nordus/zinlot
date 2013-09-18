@@ -7,8 +7,9 @@
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "https://d3dy5gmtp8yhk7.cloudfront.net/2.1/pusher.min.js"
     = javascript_include_tag "application", "data-turbolinks-track" => true
+    = javascript_include_tag "http://code.highcharts.com/modules/exporting.js"
     = csrf_meta_tags
-  %body
+  %body{id: controller_name, class: action_name}
     #layout
       #menu
         .row{style: 'margin-left:0'}
@@ -19,4 +20,12 @@
         = render 'menu'
 
       .col-xs-12{style: 'height:100%'}
+        - if notice
+          #notice.animated.bounceInDown.ac{style: 'z-index:999; position:absolute; padding:20px 10px; border-radius:10px 10px 10px 10px; background-color: rgba(0,0,0,0.8); color: white; width: 350px'}= notice
+          
+          :coffeescript
+            setTimeout ->
+              $('#notice').addClass('bounceOutRight')
+            , 3000
+            
         = yield
