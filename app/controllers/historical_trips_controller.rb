@@ -5,7 +5,9 @@ class HistoricalTripsController < ApplicationController
   respond_to :html, :json
 
   def create
-    respond_with HistoricalTrip.create(params.permit(:start_at, :device_id, :end_at, :duration, :idle_seconds, :miles, :ending_mileage, :highest_speed, :start_date, :end_date, :num_hard_brake, :num_hard_accel, :num_speed_event, :num_rpm_event, :num_corner_l, :num_corner_r, :num_very_hard_brake, :num_very_hard_accel, :num_hard_corner_l, :num_hard_corner_r, :num_enter_geo_zone, :num_exit_geo_zone))
+    p '.. HISTORICAL TRIP RECEIVED'
+    p params[:historical_trip]
+    respond_with HistoricalTrip.create(params.require(:historical_trip).permit(:start_at, :device_id, :end_at, :duration, :idle_seconds, :miles, :ending_mileage, :highest_speed, :start_date, :end_date, :num_hard_brake, :num_hard_accel, :num_speed_event, :num_rpm_event, :num_corner_l, :num_corner_r, :num_very_hard_brake, :num_very_hard_accel, :num_hard_corner_l, :num_hard_corner_r, :num_enter_geo_zone, :num_exit_geo_zone))
   end
   
   def index

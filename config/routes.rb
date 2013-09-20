@@ -1,10 +1,14 @@
 Zinlot::Application.routes.draw do
 
+  get "about_us" => "marketing#about_us"
+  get "contact_us" => "marketing#contact_us"
+  get "how_it_works" => "marketing#how_it_works"
+  get "how_it_helps" => "marketing#how_it_helps"
   resources :campaigns
 
   resources :reports
 
-  get "marketing/index"
+
   devise_for :users
   resources :users
   get 'settings' => 'users#index'
@@ -17,7 +21,7 @@ Zinlot::Application.routes.draw do
   get "map/index"
   get "devices" => "devices#index"
   get "vehicles" => 'vehicles#index'
-  get 'dashboard/index'
+  get 'dashboard/index', as: :user_root
   get 'test-drives' => 'historical_trips#index'
   get 'test-drives/week' => 'historical_trips#week'
   get 'test-drives/:id' => 'historical_trips#show'
@@ -32,7 +36,7 @@ Zinlot::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   # You can have the root of your site routed with "root"
-  root 'dashboard#index'
+  root 'marketing#index'
   ActiveAdmin.routes(self)
 
   # Example of regular route:

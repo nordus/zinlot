@@ -1,4 +1,10 @@
 - if current_user
+  .row{style: 'margin-left:0'}
+    %a.navbar-brand{href: '/dashboard/index', style: "color:#ddd; font-family:'Ubuntu Condensed'"}
+      ZINL
+      %i.glyphicon.glyphicon-map-marker{style: 'color:#6AA5CF; margin-left:-6px; margin-right:-4px'}
+      T
+
   %ul.nav
     %li
       %a#avatar-list-item.dropdown-toggle{href: '#', data: {toggle: 'dropdown'}}
@@ -8,39 +14,23 @@
       %ul.dropdown-menu
         %li
           = link_to raw("<i class='glyphicon glyphicon-log-out'></i> Log out"), destroy_user_session_path, method: 'DELETE'
-    %li.active
-      %a{:href => '/'}
-        %i.glyphicon.glyphicon-dashboard
-        &nbsp;Dashboard
-    %li
-      %a{:href => '/devices'}
-        %i.glyphicon.glyphicon-eye-open
-        &nbsp;Live Inventory
-    %li
-      %a{:href => '/test-drives'} 
-        %i.glyphicon.glyphicon-road
-        &nbsp;Trips
-    %li
-      %a{:href => '/alerts'}
-        %i.glyphicon.glyphicon-bell
-        &nbsp;Alerts
-    %li
-      %a{href: '/settings'}
-        %i.glyphicon.glyphicon-cog
-        Account
-    %li
-      %a{href: '/campaigns'}
-        %i.glyphicon.glyphicon-bullhorn
-        &nbsp;Campaigns
+    = active_link_to raw('<i class="glyphicon glyphicon-dashboard"></i> Dashboard'), '/dashboard/index', :wrap_tag => :li, :active => :exclusive
+    = active_link_to raw('<i class="glyphicon glyphicon-eye-open"></i> Live Inventory'), '/devices', :wrap_tag => :li
+    = active_link_to raw('<i class="glyphicon glyphicon-road"></i> Trips'), '/test-drives', :wrap_tag => :li
+    = active_link_to raw('<i class="glyphicon glyphicon-bell"></i> Alerts'), '/alerts', :wrap_tag => :li
+    = active_link_to raw('<i class="glyphicon glyphicon-bullhorn"></i> Campaigns'), '/campaigns', :wrap_tag => :li
+    = active_link_to raw('<i class="glyphicon glyphicon-cog"></i> Settings'), '/settings', :wrap_tag => :li
 - else
+  .row{style: 'margin-left:0'}
+    %a.navbar-brand{href: '/', style: "color:#ddd; font-family:'Ubuntu Condensed'"}
+      ZINL
+      %i.glyphicon.glyphicon-map-marker{style: 'color:#6AA5CF; margin-left:-6px; margin-right:-4px'}
+      T
+
   %ul.nav
-    %li
-      %a{href: '/users/sign_in'}
-        %i.glyphicon.glyphicon-log-in
-        &nbsp;Log in
-    %li.active
-      %a{:href => '#'} About Us
-    %li
-      %a{:href => '#'} Partners
-    %li
-      %a{:href => '#'} Connect
+    = active_link_to raw('<i class="glyphicon glyphicon-log-in"></i> Log in'), '/users/sign_in', :wrap_tag => :li
+    = active_link_to 'Home', '/', :wrap_tag => :li, :active => :exclusive
+    = active_link_to 'How It Works', '/how_it_works', :wrap_tag => :li
+    = active_link_to 'How It Helps', '/how_it_helps', :wrap_tag => :li
+    = active_link_to 'Connect', '/contact_us', :wrap_tag => :li
+    = active_link_to 'About Us', '/about_us', :wrap_tag => :li

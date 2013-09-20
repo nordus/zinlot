@@ -17,4 +17,6 @@ class ApplicationController < ActionController::Base
   def current_dealer_group
     @current_dealer_group ||= DealerGroup.find_by_subdomain(request.subdomains[0])
   end
+
+
 end
