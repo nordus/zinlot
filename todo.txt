@@ -1,0 +1,6 @@
+current:
+ - send_sms should use phone numbers which have subscribed to alert_type
+
+future:
+ - Alert#send_email
+   - should use emails which have subscribed to alert_type
