@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Noble's Campaign",
+        "start_date": "2013-10-25T03:56:18 +07:00",
+        "sent": 542,
+        "opened": 213,
+        "clicked": 31,
+        "visits": 14,
+        "revenues": "$6,199.00"
+    },
+    {
+        "name": "Mavis's Campaign",
+        "start_date": "2013-10-09T17:08:07 +07:00",
+        "sent": 442,
+        "opened": 190,
+        "clicked": 17,
+        "visits": 13,
+        "revenues": "$8,958.00"
+    },
+    {
+        "name": "Grace's Campaign",
+        "start_date": "2013-10-26T12:16:41 +07:00",
+        "sent": 271,
+        "opened": 191,
+        "clicked": 26,
+        "visits": 23,
+        "revenues": "$3,079.00"
+    },
+    {
+        "name": "Carol's Campaign",
+        "start_date": "2013-10-10T10:13:14 +07:00",
+        "sent": 423,
+        "opened": 151,
+        "clicked": 18,
+        "visits": 12,
+        "revenues": "$3,617.00"
+    },
+    {
+        "name": "Anastasia's Campaign",
+        "start_date": "2013-10-11T06:35:25 +07:00",
+        "sent": 413,
+        "opened": 234,
+        "clicked": 31,
+        "visits": 23,
+        "revenues": "$4,454.00"
+    },
+    {
+        "name": "Ferrell's Campaign",
+        "start_date": "2013-10-10T21:46:10 +07:00",
+        "sent": 538,
+        "opened": 188,
+        "clicked": 26,
+        "visits": 22,
+        "revenues": "$4,774.00"
+    },
+    {
+        "name": "Horne's Campaign",
+        "start_date": "2013-10-13T12:52:15 +07:00",
+        "sent": 289,
+        "opened": 287,
+        "clicked": 10,
+        "visits": 21,
+        "revenues": "$6,274.00"
+    },
+    {
+        "name": "Dawn's Campaign",
+        "start_date": "2013-10-31T18:35:34 +07:00",
+        "sent": 499,
+        "opened": 305,
+        "clicked": 8,
+        "visits": 23,
+        "revenues": "$8,442.00"
+    },
+    {
+        "name": "Marsha's Campaign",
+        "start_date": "2013-10-20T01:40:53 +07:00",
+        "sent": 511,
+        "opened": 156,
+        "clicked": 11,
+        "visits": 18,
+        "revenues": "$6,089.00"
+    },
+    {
+        "name": "Sheena's Campaign",
+        "start_date": "2013-10-13T17:53:31 +07:00",
+        "sent": 361,
+        "opened": 230,
+        "clicked": 15,
+        "visits": 10,
+        "revenues": "$8,778.00"
+    }
+]

@@ -1,0 +1,95 @@
+.box-header
+  %ul.nav.nav-tabs
+    %li.active
+      %a{href: '#!/create'}
+        %span{'ng-hide' => 'campaign.id'} Create
+        %span{'ng-show' => 'campaign.id'} Edit
+        {{ campaign.name }}
+    %li
+      %a{href: '#!/run'} Run
+    %li
+      %a{href: '#!/analytics'} Analytics
+
+
+%form.box-body.form-inline{name: 'campaign_form'}
+
+  .form-group{'ng-class' => "{'has-warning': !campaign.name}"}
+    %input.form-control{'ng-model' => 'campaign.name', placeholder: 'Campaign name'}
+  .form-group
+    %input.form-control{'ng-model' => 'campaign.coupon_codes', placeholder: 'Coupon codes'}
+
+  .row
+    .col-xs-12
+      .form-group{'ng-class' => "{'has-warning': !campaign.dealer_lot_id}"}
+        %label Lot:&nbsp;
+        .form-group
+          %select.form-control{name: 'dealer_lot_id', 'ng-model' => 'campaign.dealer_lot_id', 'ng-options' => 'dl.id as dl.name for dl in dealerLots'}
+      .form-group
+        %label{style: 'line-height:85px'} Email time:
+      .form-group
+        .timepicker{'ng-model' => 'campaign.email_time'}
+          %timepicker{'minute-step' => '15', 'readonly-input' => 'true'}
+
+
+  .form-group
+    %label Send on Trigger
+
+    %ul.nav.nav-tabs#trigger-tabs
+      %li{'ng-repeat' => "t in ['MILEAGE_INTERVAL', 'SERVICE_ISSUES', 'ODOMETER', 'DISTANCE_TO_DEALER']", 'ng-class' => "{active: t == 'MILEAGE_INTERVAL'}"}
+        %a{'data-toggle' => 'tab', 'data-target' => '#' + "{{t}}"} {{ t | titleize }}
+
+    .tab-content
+      #MILEAGE_INTERVAL.active.tab-pane
+        .box-body
+          .form-inline
+            .form-group{'ng-class' => "{'has-warning': !campaign.mileage_interval}"}
+              %select.form-control{'ng-model' => 'campaign.mileage_interval'}
+                %option{value: '20'} every 20 miles
+            .form-group
+              .btn-group
+                %button.btn.btn-default{type: 'button', 'ng-model' => 'campaign.mileage_interval_pct', 'btn-radio' => "0.9"} 10% before
+                %button.btn.btn-default{type: 'button', 'ng-model' => 'campaign.mileage_interval_pct', 'btn-radio' => "1.0"} at mileage
+      #SERVICE_ISSUES.tab-pane
+        .box-body.has-warning
+          %div{'ng-class' => "{'form-control': campaign.trigger == 'SERVICE_ISSUES' && !campaign.service_issues.length}"}
+            %label.checkbox-inline{'ng-repeat' => 'si in serviceIssues'}
+              %input{type: 'checkbox', 'ng-checked' => 'siIndex(si) != -1', 'ng-click' => 'toggleServiceIssue(si)'}
+              {{ si | lowercase }}
+      #ODOMETER.tab-pane
+        .box-body
+          .form-group{'ng-class' => "{'has-warning': !campaign.odometer}"}
+            %input.form-control{type: 'number', name: 'odometer', 'ng-model' => 'campaign.odometer', placeholder: 'Odometer'}
+            %p.help-block{'ng-show' => 'campaign_form.odometer.$error.number'} Enter a valid number
+      #DISTANCE_TO_DEALER.tab-pane
+        .box-body
+          .form-group{'ng-class' => "{'has-warning': !campaign.distance_to_dealer}"}
+            %input.form-control{type: 'number', name: 'distance_to_dealer', 'ng-model' => 'campaign.distance_to_dealer', placeholder: 'Distance to dealer'}
+            %p.help-block{'ng-show' => 'campaign_form.distance_to_dealer.$error.number'} Enter a valid number
+
+  .row
+    .col-xs-12
+      %button.btn.btn-success{'ng-click' => 'saveCampaign()', 'ng-class' => '{disabled: invalid()}'} Save
+      %button.btn{'ng-click' => 'campaign = newCampaign()', 'ng-show' => 'campaign.id'} Cancel
+
+.panel.panel-default
+  .panel-heading
+    %h4 Listing campaigns
+
+  %table.table.table-condensed
+    %tr
+      %th Name
+      %th Lot
+      %th Trigger
+      %th Email time
+      %td
+    %tr{'ng-repeat' => 'c in campaigns', 'ng-class' => '{red: campaign == c}'}
+      %td {{ c.name }}
+      %td {{ dealerLotName(c.dealer_lot_id) }}
+      %td {{ c.trigger | lowercase }}
+      %td {{ c.email_time | date:'h:mm a' }}
+      %td
+        %a.btn{'ng-click' => '$parent.campaign = c', 'ng-class' => '{disabled: campaign == c}', style: 'padding: 0 12px'}
+          %i.glyphicon.glyphicon-pencil
+
+        %a.btn{'ng-click' => 'confirmDelete($index)', 'ng-class' => '{disabled: campaign == c}', style: 'padding: 0 12px'}
+          %i.glyphicon.glyphicon-remove-sign

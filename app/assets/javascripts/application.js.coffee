@@ -5,9 +5,12 @@
 #= require angular
 #= require angular-resource
 #= require angular-route
+#= require ui-bootstrap-0.6.0.js
+#= require ui-bootstrap-tpls-0.6.0.js
 #= require_self
 #= require filters
 #= require global
+#= require_tree ./controllers
 
 #= require gauge
 #= require lodash
@@ -22,7 +25,29 @@
 #= require campaigns
 #= require twitter/bootstrap
 
-@Zin ?= angular.module('zin', ['ngResource', 'ngRoute'])
+angular.module('RestfulResourceModule', ['ngResource'])
+  .factory 'RestfulResource', ($resource) ->
+    (url, params, methods) ->
+      defaults =
+        update:
+          method: 'put'
+        create:
+          method: 'post'
+
+      methods = angular.extend(defaults, methods)
+
+      resource = $resource(url, params, methods)
+
+      resource.prototype.$save = (cb) ->
+        if @id
+          return @$update(cb)
+        else
+          return @$create(cb)
+
+      return resource
+
+@Zin = angular.module('zin', ['RestfulResourceModule', 'ngRoute', 'ui.bootstrap'])
+
 
 Zin.config ["$httpProvider", ($httpProvider) ->
   # Inject the CSRF token
@@ -32,17 +57,5 @@ Zin.config ["$httpProvider", ($httpProvider) ->
   $httpProvider.defaults.headers.common['Accept'] = "application/json"
 ]
 
-new Pusher('f513119581ede36ac6c4').subscribe('guard-pusher').bind 'guard', ->
-  location.reload()
-
-_gauges = _gauges or []
-(->
-  t = document.createElement("script")
-  t.type = "text/javascript"
-  t.async = true
-  t.id = "gauges-tracker"
-  t.setAttribute "data-site-id", "521fe563613f5d510a000169"
-  t.src = "//secure.gaug.es/track.js"
-  s = document.getElementsByTagName("script")[0]
-  s.parentNode.insertBefore t, s
-)()
+Zin.config ($locationProvider) ->
+  $locationProvider.hashPrefix "!"

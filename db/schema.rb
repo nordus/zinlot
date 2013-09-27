@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130912023845) do
+ActiveRecord::Schema.define(version: 20130926035116) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -76,12 +76,13 @@ ActiveRecord::Schema.define(version: 20130912023845) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "dealer_lot_id"
-    t.integer  "odometer_gte"
-    t.integer  "distance_to_dealer_below"
-    t.integer  "service_notifications_mask"
+    t.integer  "odometer"
+    t.integer  "distance_to_dealer"
+    t.integer  "service_issues_mask"
     t.string   "trigger"
     t.integer  "mileage_interval"
     t.float    "mileage_interval_pct"
+    t.boolean  "is_running"
   end
 
   create_table "cars", force: true do |t|

@@ -1,3 +1,7 @@
+Zin.filter "titleize", ->
+  (str) ->
+    str.charAt(0) + str.slice(1).replace(/_/g, ' ').toLowerCase()
+
 Zin.filter "tel", ->
   (tel) ->
     return ""  unless tel

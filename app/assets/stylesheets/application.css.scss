@@ -84,21 +84,6 @@ a:active { outline:none; }
   margin-bottom: 18px;
 }
 
-.box-header {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  padding-left: 9px;
-}
-.box-header, .box-footer {
-  background-image: linear-gradient(#FAFAFA, #F2F2F2);
-  border-bottom: 1px solid #CDCDCD;
-  color: #555555;
-  text-shadow: 0 1px #FFFFFF;
-}
-.box-header .nav-tabs {
-  border-bottom: medium none;
-  margin-left: -9px;
-}
 .table-header {
   background: linear-gradient(#FBFBFB, #F1F1F1);
   border-bottom: 1px solid #D1D2DA;

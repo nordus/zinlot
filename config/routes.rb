@@ -1,5 +1,6 @@
 Zinlot::Application.routes.draw do
 
+  get "campaigns/index"
   get "about_us" => "marketing#about_us"
   get "contact_us" => "marketing#contact_us"
   get "how_it_works" => "marketing#how_it_works"
@@ -21,7 +22,7 @@ Zinlot::Application.routes.draw do
   get "map/index"
   get "devices" => "devices#index"
   get "vehicles" => 'vehicles#index'
-  get 'dashboard/index', as: :user_root
+  get 'dashboard/index' => 'dashboard#index', as: :user_root
   get 'test-drives' => 'historical_trips#index'
   get 'test-drives/week' => 'historical_trips#week'
   get 'test-drives/:id' => 'historical_trips#show'

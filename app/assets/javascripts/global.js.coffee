@@ -1,5 +1,5 @@
 Zin.factory 'Global', -> {
-  allServiceNotifications: window.allServiceNotifications
-  allDealerLots: window.allDealerLots
+  serviceIssues: window.serviceIssues
+  dealerLots: window.dealerLots
   JST: window.JST
 }

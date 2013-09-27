@@ -38,11 +38,11 @@ class Alert < ActiveRecord::Base
   def send_sms
     return unless Rails.env == 'production'
 
-    if event = GEOFENCE_EXIT
+    if event = 'GEOFENCE_EXIT'
       message = geofence_exit_message
-    elsif event = LOW_BATT
+    elsif event = 'LOW_BATT'
       message = low_batt_message
-    elsif event = DTC
+    elsif event = 'DTC'
       message = dtc_message
     end
 

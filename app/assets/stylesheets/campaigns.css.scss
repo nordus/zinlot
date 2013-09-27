@@ -1,7 +1,22 @@
-#campaigns {
-  &.index, &.edit {
-    .row + .row {
-      margin-top: 10px;
-    }
+#analytics-table {
+  .panel-heading td {
+    border-top: medium none;
+  }
+
+  h1, h2, h3, h6 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .ellipsis {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;              /* "overflow" value must be different from "visible" */
+    text-align:    left;
+    text-overflow:    ellipsis;
+  }
+
+  .panel-heading a.btn:active {
+    box-shadow: none;
   }
 }

@@ -1,0 +1,42 @@
+.box-header
+  %ul.nav.nav-tabs
+    %li
+      %a{href: '#!/create'} Create
+    %li
+      %a{href: '#!/run'} Run
+    %li.active
+      %a{href: '#!/analytics'} Analytics
+
+
+#analytics-table.box-body
+  .panel.panel-default{style: 'min-width: 475px', 'ng-repeat' => 'c in analytics'}
+    .panel-heading
+      .row
+        .col-xs-12
+          .col-xs-5
+            %a.btn.ellipsis{style: 'padding: 0', 'data-target' => "#analytics-row{{$index}}", 'data-toggle' => 'collapse'}
+              %i.glyphicon.glyphicon-plus-sign
+              &nbsp;
+              %h3{style: 'display: inline'}
+                {{ c.name }}
+            %br
+            %small started {{ c.start_date.replace(' ', '') | date:'MMM d yyyy' }}
+          .col-xs-1.ac
+            %h3 {{ c.sent }}
+            %h6 sent
+          .col-xs-1.ac
+            %h3 {{ c.opened }}
+            %h6 opened
+          .col-xs-1.ac
+            %h3 {{ c.clicked }}
+            %h6 clicked
+          .col-xs-1.ac
+            %h3 {{ c.visits }}
+            %h6 visits
+          .col-xs-3.ac
+            %h3 {{ c.revenues }}
+            %h6 revenues
+
+    .panel-collapse.collapse{id: "analytics-row{{$index}}"}
+      %img{src: '/dummy_data/analytics_dummy_chart.png'}
+
