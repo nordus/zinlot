@@ -4,7 +4,7 @@ class DeviceHistory < ActiveRecord::Base
 
   belongs_to :device, primary_key: :imei
 
-  #after_save :update_device
+  after_save :update_device
   
   #after_save :create_alert_if_has_open_issue
 
@@ -19,6 +19,7 @@ class DeviceHistory < ActiveRecord::Base
       device.update({latest_history_id: id, has_open_issue: has_open_issue, has_low_batt: has_low_batt, has_dtc: has_dtc})
     end
   end
+
   def formatted_issues
     issues = []
     if has_low_batt
@@ -30,6 +31,7 @@ class DeviceHistory < ActiveRecord::Base
 
     issues.join(', ')
   end
+
   def create_alert_if_has_open_issue
     if has_low_batt
       Alert.create({event: 'LOW_BATT', device_id: device_id})
