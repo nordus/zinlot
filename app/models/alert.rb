@@ -1,7 +1,7 @@
 class Alert < ActiveRecord::Base
   attr_protected :created_at
 
-  #after_save :send_sms
+  after_save :send_sms
   
   #after_save :send_alert_to_subscribed_users
 
