@@ -1,5 +1,6 @@
 current:
- - send_sms should use phone numbers which have subscribed to alert_type
+ - send_sms should use User.notification_phone_nbrs for users
+   where sms_notifications_mask includes the alert_type
 
 future:
  - Alert#send_email
