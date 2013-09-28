@@ -6,7 +6,7 @@ class DeviceHistory < ActiveRecord::Base
 
   after_save :update_device
   
-  #after_save :create_alert_if_has_open_issue
+  after_save :create_alert_if_has_open_issue
 
   #before_save :set_has_low_batt_and_has_dtc
   

@@ -1,9 +1,9 @@
 class Alert < ActiveRecord::Base
   attr_protected :created_at
 
-  after_save :send_sms
+  #after_save :send_sms
   
-  after_save :send_alert_to_subscribed_users
+  #after_save :send_alert_to_subscribed_users
 
   belongs_to :device, primary_key: :imei
 
