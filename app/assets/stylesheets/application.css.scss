@@ -35,7 +35,7 @@ body                { background-image:linear-gradient(#FAFAFA, #E0E0E0); backgr
   }
 }
 
-/* settings#index */
+/* settings - users#index */
 
 #settings-index {
   .list-group-item {
@@ -48,9 +48,18 @@ body                { background-image:linear-gradient(#FAFAFA, #E0E0E0); backgr
 }
 /* action icons */
 
-.action-icons {
-  a + a {
-    margin-left: 7px;
+#users {
+  .action-icons {
+    padding-right: 0;
+    text-align: right;
+
+    a {
+      color: #6AA5CF;
+    }
+
+    a + a {
+      margin-left: 12px;
+    }
   }
 }
 

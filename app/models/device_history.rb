@@ -8,7 +8,7 @@ class DeviceHistory < ActiveRecord::Base
   
   after_save :create_alert_if_has_open_issue
 
-  #before_save :set_has_low_batt_and_has_dtc
+  before_save :set_has_low_batt_and_has_dtc
   
   scope :not_in, lambda { |device_ids| { :conditions => ['device_id NOT IN [?]', device_ids] } }
 
