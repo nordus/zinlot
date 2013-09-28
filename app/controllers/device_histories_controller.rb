@@ -5,6 +5,6 @@ class DeviceHistoriesController < ApplicationController
   respond_to :html, :json
 
   def create
-    respond_with DeviceHistory.create(params.permit(:device_id, :dtc_codes, :vbatt))
+    respond_with DeviceHistory.create(params.require(:device_history).permit(:device_id, :dtc_codes, :vbatt))
   end
 end
