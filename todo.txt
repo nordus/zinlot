@@ -1,8 +1,7 @@
 current:
- - fix DeviceHistory creation
+ - test Alert#send_sms (send to my #).  make sure each message looks good, then change deliver_to # to User.notification_phone_nbrs
+   for users where sms_notifications_mask includes the alert_type
 
 future:
- - send_sms should use User.notification_phone_nbrs for users
-   where sms_notifications_mask includes the alert_type
  - Alert#send_email
    - should use emails which have subscribed to alert_type

@@ -1,3 +1,5 @@
+require 'twilio-ruby'
+
 class Alert < ActiveRecord::Base
   attr_protected :created_at
 
@@ -36,7 +38,7 @@ class Alert < ActiveRecord::Base
   end
   
   def send_sms
-    return unless Rails.env == 'production'
+    #return unless Rails.env == 'production'
 
     if event == 'GEOFENCE_EXIT'
       message = geofence_exit_message

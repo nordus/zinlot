@@ -27,6 +27,8 @@ gem 'devise', '~> 3.1.0.rc2'
 
 gem 'rabl'
 
+gem 'twilio-ruby'
+
 gem 'protected_attributes'
 
 gem 'nokogiri'
