@@ -27,11 +27,12 @@ class AlertsController < ApplicationController
 
     #DeviceHistory.create_if_change_in_dtc_or_vbatt(alert: params[:alert], has_low_batt: has_low_batt, has_dtc: has_dtc)
 
-    alert = Alert.new
-    alert.device_id = params[:alert][:device_id]
-    alert.event_type = params[:alert][:event_type]
-    alert.save
-    respond_with alert
+    # TODO: update to Rails 4 syntax
+    #alert = Alert.new
+    #alert.device_id = params[:alert][:device_id]
+    #alert.event_type = params[:alert][:event_type]
+    #alert.save
+    #respond_with alert
   end
 
 end

@@ -9,6 +9,8 @@ class Alert < ActiveRecord::Base
 
   belongs_to :device, primary_key: :imei
 
+  validates_presence_of :device_id
+
   EVENTS = %w[GEOFENCE_ENTER GEOFENCE_EXIT LOW_BATT DTC]
 
   def send_alert_to_subscribed_users
@@ -40,7 +42,9 @@ class Alert < ActiveRecord::Base
   def send_sms
     #return unless Rails.env == 'production'
 
-    if event == 'GEOFENCE_EXIT'
+    if event == 'GEOFENCE_ENTER'
+      message = geofence_enter_message
+    elsif event == 'GEOFENCE_EXIT'
       message = geofence_exit_message
     elsif event == 'LOW_BATT'
       message = low_batt_message
@@ -48,20 +52,41 @@ class Alert < ActiveRecord::Base
       message = dtc_message
     end
 
+    p '.. message:'
+    p message
+
     return unless message
 
-    # put your own credentials here
-    account_sid = 'ACd4c11bdd5c3dbeb127d6f42e7c979b6f'
-    auth_token = 'bc3f4277d4bcafeaea13fadd1f6062c9'
+    sms_recipients = User.with_sms_notification(event)
 
-    # set up a client to talk to the Twilio REST API
-    @client = Twilio::REST::Client.new account_sid, auth_token
+    for sms_recipient in sms_recipients
 
-    @client.account.sms.messages.create(
-        :from => '+14806488904',
-        :to => '+16023413321',
-        :body => message
-    )
+      phone_numbers = sms_recipient.notification_phone_nbrs
+
+      if phone_numbers.present?
+
+        for phone_number in phone_numbers.split(',')
+
+          # put your own credentials here
+          account_sid = 'ACd4c11bdd5c3dbeb127d6f42e7c979b6f'
+          auth_token = 'bc3f4277d4bcafeaea13fadd1f6062c9'
+
+          # set up a client to talk to the Twilio REST API
+          @client = Twilio::REST::Client.new account_sid, auth_token
+
+          @client.account.sms.messages.create(
+              :from => '+14806488904',
+              #:to => '+16023413321',
+              :to => "+1#{phone_number}",
+              :body => message
+          )
+        end
+      end
+    end
+  end
+
+  def geofence_enter_message
+    "ENTER Geofence: #{device_id} entered geofence #{Geofence.friendly_name(geofence_id)}"
   end
 
   def geofence_exit_message

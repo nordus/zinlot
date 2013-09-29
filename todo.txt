@@ -1,6 +1,5 @@
 current:
- - test Alert#send_sms (send to my #).  make sure each message looks good, then change deliver_to # to User.notification_phone_nbrs
-   for users where sms_notifications_mask includes the alert_type
+
 
 future:
  - Alert#send_email
