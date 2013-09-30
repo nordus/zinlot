@@ -102,6 +102,18 @@
           %label.btn
             %button.btn{ng: {click: "toggleNotification('LOW_BATT', 'sms')"}, class: @current_user.sms_notifications.include?('LOW_BATT') && 'active'}
               %i.glyphicon.glyphicon-phone
+
+    %li.list-group-item
+      .row
+        Ignition On
+        .btn-group.pull-right{data: {toggle: 'buttons'}}
+          %label.btn
+            %button.btn{ng: {click: "toggleNotification('IGNITION_ON', 'email')"}, class: @current_user.email_notifications.include?('IGNITION_ON') && 'active'}
+              %i.glyphicon.glyphicon-envelope
+
+          %label.btn
+            %button.btn{ng: {click: "toggleNotification('IGNITION_ON', 'sms')"}, class: @current_user.sms_notifications.include?('IGNITION_ON') && 'active'}
+              %i.glyphicon.glyphicon-phone
   %legend
     %i.glyphicon.glyphicon-list-alt
     &nbsp;Report Subscriptions

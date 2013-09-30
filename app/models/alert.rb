@@ -11,21 +11,7 @@ class Alert < ActiveRecord::Base
 
   validates_presence_of :device_id
 
-  EVENTS = %w[GEOFENCE_ENTER GEOFENCE_EXIT LOW_BATT DTC]
-
-  def send_alert_to_subscribed_users
-    # send SMS
-    users_with_sms_notification = User.with_sms_notification(event)
-    users_with_email_notification = User.with_email_notification(event)
-    
-    for user in users_with_sms_notification
-      # send SMS
-    end
-    
-    for user in users_with_email_notification
-      # send Email
-    end
-  end
+  EVENTS = %w[GEOFENCE_ENTER GEOFENCE_EXIT LOW_BATT DTC IGNITION_ON]
   
   def event=(event)
     self.event_type = EVENTS.index(event)
@@ -50,6 +36,8 @@ class Alert < ActiveRecord::Base
       message = low_batt_message
     elsif event == 'DTC'
       message = dtc_message
+    elsif event == 'IGNITION_ON'
+      message = ignition_on_message
     end
 
     p '.. message:'
@@ -105,5 +93,9 @@ class Alert < ActiveRecord::Base
       s_if_plural = (dtc_codes && dtc_codes.length > 1) ? 's' : ''
       "#{device.imei} reported engine trouble code#{s_if_plural} #{device.latest_dtc}"
     end
+  end
+
+  def ignition_on_message
+    "#{device_id} turned ignition on"
   end
 end

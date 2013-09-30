@@ -33,6 +33,7 @@ Zinlot::Application.routes.draw do
   resources :historical_trips
   resources :geofence_violations
   resources :device_histories
+  resources :alerts
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
