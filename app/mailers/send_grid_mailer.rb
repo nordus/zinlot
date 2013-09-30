@@ -20,8 +20,7 @@ class SendGridMailer < ActionMailer::Base
 
   def alert_message(user, subject, body)
     if recipients = user.notification_emails.present? && user.notification_emails.split(',')
-      sendgrid_recipients recipients
-      mail :subject => subject, :body => body
+      mail :to => recipients, :subject => subject, :body => body
     end
   end
 end
