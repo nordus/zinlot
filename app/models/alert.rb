@@ -74,7 +74,7 @@ class Alert < ActiveRecord::Base
     end
 
     for email_recipient in email_recipients
-      SendGridMailer.deliver_alert_message(email_recipient, event, message)
+      SendGridMailer.alert_message(email_recipient, event, message).deliver
     end
   end
 
