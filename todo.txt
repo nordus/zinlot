@@ -1,5 +1,5 @@
 current:
-
+ - geofence_violation does not have event_type
 
 future:
  - Alert#send_email

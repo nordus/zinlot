@@ -1,6 +1,7 @@
 class GeofenceViolation < ActiveRecord::Base
   # attr_accessible :title, :body
-  attr_protected :created_at
+  #attr_protected :created_at
+  attr_accessible :event, :device_id, :event, :geofence_id, :trip_start_at, :update_time
   
   belongs_to :device, primary_key: :imei
 
