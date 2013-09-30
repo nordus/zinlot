@@ -46,6 +46,7 @@ class Alert < ActiveRecord::Base
     return unless message
 
     sms_recipients = User.with_sms_notification(event)
+    email_recipients = User.with_email_notification(event)
 
     for sms_recipient in sms_recipients
 
@@ -70,6 +71,10 @@ class Alert < ActiveRecord::Base
           )
         end
       end
+    end
+
+    for email_recipient in email_recipients
+      SendGridMailer.deliver_alert_message(email_recipient, event, message)
     end
   end
 
