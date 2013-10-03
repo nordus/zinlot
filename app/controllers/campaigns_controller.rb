@@ -30,6 +30,6 @@ private
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def campaign_params
-    params.permit(:coupon_codes, :dealer_lot_id, :distance_to_dealer, :email_time, :end_date, :is_running, :mileage_interval, :mileage_interval_pct, :name, :odometer, :start_date, :trigger, service_issues: [])
+    params.permit(:target_mileages, :coupon_codes, :dealer_lot_id, :distance_to_dealer, :email_time, :end_date, :is_running, :mileage_interval, :mileage_interval_pct, :name, :odometer, :start_date, :trigger, service_issues: [])
   end
 end

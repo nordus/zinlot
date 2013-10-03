@@ -1,0 +1,81 @@
+---
+campaigns_001:
+  id: 122
+  name: Carol's Campaign
+  start_date: 
+  end_date: 
+  nbr_of_emails_sent: 
+  status: 
+  coupon_codes: 
+  email_time: '13:30:36'
+  time_zone: 
+  created_at: '2013-09-26 20:35:44.678886'
+  updated_at: '2013-09-26 20:35:44.678886'
+  dealer_lot_id: 1
+  odometer: 
+  distance_to_dealer: 
+  service_issues_mask: 
+  trigger: MILEAGE_INTERVAL
+  mileage_interval: 20
+  mileage_interval_pct: 0.9
+  is_running: 
+campaigns_002:
+  id: 118
+  name: Noble's Campaign
+  start_date: '2013-09-27'
+  end_date: '2013-10-05'
+  nbr_of_emails_sent: 
+  status: 
+  coupon_codes: 
+  email_time: '13:30:24'
+  time_zone: 
+  created_at: '2013-09-26 08:18:42.0638'
+  updated_at: '2013-09-27 04:19:56.647377'
+  dealer_lot_id: 1
+  odometer: 30000
+  distance_to_dealer: 
+  service_issues_mask: 4
+  trigger: ODOMETER
+  mileage_interval: 
+  mileage_interval_pct: 0.9
+  is_running: f
+campaigns_003:
+  id: 114
+  name: Mavis's Campaign
+  start_date: '2013-09-11'
+  end_date: '2013-09-11'
+  nbr_of_emails_sent: 
+  status: 
+  coupon_codes: SI_FOO
+  email_time: '11:30:43'
+  time_zone: 
+  created_at: '2013-09-26 08:10:01.673104'
+  updated_at: '2013-09-28 03:47:15.422155'
+  dealer_lot_id: 2
+  odometer: 
+  distance_to_dealer: 
+  service_issues_mask: 4
+  trigger: SERVICE_ISSUES
+  mileage_interval: 
+  mileage_interval_pct: 0.9
+  is_running: t
+campaigns_004:
+  id: 110
+  name: Grace's Campaign
+  start_date: '2013-09-05'
+  end_date: '2013-09-18'
+  nbr_of_emails_sent: 
+  status: 
+  coupon_codes: MILEAGE_FOO
+  email_time: '10:30:58'
+  time_zone: 
+  created_at: '2013-09-26 07:57:29.891161'
+  updated_at: '2013-09-28 03:48:29.124952'
+  dealer_lot_id: 1
+  odometer: 
+  distance_to_dealer: 
+  service_issues_mask: 0
+  trigger: MILEAGE_INTERVAL
+  mileage_interval: 20
+  mileage_interval_pct: 0.9
+  is_running: t

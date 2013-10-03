@@ -1,0 +1,1216 @@
+---
+device_histories_001:
+  id: 371
+  device_id: '4531019793'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-10-01 00:19:01.586636'
+  updated_at: '2013-10-01 00:19:01.586636'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 14.227
+device_histories_002:
+  id: 370
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-10-01 00:00:14.829326'
+  updated_at: '2013-10-01 00:00:14.829326'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 12.616
+device_histories_003:
+  id: 369
+  device_id: '4531010353'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-30 23:55:58.417133'
+  updated_at: '2013-09-30 23:55:58.417133'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 11.977
+device_histories_004:
+  id: 368
+  device_id: '4531010353'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-30 17:58:03.402332'
+  updated_at: '2013-09-30 17:58:03.402332'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 11.856
+device_histories_005:
+  id: 367
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-30 17:56:03.586749'
+  updated_at: '2013-09-30 17:56:03.586749'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 12.676
+device_histories_006:
+  id: 366
+  device_id: '4531010353'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-30 11:56:05.718535'
+  updated_at: '2013-09-30 11:56:05.718535'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 11.916
+device_histories_007:
+  id: 365
+  device_id: '4531019793'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-30 11:56:03.72395'
+  updated_at: '2013-09-30 11:56:03.72395'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 12.342
+device_histories_008:
+  id: 364
+  device_id: '4531019793'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-30 05:56:27.541122'
+  updated_at: '2013-09-30 05:56:27.541122'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 12.372
+device_histories_009:
+  id: 363
+  device_id: '4531010353'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-30 05:56:26.312681'
+  updated_at: '2013-09-30 05:56:26.312681'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 11.916
+device_histories_010:
+  id: 362
+  device_id: '4531010353'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-29 23:56:07.611502'
+  updated_at: '2013-09-29 23:56:07.611502'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 12.008
+device_histories_011:
+  id: 361
+  device_id: '4531019793'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-29 23:55:57.227212'
+  updated_at: '2013-09-29 23:55:57.227212'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 12.403
+device_histories_012:
+  id: 360
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-29 18:00:05.779718'
+  updated_at: '2013-09-29 18:00:05.779718'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 12.737
+device_histories_013:
+  id: 359
+  device_id: '4531019793'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-29 17:58:41.378356'
+  updated_at: '2013-09-29 17:58:41.378356'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 12.737
+device_histories_014:
+  id: 358
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-29 13:50:31.876604'
+  updated_at: '2013-09-29 13:50:31.876604'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 14.288
+device_histories_015:
+  id: 357
+  device_id: '4531019793'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-29 12:00:14.916264'
+  updated_at: '2013-09-29 12:00:14.916264'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 12.403
+device_histories_016:
+  id: 356
+  device_id: '4531019793'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-29 05:56:14.954152'
+  updated_at: '2013-09-29 05:56:14.954152'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 12.494
+device_histories_017:
+  id: 355
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-29 00:10:14.960772'
+  updated_at: '2013-09-29 00:10:14.960772'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 14.257
+device_histories_018:
+  id: 354
+  device_id: '4531019793'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-29 00:00:30.998027'
+  updated_at: '2013-09-29 00:00:30.998027'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 12.524
+device_histories_019:
+  id: 353
+  device_id: '4531019793'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 17:55:58.369822'
+  updated_at: '2013-09-28 17:55:58.369822'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 12.646
+device_histories_020:
+  id: 352
+  device_id: '4531019793'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 11:56:33.985294'
+  updated_at: '2013-09-28 11:56:33.985294'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 12.524
+device_histories_021:
+  id: 351
+  device_id: '4531019793'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 11:56:33.229253'
+  updated_at: '2013-09-28 11:56:33.229253'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 12.646
+device_histories_022:
+  id: 350
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 11:56:20.924408'
+  updated_at: '2013-09-28 11:56:20.924408'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 12.616
+device_histories_023:
+  id: 349
+  device_id: '4531010353'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 11:56:17.682276'
+  updated_at: '2013-09-28 11:56:17.682276'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 11.795
+device_histories_024:
+  id: 348
+  device_id: '4531010353'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 06:24:43.038382'
+  updated_at: '2013-09-28 06:24:43.038382'
+  dtc_codes: P0123,P0456
+  has_dtc: t
+  has_low_batt: t
+  vbatt: 11.123
+device_histories_025:
+  id: 345
+  device_id: '1122334455'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 06:09:17.288929'
+  updated_at: '2013-09-28 06:09:17.288929'
+  dtc_codes: P0123,P0456
+  has_dtc: t
+  has_low_batt: t
+  vbatt: 11.123
+device_histories_026:
+  id: 344
+  device_id: '1122334455'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 06:03:56.140159'
+  updated_at: '2013-09-28 06:03:56.140159'
+  dtc_codes: P0123,P0456
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 11.123
+device_histories_027:
+  id: 343
+  device_id: '4531010353'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 05:56:57.20362'
+  updated_at: '2013-09-28 05:56:57.20362'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 11.825
+device_histories_028:
+  id: 342
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 05:56:03.411714'
+  updated_at: '2013-09-28 05:56:03.411714'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 12.676
+device_histories_029:
+  id: 341
+  device_id: '1122334455'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 02:07:52.630314'
+  updated_at: '2013-09-28 02:07:52.630314'
+  dtc_codes: P0123,P0456
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 11.123
+device_histories_030:
+  id: 340
+  device_id: '1122334455'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 01:59:52.904106'
+  updated_at: '2013-09-28 01:59:52.904106'
+  dtc_codes: P0123,P0456
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 11.123
+device_histories_031:
+  id: 339
+  device_id: '1122334455'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 00:43:48.378527'
+  updated_at: '2013-09-28 00:43:48.378527'
+  dtc_codes: P0123,P0456
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 11.123
+device_histories_032:
+  id: 338
+  device_id: '1122334455'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 00:43:25.72033'
+  updated_at: '2013-09-28 00:43:25.72033'
+  dtc_codes: P0123,P0456
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 11.123
+device_histories_033:
+  id: 337
+  device_id: '1122334455'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 00:41:46.873677'
+  updated_at: '2013-09-28 00:41:46.873677'
+  dtc_codes: P0123,P0456
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 11.123
+device_histories_034:
+  id: 336
+  device_id: '1122334455'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 00:40:30.461031'
+  updated_at: '2013-09-28 00:40:30.461031'
+  dtc_codes: P0123,P0456
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 11.123
+device_histories_035:
+  id: 335
+  device_id: '1122334455'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 00:39:34.039727'
+  updated_at: '2013-09-28 00:39:34.039727'
+  dtc_codes: 
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 11.123
+device_histories_036:
+  id: 334
+  device_id: '1122334455'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 00:38:06.37335'
+  updated_at: '2013-09-28 00:38:06.37335'
+  dtc_codes: 
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 11.321
+device_histories_037:
+  id: 333
+  device_id: '4531019793'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 00:37:13.430238'
+  updated_at: '2013-09-28 00:37:13.430238'
+  dtc_codes: 
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 
+device_histories_038:
+  id: 332
+  device_id: '4531019793'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 00:36:40.647481'
+  updated_at: '2013-09-28 00:36:40.647481'
+  dtc_codes: 
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 
+device_histories_039:
+  id: 331
+  device_id: '4531019793'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 00:36:31.702544'
+  updated_at: '2013-09-28 00:36:31.702544'
+  dtc_codes: 
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 
+device_histories_040:
+  id: 328
+  device_id: '4531019793'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 00:21:20.980554'
+  updated_at: '2013-09-28 00:21:20.980554'
+  dtc_codes: 
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 12.433
+device_histories_041:
+  id: 326
+  device_id: 
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-28 00:00:14.57214'
+  updated_at: '2013-09-28 00:00:14.57214'
+  dtc_codes: 
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 
+device_histories_042:
+  id: 325
+  device_id: 
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-09-27 23:55:59.019886'
+  updated_at: '2013-09-27 23:55:59.019886'
+  dtc_codes: 
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 
+device_histories_043:
+  id: 43
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-30 06:22:19.523989'
+  updated_at: '2013-08-30 06:22:19.523989'
+  dtc_codes: 
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 12.35
+device_histories_044:
+  id: 40
+  device_id: '4531010353'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-30 05:15:18.086335'
+  updated_at: '2013-08-30 05:15:18.086335'
+  dtc_codes: P0420
+  has_dtc: t
+  has_low_batt: t
+  vbatt: 12.35
+device_histories_045:
+  id: 39
+  device_id: '4531010353'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-30 04:52:03.451036'
+  updated_at: '2013-08-30 04:52:03.451036'
+  dtc_codes: P0420
+  has_dtc: t
+  has_low_batt: t
+  vbatt: 12.35
+device_histories_046:
+  id: 38
+  device_id: '4531010353'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-30 04:40:26.72693'
+  updated_at: '2013-08-30 04:40:26.72693'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 12.35
+device_histories_047:
+  id: 37
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-30 03:01:24.940982'
+  updated_at: '2013-08-30 03:01:24.940982'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 12.49
+device_histories_048:
+  id: 36
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-30 02:56:41.396077'
+  updated_at: '2013-08-30 02:56:41.396077'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 12.59
+device_histories_049:
+  id: 35
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-30 02:56:29.629879'
+  updated_at: '2013-08-30 02:56:29.629879'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 12.59
+device_histories_050:
+  id: 34
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-30 02:56:08.533549'
+  updated_at: '2013-08-30 02:56:08.533549'
+  dtc_codes: ''
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 12.49
+device_histories_051:
+  id: 33
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-30 02:54:57.855828'
+  updated_at: '2013-08-30 02:54:57.855828'
+  dtc_codes: ''''''
+  has_dtc: t
+  has_low_batt: t
+  vbatt: 12.49
+device_histories_052:
+  id: 32
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-30 02:54:35.153453'
+  updated_at: '2013-08-30 02:54:35.153453'
+  dtc_codes: ''''''
+  has_dtc: t
+  has_low_batt: 
+  vbatt: 12.5
+device_histories_053:
+  id: 31
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-30 02:52:57.17662'
+  updated_at: '2013-08-30 02:52:57.17662'
+  dtc_codes: ''''''
+  has_dtc: t
+  has_low_batt: 
+  vbatt: 12.5
+device_histories_054:
+  id: 30
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-30 02:51:31.561174'
+  updated_at: '2013-08-30 02:51:31.561174'
+  dtc_codes: 
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 12.5
+device_histories_055:
+  id: 29
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-30 02:49:43.709959'
+  updated_at: '2013-08-30 02:49:43.709959'
+  dtc_codes: ''
+  has_dtc: t
+  has_low_batt: t
+  vbatt: 12.49
+device_histories_056:
+  id: 28
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-30 02:48:22.785524'
+  updated_at: '2013-08-30 02:48:22.785524'
+  dtc_codes: ''
+  has_dtc: t
+  has_low_batt: 
+  vbatt: 12.5
+device_histories_057:
+  id: 27
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-30 02:47:21.461825'
+  updated_at: '2013-08-30 02:47:21.461825'
+  dtc_codes: P0420,P0415
+  has_dtc: t
+  has_low_batt: t
+  vbatt: 12.49
+device_histories_058:
+  id: 26
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-30 02:46:31.461915'
+  updated_at: '2013-08-30 02:46:31.461915'
+  dtc_codes: P0420,P0415
+  has_dtc: t
+  has_low_batt: 
+  vbatt: 12.5
+device_histories_059:
+  id: 25
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-30 02:43:59.192397'
+  updated_at: '2013-08-30 02:43:59.192397'
+  dtc_codes: P0420,P0415
+  has_dtc: t
+  has_low_batt: 
+  vbatt: 12.5
+device_histories_060:
+  id: 24
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-30 02:43:06.928038'
+  updated_at: '2013-08-30 02:43:06.928038'
+  dtc_codes: P0420,P0415
+  has_dtc: t
+  has_low_batt: t
+  vbatt: 12.49
+device_histories_061:
+  id: 21
+  device_id: '8888888888'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-29 22:16:18.800867'
+  updated_at: '2013-08-29 22:16:18.800867'
+  dtc_codes: P0420,P0415
+  has_dtc: t
+  has_low_batt: t
+  vbatt: 12.49
+device_histories_062:
+  id: 20
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-15 06:36:47.262269'
+  updated_at: '2013-08-15 06:36:47.262269'
+  dtc_codes: P0420,P0412
+  has_dtc: t
+  has_low_batt: t
+  vbatt: 12.49
+device_histories_063:
+  id: 19
+  device_id: '4531019793'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-15 06:35:19.473929'
+  updated_at: '2013-08-15 06:35:19.473929'
+  dtc_codes: P0412
+  has_dtc: t
+  has_low_batt: 
+  vbatt: 12.55
+device_histories_064:
+  id: 18
+  device_id: '4531019793'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-15 05:55:01.43557'
+  updated_at: '2013-08-15 05:55:01.43557'
+  dtc_codes: P0420,P0404
+  has_dtc: t
+  has_low_batt: 
+  vbatt: 12.55
+device_histories_065:
+  id: 17
+  device_id: '4531019793'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-15 05:45:39.340661'
+  updated_at: '2013-08-15 05:45:39.340661'
+  dtc_codes: P0420
+  has_dtc: t
+  has_low_batt: 
+  vbatt: 12.55
+device_histories_066:
+  id: 16
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-15 05:39:21.591163'
+  updated_at: '2013-08-15 05:39:21.591163'
+  dtc_codes: P0420,P0430
+  has_dtc: t
+  has_low_batt: t
+  vbatt: 12.4
+device_histories_067:
+  id: 15
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-15 05:37:28.020532'
+  updated_at: '2013-08-15 05:37:28.020532'
+  dtc_codes: P0420,P0430
+  has_dtc: t
+  has_low_batt: 
+  vbatt: 12.6
+device_histories_068:
+  id: 14
+  device_id: '4531004944'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-15 05:33:37.75753'
+  updated_at: '2013-08-15 05:33:37.75753'
+  dtc_codes: 
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 11.0
+device_histories_069:
+  id: 13
+  device_id: '9999999999'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-15 05:14:02.523651'
+  updated_at: '2013-08-15 05:14:02.523651'
+  dtc_codes: P0420
+  has_dtc: t
+  has_low_batt: t
+  vbatt: 11.0
+device_histories_070:
+  id: 12
+  device_id: '9999999999'
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-15 05:12:55.813821'
+  updated_at: '2013-08-15 05:12:55.813821'
+  dtc_codes: P0420
+  has_dtc: t
+  has_low_batt: t
+  vbatt: 11.0
+device_histories_071:
+  id: 11
+  device_id: 
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-15 04:19:43.841515'
+  updated_at: '2013-08-15 04:19:43.841515'
+  dtc_codes: P0420,P0430
+  has_dtc: t
+  has_low_batt: 
+  vbatt: 12.6
+device_histories_072:
+  id: 10
+  device_id: 
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-15 04:18:38.411986'
+  updated_at: '2013-08-15 04:18:38.411986'
+  dtc_codes: P0420,P0430
+  has_dtc: t
+  has_low_batt: t
+  vbatt: 12.6
+device_histories_073:
+  id: 9
+  device_id: 
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-15 04:17:23.024975'
+  updated_at: '2013-08-15 04:17:23.024975'
+  dtc_codes: P0420,P0430
+  has_dtc: t
+  has_low_batt: t
+  vbatt: 12.6
+device_histories_074:
+  id: 8
+  device_id: 
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-15 04:16:01.726525'
+  updated_at: '2013-08-15 04:16:01.726525'
+  dtc_codes: 
+  has_dtc: 
+  has_low_batt: t
+  vbatt: 9.0
+device_histories_075:
+  id: 7
+  device_id: 
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-15 04:13:47.555948'
+  updated_at: '2013-08-15 04:13:47.555948'
+  dtc_codes: 
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 9.0
+device_histories_076:
+  id: 6
+  device_id: 
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-15 03:58:14.618573'
+  updated_at: '2013-08-15 03:58:14.618573'
+  dtc_codes: 
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 10.12345
+device_histories_077:
+  id: 5
+  device_id: 
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-15 01:34:24.835727'
+  updated_at: '2013-08-15 01:34:24.835727'
+  dtc_codes: 
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 11.12345
+device_histories_078:
+  id: 4
+  device_id: 
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-15 01:33:46.87926'
+  updated_at: '2013-08-15 01:33:46.87926'
+  dtc_codes: 
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 12.12345
+device_histories_079:
+  id: 3
+  device_id: 
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-15 01:29:57.154362'
+  updated_at: '2013-08-15 01:29:57.154362'
+  dtc_codes: 
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 
+device_histories_080:
+  id: 2
+  device_id: 
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-15 01:29:52.560582'
+  updated_at: '2013-08-15 01:29:52.560582'
+  dtc_codes: 
+  has_dtc: 
+  has_low_batt: 
+  vbatt: 
+device_histories_081:
+  id: 1
+  device_id: 
+  obd_vin: 
+  power_on_at: 
+  time_gap: 
+  odometer: 
+  miles_gap: 
+  gps_miles_gap: 
+  created_at: '2013-08-12 23:32:21.612642'
+  updated_at: '2013-08-15 04:21:41.808391'
+  dtc_codes: 
+  has_dtc: t
+  has_low_batt: t
+  vbatt: 

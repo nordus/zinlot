@@ -1,0 +1,37 @@
+---
+reports_001:
+  id: 17
+  q: ''
+  interval: 1
+  format: pdf
+  user_id: 2
+  name: Logistic
+  time_zone: (GMT-07:00) Arizona
+  created_at: '2013-09-04 01:23:12.508505'
+  updated_at: '2013-09-04 01:23:12.508505'
+  time: '01:00:00'
+  emails: 
+reports_002:
+  id: 11
+  q: ''
+  interval: 1
+  format: xls
+  user_id: 2
+  name: Service
+  time_zone: (GMT-07:00) Arizona
+  created_at: '2013-09-04 01:16:30.678976'
+  updated_at: '2013-09-04 01:16:30.678976'
+  time: '01:15:00'
+  emails: 
+reports_003:
+  id: 8
+  q: ''
+  interval: 1
+  format: xls
+  user_id: 2
+  name: Exceptions
+  time_zone: (GMT-07:00) Arizona
+  created_at: '2013-09-03 23:29:47.490737'
+  updated_at: '2013-09-03 23:29:47.490737'
+  time: '05:00:00'
+  emails: 

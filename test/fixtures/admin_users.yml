@@ -1,0 +1,43 @@
+---
+admin_users_001:
+  id: 3
+  email: craig.cheetham@avanttconsulting.com
+  encrypted_password: $2a$10$6KgZwjFEIZi9XrmXGFDvr.jFw.O0.1pBqcEB/A784DRZ6tJFdf.UG
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  created_at: '2013-07-14 22:00:27.260292'
+  updated_at: '2013-07-14 22:00:27.260292'
+admin_users_002:
+  id: 2
+  email: tgl@norduscapital.com
+  encrypted_password: $2a$10$3g/ftXZ7TbrDAoX88wcfyO43Wy/i.XP.Rnp/B6fgNNLYATT0ylSkO
+  reset_password_token: xgBBkREeA7fKLhWKyGt8
+  reset_password_sent_at: '2013-06-13 05:50:16.81575'
+  remember_created_at: 
+  sign_in_count: 51
+  current_sign_in_at: '2013-09-28 03:44:30.758384'
+  last_sign_in_at: '2013-09-19 05:15:09.196333'
+  current_sign_in_ip: 98.177.138.152
+  last_sign_in_ip: 68.231.77.193
+  created_at: '2013-05-13 00:56:35.035266'
+  updated_at: '2013-09-28 03:44:30.761198'
+admin_users_003:
+  id: 1
+  email: admin@example.com
+  encrypted_password: $2a$10$yOUz0DemlJz4/hWfIZ1Ntetj9SKVy9ZIY6mSwVIEgOTdoyl3n2Db2
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 1
+  current_sign_in_at: '2013-05-13 00:42:09.636783'
+  last_sign_in_at: '2013-05-13 00:42:09.636783'
+  current_sign_in_ip: 127.0.0.1
+  last_sign_in_ip: 127.0.0.1
+  created_at: '2013-05-13 00:41:09.822414'
+  updated_at: '2013-05-13 00:42:09.711492'

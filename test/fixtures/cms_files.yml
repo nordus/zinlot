@@ -1,0 +1,13 @@
+---
+cms_files_001:
+  id: 1
+  site_id: 3
+  block_id: 
+  label: home_banner
+  file_file_name: banner_dealer.png
+  file_content_type: image/png
+  file_file_size: 1012327
+  description: vehicles under magnifying glasses
+  position: 0
+  created_at: '2013-09-23 22:27:56.933014'
+  updated_at: '2013-09-23 22:27:56.933014'

@@ -5,6 +5,7 @@ class DevicesController < ApplicationController
   # GET /devices.json
   def index
     @search = Device.search(params[:q])
+    #@search = Device.includes(:vehicle => [:car, :vehicle_usage]).search(params[:q])
     #@devices = Device.all
     @devices = @search.result
     @mobile_ids = @devices.pluck('imei')

@@ -2,7 +2,17 @@ class Campaign < ActiveRecord::Base
   
   attr_protected :id
   belongs_to :dealer_lot
-  
+
+  before_save :set_target_mileages
+
+  scope :with_mileage_interval, -> { where(trigger: 'MILEAGE_INTERVAL') }
+
+  def set_target_mileages
+    if trigger == 'MILEAGE_INTERVAL'
+      self.target_mileages = Device.all.each_with_object({}) {|d, hash, t = d.latest_trip| hash[d.imei] = (t.ending_mileage.round + (mileage_interval * mileage_interval_pct)) if t}
+    end
+  end
+
   SERVICE_ISSUES = %w[LOW_BATT DTC PREDICTIVE_SERVICE]
 
   def service_issues=(service_issues)

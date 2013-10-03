@@ -10,6 +10,20 @@ class HistoricalTrip < ActiveRecord::Base
   before_save :add_trip_number
   before_save :check_geofence_violations
 
+  after_save :check_campaign_target_mileages_violated
+
+  def check_campaign_target_mileages_violated
+    campaigns_violated = Campaign.with_mileage_interval.each_with_object([]) do |c, array|
+      if campaign_target_mileage = c.target_mileages[device_id]
+        array.push(c)  if ending_mileage.to_i >= campaign_target_mileage.to_i
+      end
+    end
+
+    for campaign in campaigns_violated
+      SendGridMailer.campaign_target_mileage_message(device_id, campaign).deliver
+    end
+  end
+
   def check_geofence_violations
     self.has_geofence_violations = boundary_violations?
   end

@@ -1,0 +1,3515 @@
+---
+geofence_violations_001:
+  id: 788
+  device_id: '4531010353'
+  trip_start_at: 1380588393
+  geofence_id: 1
+  event_type: 0
+  update_time: 1380589728
+geofence_violations_002:
+  id: 787
+  device_id: '4531010353'
+  trip_start_at: 1380588393
+  geofence_id: 5
+  event_type: 0
+  update_time: 1380589703
+geofence_violations_003:
+  id: 786
+  device_id: '4531004944'
+  trip_start_at: 1380587644
+  geofence_id: 2
+  event_type: 0
+  update_time: 1380588174
+geofence_violations_004:
+  id: 785
+  device_id: '4531004944'
+  trip_start_at: 1380587644
+  geofence_id: 8
+  event_type: 0
+  update_time: 1380587814
+geofence_violations_005:
+  id: 784
+  device_id: '4531004944'
+  trip_start_at: 1380587644
+  geofence_id: 9
+  event_type: 1
+  update_time: 1380587813
+geofence_violations_006:
+  id: 783
+  device_id: '4531004944'
+  trip_start_at: 1380587644
+  geofence_id: 3
+  event_type: 1
+  update_time: 1380587694
+geofence_violations_007:
+  id: 782
+  device_id: '4531010353'
+  trip_start_at: 1380580404
+  geofence_id: 1
+  event_type: 0
+  update_time: 1380581063
+geofence_violations_008:
+  id: 781
+  device_id: '4531010353'
+  trip_start_at: 1380580404
+  geofence_id: 5
+  event_type: 0
+  update_time: 1380581040
+geofence_violations_009:
+  id: 780
+  device_id: '4531010353'
+  trip_start_at: 1380575863
+  geofence_id: 5
+  event_type: 1
+  update_time: 1380575969
+geofence_violations_010:
+  id: 779
+  device_id: '4531010353'
+  trip_start_at: 1380575863
+  geofence_id: 1
+  event_type: 1
+  update_time: 1380575969
+geofence_violations_011:
+  id: 778
+  device_id: '4531004944'
+  trip_start_at: 1380568773
+  geofence_id: 3
+  event_type: 0
+  update_time: 1380570934
+geofence_violations_012:
+  id: 777
+  device_id: '4531004944'
+  trip_start_at: 1380568773
+  geofence_id: 9
+  event_type: 0
+  update_time: 1380570818
+geofence_violations_013:
+  id: 776
+  device_id: '4531004944'
+  trip_start_at: 1380568773
+  geofence_id: 8
+  event_type: 1
+  update_time: 1380570816
+geofence_violations_014:
+  id: 775
+  device_id: '4531004944'
+  trip_start_at: 1380568773
+  geofence_id: 2
+  event_type: 1
+  update_time: 1380570581
+geofence_violations_015:
+  id: 774
+  device_id: '4531004944'
+  trip_start_at: 1380568037
+  geofence_id: 2
+  event_type: 0
+  update_time: 1380568480
+geofence_violations_016:
+  id: 773
+  device_id: '4531004944'
+  trip_start_at: 1380568037
+  geofence_id: 8
+  event_type: 0
+  update_time: 1380568259
+geofence_violations_017:
+  id: 772
+  device_id: '4531004944'
+  trip_start_at: 1380568037
+  geofence_id: 9
+  event_type: 1
+  update_time: 1380568258
+geofence_violations_018:
+  id: 771
+  device_id: '4531004944'
+  trip_start_at: 1380568037
+  geofence_id: 3
+  event_type: 1
+  update_time: 1380568085
+geofence_violations_019:
+  id: 770
+  device_id: '4531004944'
+  trip_start_at: 1380554264
+  geofence_id: 3
+  event_type: 0
+  update_time: 1380554846
+geofence_violations_020:
+  id: 769
+  device_id: '4531004944'
+  trip_start_at: 1380554264
+  geofence_id: 9
+  event_type: 0
+  update_time: 1380554670
+geofence_violations_021:
+  id: 768
+  device_id: '4531004944'
+  trip_start_at: 1380554264
+  geofence_id: 8
+  event_type: 1
+  update_time: 1380554668
+geofence_violations_022:
+  id: 767
+  device_id: '4531004944'
+  trip_start_at: 1380554264
+  geofence_id: 2
+  event_type: 1
+  update_time: 1380554457
+geofence_violations_023:
+  id: 764
+  device_id: '4531010353'
+  trip_start_at: 1380520623
+  geofence_id: 1
+  event_type: 0
+  update_time: 1380520622
+geofence_violations_024:
+  id: 763
+  device_id: '4531004944'
+  trip_start_at: 1380506313
+  geofence_id: 2
+  event_type: 0
+  update_time: 1380507688
+geofence_violations_025:
+  id: 762
+  device_id: '4531004944'
+  trip_start_at: 1380506313
+  geofence_id: 8
+  event_type: 0
+  update_time: 1380507607
+geofence_violations_026:
+  id: 761
+  device_id: '4531004944'
+  trip_start_at: 1380506313
+  geofence_id: 5
+  event_type: 1
+  update_time: 1380506363
+geofence_violations_027:
+  id: 760
+  device_id: '4531004944'
+  trip_start_at: 1380506313
+  geofence_id: 1
+  event_type: 1
+  update_time: 1380506333
+geofence_violations_028:
+  id: 759
+  device_id: '4531004944'
+  trip_start_at: 1380503042
+  geofence_id: 1
+  event_type: 0
+  update_time: 1380503181
+geofence_violations_029:
+  id: 758
+  device_id: '4531004944'
+  trip_start_at: 1380503042
+  geofence_id: 5
+  event_type: 0
+  update_time: 1380503151
+geofence_violations_030:
+  id: 757
+  device_id: '4531004944'
+  trip_start_at: 1380503042
+  geofence_id: 5
+  event_type: 1
+  update_time: 1380503104
+geofence_violations_031:
+  id: 756
+  device_id: '4531004944'
+  trip_start_at: 1380503042
+  geofence_id: 1
+  event_type: 1
+  update_time: 1380503082
+geofence_violations_032:
+  id: 755
+  device_id: '4531004944'
+  trip_start_at: 1380501486
+  geofence_id: 1
+  event_type: 
+  update_time: 1380501575
+geofence_violations_033:
+  id: 754
+  device_id: '4531004944'
+  trip_start_at: 1380501486
+  geofence_id: 5
+  event_type: 
+  update_time: 1380501555
+geofence_violations_034:
+  id: 753
+  device_id: '4531004944'
+  trip_start_at: 1380501486
+  geofence_id: 5
+  event_type: 
+  update_time: 1380501539
+geofence_violations_035:
+  id: 752
+  device_id: '4531004944'
+  trip_start_at: 1380501486
+  geofence_id: 1
+  event_type: 
+  update_time: 1380501508
+geofence_violations_036:
+  id: 751
+  device_id: '4531010353'
+  trip_start_at: 1380375248
+  geofence_id: 10
+  event_type: 1
+  update_time: 1380375888
+geofence_violations_037:
+  id: 750
+  device_id: '4531010353'
+  trip_start_at: 1380375248
+  geofence_id: 10
+  event_type: 1
+  update_time: 1380375888
+geofence_violations_038:
+  id: 749
+  device_id: '4531010353'
+  trip_start_at: 1380375248
+  geofence_id: 10
+  event_type: 1
+  update_time: 1380375888
+geofence_violations_039:
+  id: 748
+  device_id: '4531010353'
+  trip_start_at: 1380375248
+  geofence_id: 10
+  event_type: 1
+  update_time: 1380375888
+geofence_violations_040:
+  id: 747
+  device_id: '4531010353'
+  trip_start_at: 1380375248
+  geofence_id: 10
+  event_type: 1
+  update_time: 1380375888
+geofence_violations_041:
+  id: 746
+  device_id: '4531010353'
+  trip_start_at: 1380375248
+  geofence_id: 10
+  event_type: 1
+  update_time: 1380375888
+geofence_violations_042:
+  id: 745
+  device_id: '4531004944'
+  trip_start_at: 1380498502
+  geofence_id: 5
+  event_type: 
+  update_time: 1380498616
+geofence_violations_043:
+  id: 744
+  device_id: '4531004944'
+  trip_start_at: 1380498502
+  geofence_id: 1
+  event_type: 
+  update_time: 1380498637
+geofence_violations_044:
+  id: 743
+  device_id: '4531004944'
+  trip_start_at: 1380498502
+  geofence_id: 5
+  event_type: 
+  update_time: 1380498616
+geofence_violations_045:
+  id: 742
+  device_id: '4531004944'
+  trip_start_at: 1380498502
+  geofence_id: 5
+  event_type: 
+  update_time: 1380498582
+geofence_violations_046:
+  id: 741
+  device_id: '4531004944'
+  trip_start_at: 1380498502
+  geofence_id: 1
+  event_type: 
+  update_time: 1380498545
+geofence_violations_047:
+  id: 740
+  device_id: 
+  trip_start_at: 
+  geofence_id: 
+  event_type: 
+  update_time: 
+geofence_violations_048:
+  id: 739
+  device_id: 
+  trip_start_at: 
+  geofence_id: 
+  event_type: 
+  update_time: 
+geofence_violations_049:
+  id: 738
+  device_id: '4531010353'
+  trip_start_at: 1380375248
+  geofence_id: 10
+  event_type: 1
+  update_time: 1380375888
+geofence_violations_050:
+  id: 737
+  device_id: '4531010353'
+  trip_start_at: 1380375248
+  geofence_id: 10
+  event_type: 0
+  update_time: 1380375888
+geofence_violations_051:
+  id: 735
+  device_id: '4531010353'
+  trip_start_at: 1380375248
+  geofence_id: 10
+  event_type: 
+  update_time: 1380375888
+geofence_violations_052:
+  id: 734
+  device_id: 
+  trip_start_at: 
+  geofence_id: 
+  event_type: 
+  update_time: 
+geofence_violations_053:
+  id: 733
+  device_id: 
+  trip_start_at: 
+  geofence_id: 
+  event_type: 
+  update_time: 
+geofence_violations_054:
+  id: 732
+  device_id: 
+  trip_start_at: 
+  geofence_id: 
+  event_type: 
+  update_time: 
+geofence_violations_055:
+  id: 731
+  device_id: 
+  trip_start_at: 
+  geofence_id: 
+  event_type: 
+  update_time: 
+geofence_violations_056:
+  id: 730
+  device_id: 
+  trip_start_at: 
+  geofence_id: 
+  event_type: 
+  update_time: 
+geofence_violations_057:
+  id: 729
+  device_id: 
+  trip_start_at: 
+  geofence_id: 
+  event_type: 
+  update_time: 
+geofence_violations_058:
+  id: 728
+  device_id: 
+  trip_start_at: 
+  geofence_id: 
+  event_type: 
+  update_time: 
+geofence_violations_059:
+  id: 727
+  device_id: 
+  trip_start_at: 
+  geofence_id: 
+  event_type: 
+  update_time: 
+geofence_violations_060:
+  id: 726
+  device_id: 
+  trip_start_at: 
+  geofence_id: 
+  event_type: 
+  update_time: 
+geofence_violations_061:
+  id: 725
+  device_id: 
+  trip_start_at: 
+  geofence_id: 
+  event_type: 
+  update_time: 
+geofence_violations_062:
+  id: 724
+  device_id: 
+  trip_start_at: 
+  geofence_id: 
+  event_type: 
+  update_time: 
+geofence_violations_063:
+  id: 456
+  device_id: '8888888888'
+  trip_start_at: 1377811882
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_064:
+  id: 455
+  device_id: '8888888888'
+  trip_start_at: 1377811882
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_065:
+  id: 454
+  device_id: '8888888888'
+  trip_start_at: 1377811882
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_066:
+  id: 453
+  device_id: '4531004944'
+  trip_start_at: 1377702602
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_067:
+  id: 452
+  device_id: '4531004944'
+  trip_start_at: 1377698776
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_068:
+  id: 451
+  device_id: '4531004944'
+  trip_start_at: 1377698776
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_069:
+  id: 450
+  device_id: '4531004944'
+  trip_start_at: 1377650619
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_070:
+  id: 449
+  device_id: '4531004944'
+  trip_start_at: 1377640447
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_071:
+  id: 448
+  device_id: '4531004944'
+  trip_start_at: 1377640447
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_072:
+  id: 447
+  device_id: '4531004944'
+  trip_start_at: 1377634690
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_073:
+  id: 446
+  device_id: '4531004944'
+  trip_start_at: 1377634690
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_074:
+  id: 445
+  device_id: '4531004944'
+  trip_start_at: 1377629081
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_075:
+  id: 444
+  device_id: '4531010353'
+  trip_start_at: 1377628965
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_076:
+  id: 443
+  device_id: '4531010353'
+  trip_start_at: 1377628965
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_077:
+  id: 442
+  device_id: '4531004944'
+  trip_start_at: 1377626574
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_078:
+  id: 441
+  device_id: '4531004944'
+  trip_start_at: 1377622807
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_079:
+  id: 440
+  device_id: '4531010353'
+  trip_start_at: 1377620540
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_080:
+  id: 439
+  device_id: '4531010353'
+  trip_start_at: 1377620540
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_081:
+  id: 438
+  device_id: '4531004944'
+  trip_start_at: 1377618961
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_082:
+  id: 437
+  device_id: '4531004944'
+  trip_start_at: 1377618961
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_083:
+  id: 436
+  device_id: '4531010353'
+  trip_start_at: 1377571060
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_084:
+  id: 435
+  device_id: '4531010353'
+  trip_start_at: 1377571060
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_085:
+  id: 434
+  device_id: '4531010353'
+  trip_start_at: 1377571060
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_086:
+  id: 433
+  device_id: '4531010353'
+  trip_start_at: 1377571060
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_087:
+  id: 432
+  device_id: '4531004944'
+  trip_start_at: 1377564780
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_088:
+  id: 431
+  device_id: '4531004944'
+  trip_start_at: 1377564780
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_089:
+  id: 430
+  device_id: '4531004944'
+  trip_start_at: 1377561835
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_090:
+  id: 429
+  device_id: '4531004944'
+  trip_start_at: 1377543863
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_091:
+  id: 428
+  device_id: '4531004944'
+  trip_start_at: 1377529535
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_092:
+  id: 427
+  device_id: '4531004944'
+  trip_start_at: 1377525780
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_093:
+  id: 426
+  device_id: '4531004944'
+  trip_start_at: 1377525780
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_094:
+  id: 425
+  device_id: '4531010353'
+  trip_start_at: 1377482611
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_095:
+  id: 424
+  device_id: '4531010353'
+  trip_start_at: 1377482611
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_096:
+  id: 423
+  device_id: '4531004944'
+  trip_start_at: 1377471765
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_097:
+  id: 422
+  device_id: '4531004944'
+  trip_start_at: 1377468455
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_098:
+  id: 421
+  device_id: '4531004944'
+  trip_start_at: 1377468455
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_099:
+  id: 420
+  device_id: '4531004944'
+  trip_start_at: 1377461702
+  geofence_id: 7
+  event_type: 
+  update_time: 
+geofence_violations_100:
+  id: 419
+  device_id: '4531004944'
+  trip_start_at: 1377452883
+  geofence_id: 7
+  event_type: 
+  update_time: 
+geofence_violations_101:
+  id: 418
+  device_id: '4531004944'
+  trip_start_at: 1377393881
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_102:
+  id: 417
+  device_id: '4531004944'
+  trip_start_at: 1377393881
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_103:
+  id: 416
+  device_id: '4531004944'
+  trip_start_at: 1377391892
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_104:
+  id: 415
+  device_id: '4531004944'
+  trip_start_at: 1377391892
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_105:
+  id: 414
+  device_id: '4531004944'
+  trip_start_at: 1377391892
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_106:
+  id: 413
+  device_id: '4531004944'
+  trip_start_at: 1377386591
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_107:
+  id: 412
+  device_id: '4531004944'
+  trip_start_at: 1377386591
+  geofence_id: 7
+  event_type: 
+  update_time: 
+geofence_violations_108:
+  id: 411
+  device_id: '4531004944'
+  trip_start_at: 1377387892
+  geofence_id: 7
+  event_type: 
+  update_time: 
+geofence_violations_109:
+  id: 410
+  device_id: '4531004944'
+  trip_start_at: 1377387052
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_110:
+  id: 409
+  device_id: '4531010353'
+  trip_start_at: 1377381589
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_111:
+  id: 408
+  device_id: '4531010353'
+  trip_start_at: 1377381589
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_112:
+  id: 407
+  device_id: '4531010353'
+  trip_start_at: 1377373348
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_113:
+  id: 406
+  device_id: '4531010353'
+  trip_start_at: 1377373348
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_114:
+  id: 405
+  device_id: '4531004944'
+  trip_start_at: 1377358241
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_115:
+  id: 404
+  device_id: '4531004944'
+  trip_start_at: 1377308020
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_116:
+  id: 403
+  device_id: '4531010353'
+  trip_start_at: 1377301213
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_117:
+  id: 402
+  device_id: '4531010353'
+  trip_start_at: 1377298954
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_118:
+  id: 401
+  device_id: '4531010353'
+  trip_start_at: 1377298954
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_119:
+  id: 400
+  device_id: '4531004944'
+  trip_start_at: 1377294223
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_120:
+  id: 399
+  device_id: '4531010353'
+  trip_start_at: 1377294209
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_121:
+  id: 398
+  device_id: '4531010353'
+  trip_start_at: 1377294209
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_122:
+  id: 397
+  device_id: '4531004944'
+  trip_start_at: 1377269979
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_123:
+  id: 396
+  device_id: '4531004944'
+  trip_start_at: 1377269979
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_124:
+  id: 395
+  device_id: '4531010353'
+  trip_start_at: 1377235795
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_125:
+  id: 394
+  device_id: '4531010353'
+  trip_start_at: 1377235795
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_126:
+  id: 393
+  device_id: '4531004944'
+  trip_start_at: 1377221845
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_127:
+  id: 392
+  device_id: '4531004944'
+  trip_start_at: 1377221845
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_128:
+  id: 391
+  device_id: '4531004944'
+  trip_start_at: 1377212128
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_129:
+  id: 390
+  device_id: '4531004944'
+  trip_start_at: 1377212128
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_130:
+  id: 389
+  device_id: '4531004944'
+  trip_start_at: 1377198923
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_131:
+  id: 388
+  device_id: '4531004944'
+  trip_start_at: 1377198923
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_132:
+  id: 387
+  device_id: '4531010353'
+  trip_start_at: 1377196880
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_133:
+  id: 386
+  device_id: '4531010353'
+  trip_start_at: 1377196880
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_134:
+  id: 385
+  device_id: '4531004944'
+  trip_start_at: 1377184728
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_135:
+  id: 384
+  device_id: '4531004944'
+  trip_start_at: 1377184728
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_136:
+  id: 383
+  device_id: '4531004944'
+  trip_start_at: 1377135800
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_137:
+  id: 382
+  device_id: '4531004944'
+  trip_start_at: 1377133935
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_138:
+  id: 381
+  device_id: '4531004944'
+  trip_start_at: 1377133935
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_139:
+  id: 380
+  device_id: '4531004944'
+  trip_start_at: 1377130572
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_140:
+  id: 379
+  device_id: '4531004944'
+  trip_start_at: 1377130572
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_141:
+  id: 378
+  device_id: '4531010353'
+  trip_start_at: 1377111719
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_142:
+  id: 377
+  device_id: '4531010353'
+  trip_start_at: 1377111719
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_143:
+  id: 376
+  device_id: '4531010353'
+  trip_start_at: 1377111719
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_144:
+  id: 375
+  device_id: '4531004944'
+  trip_start_at: 1377109981
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_145:
+  id: 374
+  device_id: '4531004944'
+  trip_start_at: 1377109981
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_146:
+  id: 373
+  device_id: '4531004944'
+  trip_start_at: 1377109981
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_147:
+  id: 372
+  device_id: '4531004944'
+  trip_start_at: 1377096018
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_148:
+  id: 371
+  device_id: '4531004944'
+  trip_start_at: 1377096018
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_149:
+  id: 370
+  device_id: '4531010353'
+  trip_start_at: 1377045350
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_150:
+  id: 369
+  device_id: '4531010353'
+  trip_start_at: 1377045350
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_151:
+  id: 368
+  device_id: '4531010353'
+  trip_start_at: 1377045350
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_152:
+  id: 367
+  device_id: '4531004944'
+  trip_start_at: 1377034394
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_153:
+  id: 366
+  device_id: '4531004944'
+  trip_start_at: 1377034394
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_154:
+  id: 365
+  device_id: '4531004944'
+  trip_start_at: 1377034394
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_155:
+  id: 364
+  device_id: '4531004944'
+  trip_start_at: 1377034394
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_156:
+  id: 363
+  device_id: '4531004944'
+  trip_start_at: 1377027625
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_157:
+  id: 362
+  device_id: '4531004944'
+  trip_start_at: 1377027625
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_158:
+  id: 361
+  device_id: '4531004944'
+  trip_start_at: 1377027625
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_159:
+  id: 360
+  device_id: '4531004944'
+  trip_start_at: 1377027625
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_160:
+  id: 359
+  device_id: '4531004944'
+  trip_start_at: 1377027625
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_161:
+  id: 358
+  device_id: '4531004944'
+  trip_start_at: 1377027625
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_162:
+  id: 357
+  device_id: '4531010353'
+  trip_start_at: 1377024222
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_163:
+  id: 356
+  device_id: '4531010353'
+  trip_start_at: 1377024222
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_164:
+  id: 355
+  device_id: '4531010353'
+  trip_start_at: 1377015711
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_165:
+  id: 354
+  device_id: '4531010353'
+  trip_start_at: 1377015711
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_166:
+  id: 353
+  device_id: '4531010353'
+  trip_start_at: 1377013907
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_167:
+  id: 352
+  device_id: '4531010353'
+  trip_start_at: 1377013907
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_168:
+  id: 351
+  device_id: '4531004944'
+  trip_start_at: 1377007706
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_169:
+  id: 350
+  device_id: '4531004944'
+  trip_start_at: 1377007706
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_170:
+  id: 349
+  device_id: '4531004944'
+  trip_start_at: 1376969199
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_171:
+  id: 348
+  device_id: '4531004944'
+  trip_start_at: 1376969199
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_172:
+  id: 347
+  device_id: '4531004944'
+  trip_start_at: 1376969199
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_173:
+  id: 346
+  device_id: '4531010353'
+  trip_start_at: 1376963199
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_174:
+  id: 345
+  device_id: '4531004944'
+  trip_start_at: 1376961715
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_175:
+  id: 344
+  device_id: '4531004944'
+  trip_start_at: 1376947821
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_176:
+  id: 343
+  device_id: '4531004944'
+  trip_start_at: 1376947821
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_177:
+  id: 342
+  device_id: '4531004944'
+  trip_start_at: 1376947821
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_178:
+  id: 341
+  device_id: '4531004944'
+  trip_start_at: 1376943826
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_179:
+  id: 340
+  device_id: '4531004944'
+  trip_start_at: 1376943826
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_180:
+  id: 339
+  device_id: '4531004944'
+  trip_start_at: 1376943826
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_181:
+  id: 338
+  device_id: '4531004944'
+  trip_start_at: 1376935915
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_182:
+  id: 337
+  device_id: '4531004944'
+  trip_start_at: 1376935915
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_183:
+  id: 336
+  device_id: '4531010358'
+  trip_start_at: 1376928270
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_184:
+  id: 335
+  device_id: '4531010358'
+  trip_start_at: 1376928270
+  geofence_id: 6
+  event_type: 
+  update_time: 
+geofence_violations_185:
+  id: 334
+  device_id: '4531010358'
+  trip_start_at: 19
+  geofence_id: 6
+  event_type: 
+  update_time: 
+geofence_violations_186:
+  id: 333
+  device_id: '4531004944'
+  trip_start_at: 1376921848
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_187:
+  id: 332
+  device_id: '4531004944'
+  trip_start_at: 1376921848
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_188:
+  id: 331
+  device_id: '4531004944'
+  trip_start_at: 1376755615
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_189:
+  id: 330
+  device_id: '4531004944'
+  trip_start_at: 1376755615
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_190:
+  id: 329
+  device_id: '4531004944'
+  trip_start_at: 1376705422
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_191:
+  id: 328
+  device_id: '4531004944'
+  trip_start_at: 1376705422
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_192:
+  id: 327
+  device_id: '4531010353'
+  trip_start_at: 1376700428
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_193:
+  id: 326
+  device_id: '4531010353'
+  trip_start_at: 1376700428
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_194:
+  id: 325
+  device_id: '4531004944'
+  trip_start_at: 1376689977
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_195:
+  id: 324
+  device_id: '4531004944'
+  trip_start_at: 1376689977
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_196:
+  id: 323
+  device_id: '4531010353'
+  trip_start_at: 1376683095
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_197:
+  id: 322
+  device_id: '4531010353'
+  trip_start_at: 1376683095
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_198:
+  id: 321
+  device_id: '4531004944'
+  trip_start_at: 1376670679
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_199:
+  id: 320
+  device_id: '4531004944'
+  trip_start_at: 1376667851
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_200:
+  id: 319
+  device_id: '4531004944'
+  trip_start_at: 1376667851
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_201:
+  id: 318
+  device_id: '4531004944'
+  trip_start_at: 1376664490
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_202:
+  id: 317
+  device_id: '4531004944'
+  trip_start_at: 1376664490
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_203:
+  id: 316
+  device_id: '4531004944'
+  trip_start_at: 1376602983
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_204:
+  id: 315
+  device_id: '4531004944'
+  trip_start_at: 1376602983
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_205:
+  id: 314
+  device_id: '4531004944'
+  trip_start_at: 1376602983
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_206:
+  id: 313
+  device_id: '4531004944'
+  trip_start_at: 1376592777
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_207:
+  id: 312
+  device_id: '4531004944'
+  trip_start_at: 1376592777
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_208:
+  id: 311
+  device_id: '4531004944'
+  trip_start_at: 1376592171
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_209:
+  id: 310
+  device_id: '4531004944'
+  trip_start_at: 1376589450
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_210:
+  id: 309
+  device_id: '4531004944'
+  trip_start_at: 1376578933
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_211:
+  id: 308
+  device_id: '4531004944'
+  trip_start_at: 1376578933
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_212:
+  id: 307
+  device_id: '4531004944'
+  trip_start_at: 1376501891
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_213:
+  id: 306
+  device_id: '4531004944'
+  trip_start_at: 1376501891
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_214:
+  id: 305
+  device_id: '4531004944'
+  trip_start_at: 1376491265
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_215:
+  id: 304
+  device_id: '4531004944'
+  trip_start_at: 1376491265
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_216:
+  id: 303
+  device_id: '4531010353'
+  trip_start_at: 1376450046
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_217:
+  id: 302
+  device_id: '4531010353'
+  trip_start_at: 1376450046
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_218:
+  id: 301
+  device_id: '4531004944'
+  trip_start_at: 1376430187
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_219:
+  id: 300
+  device_id: '4531004944'
+  trip_start_at: 1376430187
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_220:
+  id: 299
+  device_id: '4531004944'
+  trip_start_at: 1376425053
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_221:
+  id: 298
+  device_id: '4531004944'
+  trip_start_at: 1376425053
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_222:
+  id: 297
+  device_id: '4531010353'
+  trip_start_at: 1376403712
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_223:
+  id: 296
+  device_id: '4531010353'
+  trip_start_at: 1376403712
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_224:
+  id: 295
+  device_id: '4531004944'
+  trip_start_at: 1376401584
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_225:
+  id: 294
+  device_id: '4531004944'
+  trip_start_at: 1376401584
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_226:
+  id: 293
+  device_id: '4531010353'
+  trip_start_at: 1376373238
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_227:
+  id: 292
+  device_id: '4531010353'
+  trip_start_at: 1376373238
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_228:
+  id: 291
+  device_id: '4531004944'
+  trip_start_at: 1376363749
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_229:
+  id: 290
+  device_id: '4531004944'
+  trip_start_at: 1376363749
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_230:
+  id: 289
+  device_id: '4531004944'
+  trip_start_at: 1376352515
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_231:
+  id: 288
+  device_id: '4531004944'
+  trip_start_at: 1376352515
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_232:
+  id: 287
+  device_id: '4531004944'
+  trip_start_at: 1376342519
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_233:
+  id: 286
+  device_id: '4531004944'
+  trip_start_at: 1376342519
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_234:
+  id: 285
+  device_id: '4531004944'
+  trip_start_at: 1376342519
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_235:
+  id: 284
+  device_id: '4531019793'
+  trip_start_at: 1376339124
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_236:
+  id: 283
+  device_id: '4531019793'
+  trip_start_at: 1376339124
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_237:
+  id: 282
+  device_id: '4531019793'
+  trip_start_at: 1376339124
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_238:
+  id: 281
+  device_id: '4531004944'
+  trip_start_at: 1376336536
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_239:
+  id: 280
+  device_id: '4531004944'
+  trip_start_at: 1376333846
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_240:
+  id: 279
+  device_id: '4531004944'
+  trip_start_at: 1376315071
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_241:
+  id: 278
+  device_id: '4531004944'
+  trip_start_at: 1376315071
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_242:
+  id: 277
+  device_id: '4531010353'
+  trip_start_at: 1376277983
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_243:
+  id: 276
+  device_id: '4531010353'
+  trip_start_at: 1376277983
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_244:
+  id: 275
+  device_id: '4531019793'
+  trip_start_at: 1376191929
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_245:
+  id: 274
+  device_id: '4531019793'
+  trip_start_at: 1376180025
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_246:
+  id: 273
+  device_id: '4531019793'
+  trip_start_at: 1376180025
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_247:
+  id: 272
+  device_id: '4531019793'
+  trip_start_at: 1376180025
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_248:
+  id: 271
+  device_id: '4531019793'
+  trip_start_at: 1376174220
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_249:
+  id: 270
+  device_id: '4531019793'
+  trip_start_at: 1376169179
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_250:
+  id: 269
+  device_id: '4531019793'
+  trip_start_at: 1376169179
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_251:
+  id: 268
+  device_id: '4531019793'
+  trip_start_at: 1376162693
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_252:
+  id: 267
+  device_id: '4531019793'
+  trip_start_at: 1376162693
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_253:
+  id: 266
+  device_id: '4531019793'
+  trip_start_at: 1376162693
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_254:
+  id: 265
+  device_id: '4531004944'
+  trip_start_at: 1376158870
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_255:
+  id: 264
+  device_id: '4531004944'
+  trip_start_at: 1376158870
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_256:
+  id: 263
+  device_id: '4531004944'
+  trip_start_at: 1376150615
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_257:
+  id: 262
+  device_id: '4531004944'
+  trip_start_at: 1376150615
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_258:
+  id: 261
+  device_id: '4531004944'
+  trip_start_at: 1376108190
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_259:
+  id: 260
+  device_id: '4531004944'
+  trip_start_at: 1376108190
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_260:
+  id: 259
+  device_id: '4531004944'
+  trip_start_at: 1376099949
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_261:
+  id: 258
+  device_id: '4531004944'
+  trip_start_at: 1376099949
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_262:
+  id: 257
+  device_id: '4531004944'
+  trip_start_at: 1376086017
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_263:
+  id: 256
+  device_id: '4531004944'
+  trip_start_at: 1376086017
+  geofence_id: 7
+  event_type: 
+  update_time: 
+geofence_violations_264:
+  id: 252
+  device_id: '4531004944'
+  trip_start_at: 1376069188
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_265:
+  id: 251
+  device_id: '4531004944'
+  trip_start_at: 1376059593
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_266:
+  id: 250
+  device_id: '4531004944'
+  trip_start_at: 1376059593
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_267:
+  id: 249
+  device_id: '4531010353'
+  trip_start_at: 1376023877
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_268:
+  id: 248
+  device_id: '4531010353'
+  trip_start_at: 1376023877
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_269:
+  id: 247
+  device_id: '4531004944'
+  trip_start_at: 1376002145
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_270:
+  id: 246
+  device_id: '4531004944'
+  trip_start_at: 1376002145
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_271:
+  id: 245
+  device_id: '4531010353'
+  trip_start_at: 1375988159
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_272:
+  id: 244
+  device_id: '4531010353'
+  trip_start_at: 1375988159
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_273:
+  id: 243
+  device_id: '4531004944'
+  trip_start_at: 1375974578
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_274:
+  id: 242
+  device_id: '4531004944'
+  trip_start_at: 1375970690
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_275:
+  id: 241
+  device_id: '4531004944'
+  trip_start_at: 1375970690
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_276:
+  id: 240
+  device_id: '4531010353'
+  trip_start_at: 1375923426
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_277:
+  id: 239
+  device_id: '4531010353'
+  trip_start_at: 1375923426
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_278:
+  id: 238
+  device_id: '4531004944'
+  trip_start_at: 1375922143
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_279:
+  id: 237
+  device_id: '4531004944'
+  trip_start_at: 1375922143
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_280:
+  id: 236
+  device_id: '4531004944'
+  trip_start_at: 1375907345
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_281:
+  id: 235
+  device_id: '4531010358'
+  trip_start_at: 1375895451
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_282:
+  id: 234
+  device_id: '4531010358'
+  trip_start_at: 1375894574
+  geofence_id: 6
+  event_type: 
+  update_time: 
+geofence_violations_283:
+  id: 233
+  device_id: '4531004944'
+  trip_start_at: 1375892782
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_284:
+  id: 232
+  device_id: '4531004944'
+  trip_start_at: 1375892782
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_285:
+  id: 231
+  device_id: '4531010358'
+  trip_start_at: 1375892637
+  geofence_id: 6
+  event_type: 
+  update_time: 
+geofence_violations_286:
+  id: 230
+  device_id: '4531010358'
+  trip_start_at: 1375892637
+  geofence_id: 0
+  event_type: 
+  update_time: 
+geofence_violations_287:
+  id: 229
+  device_id: '4531004944'
+  trip_start_at: 1375845089
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_288:
+  id: 228
+  device_id: '4531010358'
+  trip_start_at: 1375836952
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_289:
+  id: 227
+  device_id: '4531010358'
+  trip_start_at: 1375836952
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_290:
+  id: 226
+  device_id: '4531004944'
+  trip_start_at: 1375826532
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_291:
+  id: 225
+  device_id: '4531004944'
+  trip_start_at: 1375826532
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_292:
+  id: 224
+  device_id: '4531004944'
+  trip_start_at: 1375824773
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_293:
+  id: 223
+  device_id: '4531010358'
+  trip_start_at: 1375823079
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_294:
+  id: 222
+  device_id: '4531010358'
+  trip_start_at: 1375820726
+  geofence_id: 7
+  event_type: 
+  update_time: 
+geofence_violations_295:
+  id: 221
+  device_id: '4531010358'
+  trip_start_at: 1375820726
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_296:
+  id: 220
+  device_id: '4531010358'
+  trip_start_at: 1375820726
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_297:
+  id: 219
+  device_id: '4531004944'
+  trip_start_at: 1375816162
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_298:
+  id: 218
+  device_id: '4531019793'
+  trip_start_at: 1375811454
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_299:
+  id: 217
+  device_id: '4531010358'
+  trip_start_at: 1375803108
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_300:
+  id: 216
+  device_id: '4531010358'
+  trip_start_at: 1375803108
+  geofence_id: 6
+  event_type: 
+  update_time: 
+geofence_violations_301:
+  id: 215
+  device_id: '4531010353'
+  trip_start_at: 1375802349
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_302:
+  id: 214
+  device_id: '4531010353'
+  trip_start_at: 1375802349
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_303:
+  id: 213
+  device_id: '4531004944'
+  trip_start_at: 1375797207
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_304:
+  id: 212
+  device_id: '4531004944'
+  trip_start_at: 1375797207
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_305:
+  id: 211
+  device_id: '4531019793'
+  trip_start_at: 1375755335
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_306:
+  id: 210
+  device_id: '4531010358'
+  trip_start_at: 1375751626
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_307:
+  id: 209
+  device_id: '4531010358'
+  trip_start_at: 1375751626
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_308:
+  id: 208
+  device_id: '4531019793'
+  trip_start_at: 1375747523
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_309:
+  id: 207
+  device_id: '4531019793'
+  trip_start_at: 1375746537
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_310:
+  id: 206
+  device_id: '4531004944'
+  trip_start_at: 1375745866
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_311:
+  id: 205
+  device_id: '4531004944'
+  trip_start_at: 1375745866
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_312:
+  id: 204
+  device_id: '4531010358'
+  trip_start_at: 1375734124
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_313:
+  id: 203
+  device_id: '4531010358'
+  trip_start_at: 1375734124
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_314:
+  id: 202
+  device_id: '4531010358'
+  trip_start_at: 1375732257
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_315:
+  id: 201
+  device_id: '4531010358'
+  trip_start_at: 1375732257
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_316:
+  id: 200
+  device_id: '4531010358'
+  trip_start_at: 1375732257
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_317:
+  id: 199
+  device_id: '4531010358'
+  trip_start_at: 1375714678
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_318:
+  id: 198
+  device_id: '4531010358'
+  trip_start_at: 1375714678
+  geofence_id: 6
+  event_type: 
+  update_time: 
+geofence_violations_319:
+  id: 197
+  device_id: '4531010358'
+  trip_start_at: 1375661634
+  geofence_id: 0
+  event_type: 
+  update_time: 
+geofence_violations_320:
+  id: 196
+  device_id: '4531004944'
+  trip_start_at: 1375714400
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_321:
+  id: 195
+  device_id: '4531004944'
+  trip_start_at: 1375710881
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_322:
+  id: 194
+  device_id: '4531019793'
+  trip_start_at: 1375708856
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_323:
+  id: 193
+  device_id: '4531019793'
+  trip_start_at: 1375708856
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_324:
+  id: 192
+  device_id: '4531004944'
+  trip_start_at: 1375672395
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_325:
+  id: 191
+  device_id: '4531004944'
+  trip_start_at: 1375672395
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_326:
+  id: 190
+  device_id: '4531004944'
+  trip_start_at: 1375656793
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_327:
+  id: 189
+  device_id: '4531004944'
+  trip_start_at: 1375656793
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_328:
+  id: 188
+  device_id: '4531010353'
+  trip_start_at: 1375641218
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_329:
+  id: 187
+  device_id: '4531010353'
+  trip_start_at: 1375641218
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_330:
+  id: 186
+  device_id: '4531019793'
+  trip_start_at: 1375636236
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_331:
+  id: 185
+  device_id: '4531019793'
+  trip_start_at: 1375636236
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_332:
+  id: 184
+  device_id: '4531019793'
+  trip_start_at: 1375632992
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_333:
+  id: 183
+  device_id: '4531019793'
+  trip_start_at: 1375632992
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_334:
+  id: 182
+  device_id: '4531010353'
+  trip_start_at: 1375595953
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_335:
+  id: 181
+  device_id: '4531010353'
+  trip_start_at: 1375588381
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_336:
+  id: 180
+  device_id: '4531010353'
+  trip_start_at: 1375588381
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_337:
+  id: 179
+  device_id: '4531019793'
+  trip_start_at: 1375587348
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_338:
+  id: 178
+  device_id: '4531019793'
+  trip_start_at: 1375587348
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_339:
+  id: 177
+  device_id: '4531019793'
+  trip_start_at: 1375572395
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_340:
+  id: 176
+  device_id: '4531019793'
+  trip_start_at: 1375572395
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_341:
+  id: 175
+  device_id: '4531004944'
+  trip_start_at: 1375571726
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_342:
+  id: 174
+  device_id: '4531004944'
+  trip_start_at: 1375571726
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_343:
+  id: 173
+  device_id: '4531010353'
+  trip_start_at: 1375560857
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_344:
+  id: 172
+  device_id: '4531010353'
+  trip_start_at: 1375560857
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_345:
+  id: 171
+  device_id: '4531010358'
+  trip_start_at: 1375559459
+  geofence_id: 6
+  event_type: 
+  update_time: 
+geofence_violations_346:
+  id: 170
+  device_id: '4531010358'
+  trip_start_at: 1375559188
+  geofence_id: 0
+  event_type: 
+  update_time: 
+geofence_violations_347:
+  id: 169
+  device_id: '4531019793'
+  trip_start_at: 1375558284
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_348:
+  id: 168
+  device_id: '4531019793'
+  trip_start_at: 1375555916
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_349:
+  id: 167
+  device_id: '4531019793'
+  trip_start_at: 1375555916
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_350:
+  id: 166
+  device_id: '4531019793'
+  trip_start_at: 1375555916
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_351:
+  id: 165
+  device_id: '4531019793'
+  trip_start_at: 1375555916
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_352:
+  id: 164
+  device_id: '4531019793'
+  trip_start_at: 1375550272
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_353:
+  id: 163
+  device_id: '4531019793'
+  trip_start_at: 1375550272
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_354:
+  id: 162
+  device_id: '4531019793'
+  trip_start_at: 1375550272
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_355:
+  id: 161
+  device_id: '4531019793'
+  trip_start_at: 1375550272
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_356:
+  id: 160
+  device_id: '4531019793'
+  trip_start_at: 1375543544
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_357:
+  id: 159
+  device_id: '4531019793'
+  trip_start_at: 1375543544
+  geofence_id: 7
+  event_type: 
+  update_time: 
+geofence_violations_358:
+  id: 158
+  device_id: '4531019793'
+  trip_start_at: 1375542667
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_359:
+  id: 157
+  device_id: '4531019793'
+  trip_start_at: 1375507107
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_360:
+  id: 156
+  device_id: '4531019793'
+  trip_start_at: 1375507107
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_361:
+  id: 155
+  device_id: '4531004944'
+  trip_start_at: 1375502494
+  geofence_id: 7
+  event_type: 
+  update_time: 
+geofence_violations_362:
+  id: 154
+  device_id: '4531019793'
+  trip_start_at: 1375493660
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_363:
+  id: 153
+  device_id: '4531019793'
+  trip_start_at: 1375493660
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_364:
+  id: 152
+  device_id: '4531019793'
+  trip_start_at: 1375493660
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_365:
+  id: 151
+  device_id: '4531004944'
+  trip_start_at: 1375491006
+  geofence_id: 7
+  event_type: 
+  update_time: 
+geofence_violations_366:
+  id: 150
+  device_id: '4531004944'
+  trip_start_at: 1375491006
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_367:
+  id: 149
+  device_id: '4531004944'
+  trip_start_at: 1375491006
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_368:
+  id: 148
+  device_id: '4531010358'
+  trip_start_at: 1375487769
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_369:
+  id: 147
+  device_id: '4531010358'
+  trip_start_at: 1375487769
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_370:
+  id: 146
+  device_id: '4531010358'
+  trip_start_at: 1375487769
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_371:
+  id: 145
+  device_id: '4531004944'
+  trip_start_at: 1375486388
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_372:
+  id: 144
+  device_id: '4531019793'
+  trip_start_at: 1375484185
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_373:
+  id: 143
+  device_id: '4531019793'
+  trip_start_at: 1375484185
+  geofence_id: 7
+  event_type: 
+  update_time: 
+geofence_violations_374:
+  id: 142
+  device_id: '4531019793'
+  trip_start_at: 1375484185
+  geofence_id: 7
+  event_type: 
+  update_time: 
+geofence_violations_375:
+  id: 141
+  device_id: '4531019793'
+  trip_start_at: 1375483350
+  geofence_id: 7
+  event_type: 
+  update_time: 
+geofence_violations_376:
+  id: 140
+  device_id: '4531019793'
+  trip_start_at: 1375482679
+  geofence_id: 7
+  event_type: 
+  update_time: 
+geofence_violations_377:
+  id: 139
+  device_id: '4531019793'
+  trip_start_at: 1375482679
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_378:
+  id: 138
+  device_id: '4531019793'
+  trip_start_at: 1375482679
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_379:
+  id: 137
+  device_id: '4531019793'
+  trip_start_at: 1375468666
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_380:
+  id: 136
+  device_id: '4531019793'
+  trip_start_at: 1375466831
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_381:
+  id: 135
+  device_id: '4531019793'
+  trip_start_at: 1375466831
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_382:
+  id: 134
+  device_id: '4531019793'
+  trip_start_at: 1375466831
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_383:
+  id: 133
+  device_id: '4531010358'
+  trip_start_at: 1375457273
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_384:
+  id: 132
+  device_id: '4531010358'
+  trip_start_at: 1375457273
+  geofence_id: 6
+  event_type: 
+  update_time: 
+geofence_violations_385:
+  id: 131
+  device_id: '4531019793'
+  trip_start_at: 1375452642
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_386:
+  id: 130
+  device_id: '4531004944'
+  trip_start_at: 1375451717
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_387:
+  id: 129
+  device_id: '4531004944'
+  trip_start_at: 1375451717
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_388:
+  id: 128
+  device_id: '4531019793'
+  trip_start_at: 1375418421
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_389:
+  id: 127
+  device_id: '4531019793'
+  trip_start_at: 1375418421
+  geofence_id: 7
+  event_type: 
+  update_time: 
+geofence_violations_390:
+  id: 126
+  device_id: '4531004944'
+  trip_start_at: 1375410643
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_391:
+  id: 125
+  device_id: '4531004944'
+  trip_start_at: 1375410643
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_392:
+  id: 124
+  device_id: '4531019793'
+  trip_start_at: 1375409613
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_393:
+  id: 123
+  device_id: '4531019793'
+  trip_start_at: 1375409613
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_394:
+  id: 122
+  device_id: '4531004944'
+  trip_start_at: 1375403909
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_395:
+  id: 121
+  device_id: '4531004944'
+  trip_start_at: 1375403909
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_396:
+  id: 120
+  device_id: '4531010358'
+  trip_start_at: 1375402097
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_397:
+  id: 119
+  device_id: '4531010358'
+  trip_start_at: 1375402097
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_398:
+  id: 118
+  device_id: '4531010358'
+  trip_start_at: 1375402097
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_399:
+  id: 117
+  device_id: '4531004944'
+  trip_start_at: 1375398675
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_400:
+  id: 116
+  device_id: '4531004944'
+  trip_start_at: 1375398675
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_401:
+  id: 115
+  device_id: '9999999999'
+  trip_start_at: 1375398434
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_402:
+  id: 114
+  device_id: '9999999999'
+  trip_start_at: 1375398434
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_403:
+  id: 113
+  device_id: '9999999999'
+  trip_start_at: 1375398423
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_404:
+  id: 112
+  device_id: '9999999999'
+  trip_start_at: 1375398411
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_405:
+  id: 111
+  device_id: '4531004944'
+  trip_start_at: 1375397471
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_406:
+  id: 110
+  device_id: '4531004944'
+  trip_start_at: 1375397471
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_407:
+  id: 109
+  device_id: '4531019793'
+  trip_start_at: 1375391369
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_408:
+  id: 108
+  device_id: '9999999999'
+  trip_start_at: 1375391660
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_409:
+  id: 107
+  device_id: '4531019793'
+  trip_start_at: 1375391369
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_410:
+  id: 106
+  device_id: '4531019793'
+  trip_start_at: 1375388905
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_411:
+  id: 105
+  device_id: '4531010358'
+  trip_start_at: 1375387650
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_412:
+  id: 104
+  device_id: '4531004944'
+  trip_start_at: 1375386747
+  geofence_id: 5
+  event_type: 
+  update_time: 
+geofence_violations_413:
+  id: 103
+  device_id: '4531004944'
+  trip_start_at: 1375386747
+  geofence_id: 1
+  event_type: 
+  update_time: 
+geofence_violations_414:
+  id: 102
+  device_id: '4531004944'
+  trip_start_at: 1375384694
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_415:
+  id: 101
+  device_id: '4531004944'
+  trip_start_at: 1375384694
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_416:
+  id: 100
+  device_id: '4531004944'
+  trip_start_at: 1375384154
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_417:
+  id: 99
+  device_id: '4531019793'
+  trip_start_at: 1375380209
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_418:
+  id: 98
+  device_id: '4531019793'
+  trip_start_at: 1375380209
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_419:
+  id: 97
+  device_id: '4531004944'
+  trip_start_at: 1375376570
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_420:
+  id: 96
+  device_id: '4531004944'
+  trip_start_at: 1375376570
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_421:
+  id: 95
+  device_id: '9999999999'
+  trip_start_at: 1375375987
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_422:
+  id: 94
+  device_id: '9999999999'
+  trip_start_at: 1375375979
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_423:
+  id: 93
+  device_id: '9999999999'
+  trip_start_at: 1375375968
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_424:
+  id: 92
+  device_id: '9999999999'
+  trip_start_at: 1375375960
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_425:
+  id: 91
+  device_id: '4531010358'
+  trip_start_at: 1375370933
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_426:
+  id: 90
+  device_id: '4531010358'
+  trip_start_at: 1375370933
+  geofence_id: 6
+  event_type: 
+  update_time: 
+geofence_violations_427:
+  id: 89
+  device_id: '4531004944'
+  trip_start_at: 1375365355
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_428:
+  id: 88
+  device_id: '4531004944'
+  trip_start_at: 1375365355
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_429:
+  id: 87
+  device_id: '4531019793'
+  trip_start_at: 1375365268
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_430:
+  id: 86
+  device_id: '4531004944'
+  trip_start_at: 1375324238
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_431:
+  id: 85
+  device_id: '4531004944'
+  trip_start_at: 1375324238
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_432:
+  id: 84
+  device_id: '4531004944'
+  trip_start_at: 1375316727
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_433:
+  id: 83
+  device_id: '4531004944'
+  trip_start_at: 1375316727
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_434:
+  id: 82
+  device_id: '4531010358'
+  trip_start_at: 1375315368
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_435:
+  id: 81
+  device_id: '4531010358'
+  trip_start_at: 1375315368
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_436:
+  id: 80
+  device_id: '4531010358'
+  trip_start_at: 1375315368
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_437:
+  id: 79
+  device_id: '4531019793'
+  trip_start_at: 1375313046
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_438:
+  id: 78
+  device_id: '4531019793'
+  trip_start_at: 1375313046
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_439:
+  id: 77
+  device_id: '4531019793'
+  trip_start_at: 1375313046
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_440:
+  id: 76
+  device_id: '4531019793'
+  trip_start_at: 1375313046
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_441:
+  id: 75
+  device_id: '4531004944'
+  trip_start_at: 1375298410
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_442:
+  id: 74
+  device_id: '4531010358'
+  trip_start_at: 1375284563
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_443:
+  id: 73
+  device_id: '4531010358'
+  trip_start_at: 1375284563
+  geofence_id: 6
+  event_type: 
+  update_time: 
+geofence_violations_444:
+  id: 72
+  device_id: '4531004944'
+  trip_start_at: 1375279083
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_445:
+  id: 71
+  device_id: '4531004944'
+  trip_start_at: 1375279083
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_446:
+  id: 70
+  device_id: '4531019793'
+  trip_start_at: 1375278262
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_447:
+  id: 69
+  device_id: '9999999999'
+  trip_start_at: 1375247868
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_448:
+  id: 68
+  device_id: '9999999999'
+  trip_start_at: 1375247868
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_449:
+  id: 67
+  device_id: '9999999999'
+  trip_start_at: 1375247851
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_450:
+  id: 66
+  device_id: '9999999999'
+  trip_start_at: 1375247849
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_451:
+  id: 65
+  device_id: '4531004944'
+  trip_start_at: 1375246068
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_452:
+  id: 64
+  device_id: '4531010358'
+  trip_start_at: 1375236158
+  geofence_id: 0
+  event_type: 
+  update_time: 
+geofence_violations_453:
+  id: 63
+  device_id: '4531019793'
+  trip_start_at: 1375235221
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_454:
+  id: 62
+  device_id: '4531004944'
+  trip_start_at: 1375231757
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_455:
+  id: 61
+  device_id: '4531004944'
+  trip_start_at: 1375231757
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_456:
+  id: 60
+  device_id: '4531010358'
+  trip_start_at: 1375226670
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_457:
+  id: 59
+  device_id: '4531019793'
+  trip_start_at: 1375225103
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_458:
+  id: 58
+  device_id: '4531010358'
+  trip_start_at: 1375226670
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_459:
+  id: 57
+  device_id: '4531010358'
+  trip_start_at: 1375226670
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_460:
+  id: 56
+  device_id: '4531019793'
+  trip_start_at: 1375225103
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_461:
+  id: 55
+  device_id: '4531019793'
+  trip_start_at: 1375225103
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_462:
+  id: 54
+  device_id: '4531019793'
+  trip_start_at: 1375225103
+  geofence_id: 7
+  event_type: 
+  update_time: 
+geofence_violations_463:
+  id: 53
+  device_id: '4531019793'
+  trip_start_at: 1375225103
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_464:
+  id: 52
+  device_id: '4531019793'
+  trip_start_at: 1375225103
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_465:
+  id: 51
+  device_id: '4531004944'
+  trip_start_at: 1375211306
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_466:
+  id: 50
+  device_id: '4531010358'
+  trip_start_at: 1375197084
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_467:
+  id: 49
+  device_id: '4531019793'
+  trip_start_at: 1375197827
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_468:
+  id: 48
+  device_id: '4531019793'
+  trip_start_at: 1375197827
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_469:
+  id: 47
+  device_id: '4531010358'
+  trip_start_at: 1375197084
+  geofence_id: 6
+  event_type: 
+  update_time: 
+geofence_violations_470:
+  id: 46
+  device_id: '4531010358'
+  trip_start_at: 1375196525
+  geofence_id: 0
+  event_type: 
+  update_time: 
+geofence_violations_471:
+  id: 45
+  device_id: '4531019793'
+  trip_start_at: 1375195974
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_472:
+  id: 44
+  device_id: '4531004944'
+  trip_start_at: 1375193950
+  geofence_id: 7
+  event_type: 
+  update_time: 
+geofence_violations_473:
+  id: 43
+  device_id: '4531019793'
+  trip_start_at: 1375192690
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_474:
+  id: 42
+  device_id: '4531004944'
+  trip_start_at: 1375185294
+  geofence_id: 7
+  event_type: 
+  update_time: 
+geofence_violations_475:
+  id: 41
+  device_id: '4531019793'
+  trip_start_at: 1375150023
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_476:
+  id: 40
+  device_id: '4531019793'
+  trip_start_at: 1375150023
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_477:
+  id: 39
+  device_id: '4531019793'
+  trip_start_at: 1375148189
+  geofence_id: 2
+  event_type: 
+  update_time: 
+geofence_violations_478:
+  id: 38
+  device_id: '4531019793'
+  trip_start_at: 1375147267
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_479:
+  id: 37
+  device_id: '4531019793'
+  trip_start_at: 1375147267
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_480:
+  id: 36
+  device_id: '4531019793'
+  trip_start_at: 1375145489
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_481:
+  id: 35
+  device_id: '4531019793'
+  trip_start_at: 1375145489
+  geofence_id: 7
+  event_type: 
+  update_time: 
+geofence_violations_482:
+  id: 34
+  device_id: '4531019793'
+  trip_start_at: 1375144374
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_483:
+  id: 33
+  device_id: '4531019793'
+  trip_start_at: 1375144374
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_484:
+  id: 32
+  device_id: '4531010358'
+  trip_start_at: 1375143691
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_485:
+  id: 31
+  device_id: '4531010358'
+  trip_start_at: 1375143691
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_486:
+  id: 30
+  device_id: '4531010358'
+  trip_start_at: 1375143691
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_487:
+  id: 29
+  device_id: '4531019793'
+  trip_start_at: 1375132931
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_488:
+  id: 28
+  device_id: '4531019793'
+  trip_start_at: 1375132931
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_489:
+  id: 27
+  device_id: '4531019793'
+  trip_start_at: 1375132931
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_490:
+  id: 26
+  device_id: '4531019793'
+  trip_start_at: 1375132931
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_491:
+  id: 25
+  device_id: '4531019793'
+  trip_start_at: 1375132931
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_492:
+  id: 24
+  device_id: '4531010358'
+  trip_start_at: 1375127130
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_493:
+  id: 23
+  device_id: '4531010358'
+  trip_start_at: 1375127130
+  geofence_id: 7
+  event_type: 
+  update_time: 
+geofence_violations_494:
+  id: 22
+  device_id: '4531010358'
+  trip_start_at: 1375125061
+  geofence_id: 9
+  event_type: 
+  update_time: 
+geofence_violations_495:
+  id: 21
+  device_id: '4531010358'
+  trip_start_at: 1375125061
+  geofence_id: 3
+  event_type: 
+  update_time: 
+geofence_violations_496:
+  id: 20
+  device_id: '4531010358'
+  trip_start_at: 1375110242
+  geofence_id: 8
+  event_type: 
+  update_time: 
+geofence_violations_497:
+  id: 19
+  device_id: '4531010358'
+  trip_start_at: 1375110242
+  geofence_id: 6
+  event_type: 
+  update_time: 
+geofence_violations_498:
+  id: 18
+  device_id: '4531010358'
+  trip_start_at: 1375109592
+  geofence_id: 0
+  event_type: 
+  update_time: 
+geofence_violations_499:
+  id: 17
+  device_id: '4531019793'
+  trip_start_at: 1375102456
+  geofence_id: 4
+  event_type: 
+  update_time: 
+geofence_violations_500:
+  id: 16
+  device_id: '4531010358'
+  trip_start_at: 1375046663
+  geofence_id: 6
+  event_type: 
+  update_time: 
+geofence_violations_501:
+  id: 15
+  device_id: '4531010358'
+  trip_start_at: 1375046663
+  geofence_id: 0
+  event_type: 
+  update_time: 
+geofence_violations_502:
+  id: 14
+  device_id: '4531019793'
+  trip_start_at: 1374982232
+  geofence_id: 8
+  event_type: 
+  update_time: 

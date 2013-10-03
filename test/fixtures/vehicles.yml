@@ -1,0 +1,86 @@
+---
+vehicles_001:
+  id: 7
+  vin: ABC123AABBCC
+  acquired_date: 
+  sold_date: 
+  vehicle_type: ''
+  vehicle_status: ''
+  vehicle_location: ''
+  car_color: champagne
+  vehicle_mileage: 
+  garage_loc_lat: 
+  garage_loc_long: 
+  car_id: 38
+  ship_start: 
+  ship_end: 
+  vehicle_usage_id: 3
+  dealer_lot_id: 2
+vehicles_002:
+  id: 6
+  vin: abc112233
+  acquired_date: 
+  sold_date: 
+  vehicle_type: ''
+  vehicle_status: ''
+  vehicle_location: ''
+  car_color: ''
+  vehicle_mileage: 
+  garage_loc_lat: 
+  garage_loc_long: 
+  car_id: 3
+  ship_start: 
+  ship_end: 
+  vehicle_usage_id: 1
+  dealer_lot_id: 2
+vehicles_003:
+  id: 4
+  vin: XYZYX112233
+  acquired_date: 
+  sold_date: 
+  vehicle_type: 
+  vehicle_status: 
+  vehicle_location: 
+  car_color: blue
+  vehicle_mileage: 3000
+  garage_loc_lat: 
+  garage_loc_long: 
+  car_id: 2013
+  ship_start: 
+  ship_end: 
+  vehicle_usage_id: 3
+  dealer_lot_id: 2
+vehicles_004:
+  id: 2
+  vin: abc112233
+  acquired_date: 
+  sold_date: 
+  vehicle_type: ''
+  vehicle_status: ''
+  vehicle_location: ''
+  car_color: black
+  vehicle_mileage: 100000
+  garage_loc_lat: 
+  garage_loc_long: 
+  car_id: 370
+  ship_start: 
+  ship_end: 
+  vehicle_usage_id: 3
+  dealer_lot_id: 2
+vehicles_005:
+  id: 1
+  vin: JTKDE112233
+  acquired_date: 
+  sold_date: 
+  vehicle_type: ''
+  vehicle_status: 
+  vehicle_location: 
+  car_color: red
+  vehicle_mileage: 112900
+  garage_loc_lat: 
+  garage_loc_long: 
+  car_id: 627
+  ship_start: 
+  ship_end: 
+  vehicle_usage_id: 2
+  dealer_lot_id: 2

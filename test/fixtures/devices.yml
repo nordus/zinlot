@@ -1,0 +1,61 @@
+---
+devices_001:
+  id: 5
+  type_id: 
+  imei: '4531019793'
+  msisdn: ''
+  sim_status: ''
+  activated_at: 
+  created_at: '2013-09-10 04:18:37.167185'
+  updated_at: '2013-10-01 00:19:01.598235'
+  name: Tom
+  latest_history_id: 371
+  vehicle_id: 7
+  has_open_issue: f
+  has_dtc: 
+  has_low_batt: 
+devices_002:
+  id: 3
+  type_id: 
+  imei: '4531010358'
+  msisdn: 
+  sim_status: 
+  activated_at: 
+  created_at: '2013-08-05 04:40:42.446928'
+  updated_at: '2013-08-05 04:40:42.446928'
+  name: Craigin
+  latest_history_id: 
+  vehicle_id: 4
+  has_open_issue: 
+  has_dtc: 
+  has_low_batt: 
+devices_003:
+  id: 2
+  type_id: 
+  imei: '4531010353'
+  msisdn: 
+  sim_status: 
+  activated_at: 
+  created_at: '2013-08-05 04:40:22.535881'
+  updated_at: '2013-09-30 23:55:58.517604'
+  name: Daniel
+  latest_history_id: 369
+  vehicle_id: 2
+  has_open_issue: t
+  has_dtc: 
+  has_low_batt: t
+devices_004:
+  id: 1
+  type_id: 
+  imei: '4531004944'
+  msisdn: 
+  sim_status: 
+  activated_at: 
+  created_at: '2013-08-05 04:39:56.265519'
+  updated_at: '2013-10-01 00:00:14.835264'
+  name: Terje
+  latest_history_id: 370
+  vehicle_id: 1
+  has_open_issue: f
+  has_dtc: 
+  has_low_batt: 

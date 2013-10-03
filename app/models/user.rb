@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  attr_accessible :notification_emails, :notification_phone_nbrs, :email_notifications, :sms_notifications
+  attr_accessible :email, :password, :notification_emails, :notification_phone_nbrs, :email_notifications, :sms_notifications
 
   scope :with_email_notification, lambda { |event| {:conditions => "email_notifications_mask & #{2**EVENTS.index(event.to_s)} > 0 "} }
   scope :with_sms_notification, lambda { |event| {:conditions => "sms_notifications_mask & #{2**EVENTS.index(event.to_s)} > 0 "} }

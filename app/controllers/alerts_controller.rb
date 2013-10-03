@@ -3,11 +3,14 @@ class AlertsController < ApplicationController
   include AngularController
 
   skip_before_filter :verify_authenticity_token, only: [:create, :show]
+  if Rails.env == 'test'
+    skip_before_filter :authenticate_user!
+  end
   skip_before_filter :authenticate_user!, only: [:create, :show]
   respond_to :html, :json
   
   def index
-    @search = Device.search(params[:q])
+    @search = Device.includes(:vehicle => [:car, :vehicle_usage]).search(params[:q])
     @low_batt_checked = false
     @dtc_checked = false
     if params[:q]
@@ -17,7 +20,7 @@ class AlertsController < ApplicationController
     @devices = @search.result.has_open_issues
     device_ids = @search.result.pluck('imei')
     open_issue_ids = @devices.pluck('latest_history_id')
-    @alerts = DeviceHistory.where('id NOT IN (?)', open_issue_ids).where({device_id: device_ids}).includes(:device => :vehicle)
+    @alerts = DeviceHistory.where('id NOT IN (?)', open_issue_ids).where({device_id: device_ids}).includes([:device => {:vehicle => [:car, :vehicle_usage]}])
   end
 
   def create

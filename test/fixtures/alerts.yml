@@ -1,0 +1,1667 @@
+---
+alerts_001:
+  id: 695
+  checked: f
+  device_id: '4531019793'
+  driver_id: 
+  update_time: 1380596738
+  trip_start_at: 1380596738
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-10-01 03:05:39.195712'
+  updated_at: '2013-10-01 03:05:39.195712'
+alerts_002:
+  id: 694
+  checked: f
+  device_id: '4531019793'
+  driver_id: 
+  update_time: 1380596110
+  trip_start_at: 1380596110
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-10-01 02:56:06.080985'
+  updated_at: '2013-10-01 02:56:06.080985'
+alerts_003:
+  id: 693
+  checked: f
+  device_id: '4531019793'
+  driver_id: 
+  update_time: 1380591169
+  trip_start_at: 1380591169
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-10-01 01:33:22.176288'
+  updated_at: '2013-10-01 01:33:22.176288'
+alerts_004:
+  id: 692
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380588393
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '1'
+  time_inside_geofence: 
+  created_at: '2013-10-01 01:08:50.599371'
+  updated_at: '2013-10-01 01:08:50.599371'
+alerts_005:
+  id: 691
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380588393
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '5'
+  time_inside_geofence: 
+  created_at: '2013-10-01 01:08:25.011826'
+  updated_at: '2013-10-01 01:08:25.011826'
+alerts_006:
+  id: 690
+  checked: f
+  device_id: '4531019793'
+  driver_id: 
+  update_time: 1380589480
+  trip_start_at: 1380589480
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-10-01 01:05:03.343076'
+  updated_at: '2013-10-01 01:05:03.343076'
+alerts_007:
+  id: 689
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 1380588393
+  trip_start_at: 1380588393
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-10-01 00:47:01.22693'
+  updated_at: '2013-10-01 00:47:01.22693'
+alerts_008:
+  id: 688
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380587644
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '2'
+  time_inside_geofence: 
+  created_at: '2013-10-01 00:42:55.450105'
+  updated_at: '2013-10-01 00:42:55.450105'
+alerts_009:
+  id: 687
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380587644
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '8'
+  time_inside_geofence: 
+  created_at: '2013-10-01 00:40:20.104892'
+  updated_at: '2013-10-01 00:40:20.104892'
+alerts_010:
+  id: 686
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380587644
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '9'
+  time_inside_geofence: 
+  created_at: '2013-10-01 00:40:18.013062'
+  updated_at: '2013-10-01 00:40:18.013062'
+alerts_011:
+  id: 685
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380587644
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '3'
+  time_inside_geofence: 
+  created_at: '2013-10-01 00:34:55.412048'
+  updated_at: '2013-10-01 00:34:55.412048'
+alerts_012:
+  id: 684
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 1380587644
+  trip_start_at: 1380587644
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-10-01 00:34:06.047826'
+  updated_at: '2013-10-01 00:34:06.047826'
+alerts_013:
+  id: 683
+  checked: f
+  device_id: '4531019793'
+  driver_id: 
+  update_time: 1380587067
+  trip_start_at: 1380587067
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-10-01 00:30:17.728545'
+  updated_at: '2013-10-01 00:30:17.728545'
+alerts_014:
+  id: 682
+  checked: f
+  device_id: '4531019793'
+  driver_id: 
+  update_time: 1380586392
+  trip_start_at: 1380586392
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-10-01 00:18:59.552696'
+  updated_at: '2013-10-01 00:18:59.552696'
+alerts_015:
+  id: 681
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 23:55:58.53172'
+  updated_at: '2013-09-30 23:55:58.53172'
+alerts_016:
+  id: 680
+  checked: f
+  device_id: '4531019793'
+  driver_id: 
+  update_time: 1380582445
+  trip_start_at: 1380582445
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 23:07:26.801414'
+  updated_at: '2013-09-30 23:07:26.801414'
+alerts_017:
+  id: 679
+  checked: f
+  device_id: '4531019793'
+  driver_id: 
+  update_time: 1380581343
+  trip_start_at: 1380581343
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 22:49:20.577199'
+  updated_at: '2013-09-30 22:49:20.577199'
+alerts_018:
+  id: 678
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380580404
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '1'
+  time_inside_geofence: 
+  created_at: '2013-09-30 22:44:24.137429'
+  updated_at: '2013-09-30 22:44:24.137429'
+alerts_019:
+  id: 677
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380580404
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '5'
+  time_inside_geofence: 
+  created_at: '2013-09-30 22:44:00.873526'
+  updated_at: '2013-09-30 22:44:00.873526'
+alerts_020:
+  id: 676
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 1380580404
+  trip_start_at: 1380580404
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 22:33:45.057752'
+  updated_at: '2013-09-30 22:33:45.057752'
+alerts_021:
+  id: 675
+  checked: f
+  device_id: '4531019793'
+  driver_id: 
+  update_time: 1380579975
+  trip_start_at: 1380579975
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 22:28:41.288288'
+  updated_at: '2013-09-30 22:28:41.288288'
+alerts_022:
+  id: 674
+  checked: f
+  device_id: '4531019793'
+  driver_id: 
+  update_time: 1380578017
+  trip_start_at: 1380578017
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 21:54:11.62278'
+  updated_at: '2013-09-30 21:54:11.62278'
+alerts_023:
+  id: 673
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380575863
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '5'
+  time_inside_geofence: 
+  created_at: '2013-09-30 21:19:34.899697'
+  updated_at: '2013-09-30 21:19:34.899697'
+alerts_024:
+  id: 672
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380575863
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '1'
+  time_inside_geofence: 
+  created_at: '2013-09-30 21:19:30.653941'
+  updated_at: '2013-09-30 21:19:30.653941'
+alerts_025:
+  id: 671
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 1380575863
+  trip_start_at: 1380575863
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 21:18:42.092601'
+  updated_at: '2013-09-30 21:18:42.092601'
+alerts_026:
+  id: 670
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380568773
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '3'
+  time_inside_geofence: 
+  created_at: '2013-09-30 19:55:36.173427'
+  updated_at: '2013-09-30 19:55:36.173427'
+alerts_027:
+  id: 669
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380568773
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '9'
+  time_inside_geofence: 
+  created_at: '2013-09-30 19:53:40.156153'
+  updated_at: '2013-09-30 19:53:40.156153'
+alerts_028:
+  id: 668
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380568773
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '8'
+  time_inside_geofence: 
+  created_at: '2013-09-30 19:53:37.479759'
+  updated_at: '2013-09-30 19:53:37.479759'
+alerts_029:
+  id: 667
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380568773
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '2'
+  time_inside_geofence: 
+  created_at: '2013-09-30 19:49:42.806999'
+  updated_at: '2013-09-30 19:49:42.806999'
+alerts_030:
+  id: 666
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 1380568773
+  trip_start_at: 1380568773
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 19:47:48.912677'
+  updated_at: '2013-09-30 19:47:48.912677'
+alerts_031:
+  id: 665
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380568037
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '2'
+  time_inside_geofence: 
+  created_at: '2013-09-30 19:14:41.044611'
+  updated_at: '2013-09-30 19:14:41.044611'
+alerts_032:
+  id: 664
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380568037
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '8'
+  time_inside_geofence: 
+  created_at: '2013-09-30 19:11:06.86712'
+  updated_at: '2013-09-30 19:11:06.86712'
+alerts_033:
+  id: 663
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380568037
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '9'
+  time_inside_geofence: 
+  created_at: '2013-09-30 19:10:59.601112'
+  updated_at: '2013-09-30 19:10:59.601112'
+alerts_034:
+  id: 662
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380568037
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '3'
+  time_inside_geofence: 
+  created_at: '2013-09-30 19:08:07.776737'
+  updated_at: '2013-09-30 19:08:07.776737'
+alerts_035:
+  id: 661
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 1380568037
+  trip_start_at: 1380568037
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 19:07:54.975604'
+  updated_at: '2013-09-30 19:07:54.975604'
+alerts_036:
+  id: 660
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 17:58:03.414029'
+  updated_at: '2013-09-30 17:58:03.414029'
+alerts_037:
+  id: 659
+  checked: f
+  device_id: '4531019793'
+  driver_id: 
+  update_time: 1380562821
+  trip_start_at: 1380562821
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 17:40:40.685903'
+  updated_at: '2013-09-30 17:40:40.685903'
+alerts_038:
+  id: 658
+  checked: f
+  device_id: '4531019793'
+  driver_id: 
+  update_time: 1380556418
+  trip_start_at: 1380556418
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 15:54:11.64343'
+  updated_at: '2013-09-30 15:54:11.64343'
+alerts_039:
+  id: 657
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380554264
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '3'
+  time_inside_geofence: 
+  created_at: '2013-09-30 15:27:29.262587'
+  updated_at: '2013-09-30 15:27:29.262587'
+alerts_040:
+  id: 656
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380554264
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '9'
+  time_inside_geofence: 
+  created_at: '2013-09-30 15:24:32.405925'
+  updated_at: '2013-09-30 15:24:32.405925'
+alerts_041:
+  id: 655
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380554264
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '8'
+  time_inside_geofence: 
+  created_at: '2013-09-30 15:24:29.876632'
+  updated_at: '2013-09-30 15:24:29.876632'
+alerts_042:
+  id: 654
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380554264
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '2'
+  time_inside_geofence: 
+  created_at: '2013-09-30 15:21:00.165988'
+  updated_at: '2013-09-30 15:21:00.165988'
+alerts_043:
+  id: 653
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 1380554264
+  trip_start_at: 1380554264
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 15:18:09.141796'
+  updated_at: '2013-09-30 15:18:09.141796'
+alerts_044:
+  id: 652
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 11:56:05.726692'
+  updated_at: '2013-09-30 11:56:05.726692'
+alerts_045:
+  id: 651
+  checked: f
+  device_id: '4531019793'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 11:56:03.932314'
+  updated_at: '2013-09-30 11:56:03.932314'
+alerts_046:
+  id: 650
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 1380522974
+  trip_start_at: 1380522974
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 06:36:45.538734'
+  updated_at: '2013-09-30 06:36:45.538734'
+alerts_047:
+  id: 645
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380520623
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '1'
+  time_inside_geofence: 
+  created_at: '2013-09-30 05:57:04.429929'
+  updated_at: '2013-09-30 05:57:04.429929'
+alerts_048:
+  id: 644
+  checked: f
+  device_id: '4531019793'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 05:56:27.555372'
+  updated_at: '2013-09-30 05:56:27.555372'
+alerts_049:
+  id: 643
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 05:56:26.635345'
+  updated_at: '2013-09-30 05:56:26.635345'
+alerts_050:
+  id: 642
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 1380514619
+  trip_start_at: 1380514619
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 04:17:00.946527'
+  updated_at: '2013-09-30 04:17:00.946527'
+alerts_051:
+  id: 641
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 1380514427
+  trip_start_at: 1380514427
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 04:14:05.140292'
+  updated_at: '2013-09-30 04:14:05.140292'
+alerts_052:
+  id: 640
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 1380375248
+  trip_start_at: 1380375248
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 04:03:00.712577'
+  updated_at: '2013-09-30 04:03:00.712577'
+alerts_053:
+  id: 639
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 1380375248
+  trip_start_at: 1380375248
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 04:02:21.534368'
+  updated_at: '2013-09-30 04:02:21.534368'
+alerts_054:
+  id: 638
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 1380375248
+  trip_start_at: 1380375248
+  latitude: 
+  longitude: 
+  event_type: 4
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-30 03:59:32.824471'
+  updated_at: '2013-09-30 03:59:32.824471'
+alerts_055:
+  id: 637
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380506313
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '2'
+  time_inside_geofence: 
+  created_at: '2013-09-30 02:23:13.931001'
+  updated_at: '2013-09-30 02:23:13.931001'
+alerts_056:
+  id: 636
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380506313
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '8'
+  time_inside_geofence: 
+  created_at: '2013-09-30 02:23:11.742852'
+  updated_at: '2013-09-30 02:23:11.742852'
+alerts_057:
+  id: 635
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380506313
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '5'
+  time_inside_geofence: 
+  created_at: '2013-09-30 01:59:24.996613'
+  updated_at: '2013-09-30 01:59:24.996613'
+alerts_058:
+  id: 634
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380506313
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '1'
+  time_inside_geofence: 
+  created_at: '2013-09-30 01:58:55.011028'
+  updated_at: '2013-09-30 01:58:55.011028'
+alerts_059:
+  id: 633
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380503042
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '1'
+  time_inside_geofence: 
+  created_at: '2013-09-30 01:06:22.067871'
+  updated_at: '2013-09-30 01:06:22.067871'
+alerts_060:
+  id: 632
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380503042
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '5'
+  time_inside_geofence: 
+  created_at: '2013-09-30 01:05:52.093019'
+  updated_at: '2013-09-30 01:05:52.093019'
+alerts_061:
+  id: 631
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380503042
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '5'
+  time_inside_geofence: 
+  created_at: '2013-09-30 01:05:04.815997'
+  updated_at: '2013-09-30 01:05:04.815997'
+alerts_062:
+  id: 630
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380503042
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '1'
+  time_inside_geofence: 
+  created_at: '2013-09-30 01:04:43.454837'
+  updated_at: '2013-09-30 01:04:43.454837'
+alerts_063:
+  id: 629
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380375248
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '10'
+  time_inside_geofence: 
+  created_at: '2013-09-30 00:21:29.625473'
+  updated_at: '2013-09-30 00:21:29.625473'
+alerts_064:
+  id: 628
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380375248
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '10'
+  time_inside_geofence: 
+  created_at: '2013-09-30 00:20:59.788197'
+  updated_at: '2013-09-30 00:20:59.788197'
+alerts_065:
+  id: 627
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380375248
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '10'
+  time_inside_geofence: 
+  created_at: '2013-09-30 00:19:52.986146'
+  updated_at: '2013-09-30 00:19:52.986146'
+alerts_066:
+  id: 626
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380375248
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '10'
+  time_inside_geofence: 
+  created_at: '2013-09-30 00:19:37.249656'
+  updated_at: '2013-09-30 00:19:37.249656'
+alerts_067:
+  id: 625
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380375248
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '10'
+  time_inside_geofence: 
+  created_at: '2013-09-30 00:13:19.646856'
+  updated_at: '2013-09-30 00:13:19.646856'
+alerts_068:
+  id: 624
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380375248
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '10'
+  time_inside_geofence: 
+  created_at: '2013-09-30 00:11:49.159912'
+  updated_at: '2013-09-30 00:11:49.159912'
+alerts_069:
+  id: 623
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-29 23:56:07.627341'
+  updated_at: '2013-09-29 23:56:07.627341'
+alerts_070:
+  id: 622
+  checked: f
+  device_id: '4531019793'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-29 23:55:57.287899'
+  updated_at: '2013-09-29 23:55:57.287899'
+alerts_071:
+  id: 621
+  checked: f
+  device_id: 
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: ''
+  time_inside_geofence: 
+  created_at: '2013-09-29 23:20:50.375837'
+  updated_at: '2013-09-29 23:20:50.375837'
+alerts_072:
+  id: 620
+  checked: f
+  device_id: 
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: ''
+  time_inside_geofence: 
+  created_at: '2013-09-29 23:20:48.136196'
+  updated_at: '2013-09-29 23:20:48.136196'
+alerts_073:
+  id: 619
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380375248
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: '10'
+  time_inside_geofence: 
+  created_at: '2013-09-29 22:59:23.244428'
+  updated_at: '2013-09-29 22:59:23.244428'
+alerts_074:
+  id: 618
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 1380375248
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '10'
+  time_inside_geofence: 
+  created_at: '2013-09-29 22:55:40.825058'
+  updated_at: '2013-09-29 22:55:40.825058'
+alerts_075:
+  id: 616
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '10'
+  time_inside_geofence: 
+  created_at: '2013-09-29 21:15:15.483821'
+  updated_at: '2013-09-29 21:15:15.483821'
+alerts_076:
+  id: 615
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: '10'
+  time_inside_geofence: 
+  created_at: '2013-09-29 21:07:25.828514'
+  updated_at: '2013-09-29 21:11:22.956055'
+alerts_077:
+  id: 614
+  checked: f
+  device_id: 
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: ''
+  time_inside_geofence: 
+  created_at: '2013-09-29 17:22:05.121438'
+  updated_at: '2013-09-29 17:22:05.121438'
+alerts_078:
+  id: 613
+  checked: f
+  device_id: 
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: ''
+  time_inside_geofence: 
+  created_at: '2013-09-29 17:19:52.122828'
+  updated_at: '2013-09-29 17:19:52.122828'
+alerts_079:
+  id: 612
+  checked: f
+  device_id: 
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: ''
+  time_inside_geofence: 
+  created_at: '2013-09-29 13:50:51.279262'
+  updated_at: '2013-09-29 13:50:51.279262'
+alerts_080:
+  id: 611
+  checked: f
+  device_id: 
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: ''
+  time_inside_geofence: 
+  created_at: '2013-09-29 13:50:32.369311'
+  updated_at: '2013-09-29 13:50:32.369311'
+alerts_081:
+  id: 610
+  checked: f
+  device_id: '4531019793'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-29 12:00:15.064563'
+  updated_at: '2013-09-29 12:00:15.064563'
+alerts_082:
+  id: 609
+  checked: f
+  device_id: '4531019793'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-29 05:56:15.311988'
+  updated_at: '2013-09-29 05:56:15.311988'
+alerts_083:
+  id: 608
+  checked: f
+  device_id: 
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: ''
+  time_inside_geofence: 
+  created_at: '2013-09-29 01:14:14.999474'
+  updated_at: '2013-09-29 01:14:14.999474'
+alerts_084:
+  id: 607
+  checked: f
+  device_id: 
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: ''
+  time_inside_geofence: 
+  created_at: '2013-09-29 01:09:04.136073'
+  updated_at: '2013-09-29 01:09:04.136073'
+alerts_085:
+  id: 606
+  checked: f
+  device_id: 
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: ''
+  time_inside_geofence: 
+  created_at: '2013-09-28 13:39:18.126387'
+  updated_at: '2013-09-28 13:39:18.126387'
+alerts_086:
+  id: 605
+  checked: f
+  device_id: 
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: ''
+  time_inside_geofence: 
+  created_at: '2013-09-28 13:39:15.864517'
+  updated_at: '2013-09-28 13:39:15.864517'
+alerts_087:
+  id: 604
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-28 11:56:17.799476'
+  updated_at: '2013-09-28 11:56:17.799476'
+alerts_088:
+  id: 603
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 3
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-28 06:24:45.517562'
+  updated_at: '2013-09-28 06:24:45.517562'
+alerts_089:
+  id: 602
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-28 06:24:43.868364'
+  updated_at: '2013-09-28 06:24:43.868364'
+alerts_090:
+  id: 599
+  checked: f
+  device_id: '1122334455'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 3
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-28 06:09:17.367504'
+  updated_at: '2013-09-28 06:09:17.367504'
+alerts_091:
+  id: 598
+  checked: f
+  device_id: '1122334455'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-28 06:09:17.358733'
+  updated_at: '2013-09-28 06:09:17.358733'
+alerts_092:
+  id: 597
+  checked: f
+  device_id: 
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: ''
+  time_inside_geofence: 
+  created_at: '2013-09-28 06:01:36.329533'
+  updated_at: '2013-09-28 06:01:36.329533'
+alerts_093:
+  id: 596
+  checked: f
+  device_id: 
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: ''
+  time_inside_geofence: 
+  created_at: '2013-09-28 05:58:39.35038'
+  updated_at: '2013-09-28 05:58:39.35038'
+alerts_094:
+  id: 595
+  checked: f
+  device_id: 
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 1
+  geofence_id: ''
+  time_inside_geofence: 
+  created_at: '2013-09-28 05:58:13.08881'
+  updated_at: '2013-09-28 05:58:13.08881'
+alerts_095:
+  id: 590
+  checked: f
+  device_id: '4531019793'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-28 00:21:21.568783'
+  updated_at: '2013-09-28 00:21:21.568783'
+alerts_096:
+  id: 588
+  checked: f
+  device_id: 
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-28 00:00:14.574821'
+  updated_at: '2013-09-28 00:00:14.574821'
+alerts_097:
+  id: 587
+  checked: f
+  device_id: 
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-09-27 23:55:59.029902'
+  updated_at: '2013-09-27 23:55:59.029902'
+alerts_098:
+  id: 44
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 06:22:20.268819'
+  updated_at: '2013-08-30 06:22:20.268819'
+alerts_099:
+  id: 41
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 3
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 05:15:19.708611'
+  updated_at: '2013-08-30 05:15:19.708611'
+alerts_100:
+  id: 40
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 05:15:19.077151'
+  updated_at: '2013-08-30 05:15:19.077151'
+alerts_101:
+  id: 39
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 3
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 04:52:04.229265'
+  updated_at: '2013-08-30 04:52:04.229265'
+alerts_102:
+  id: 38
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 04:52:03.981334'
+  updated_at: '2013-08-30 04:52:03.981334'
+alerts_103:
+  id: 35
+  checked: f
+  device_id: '4531010353'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 04:40:27.180053'
+  updated_at: '2013-08-30 04:40:27.180053'
+alerts_104:
+  id: 34
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 03:01:25.438035'
+  updated_at: '2013-08-30 03:01:25.438035'
+alerts_105:
+  id: 33
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 02:56:08.862561'
+  updated_at: '2013-08-30 02:56:08.862561'
+alerts_106:
+  id: 32
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 3
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 02:54:58.353387'
+  updated_at: '2013-08-30 02:54:58.353387'
+alerts_107:
+  id: 31
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 02:54:58.105372'
+  updated_at: '2013-08-30 02:54:58.105372'
+alerts_108:
+  id: 30
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 3
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 02:54:35.710886'
+  updated_at: '2013-08-30 02:54:35.710886'
+alerts_109:
+  id: 29
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 3
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 02:52:57.461341'
+  updated_at: '2013-08-30 02:52:57.461341'
+alerts_110:
+  id: 28
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 3
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 02:49:44.211106'
+  updated_at: '2013-08-30 02:49:44.211106'
+alerts_111:
+  id: 27
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 02:49:43.961809'
+  updated_at: '2013-08-30 02:49:43.961809'
+alerts_112:
+  id: 26
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 3
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 02:48:23.267865'
+  updated_at: '2013-08-30 02:48:23.267865'
+alerts_113:
+  id: 25
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 3
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 02:47:21.96619'
+  updated_at: '2013-08-30 02:47:21.96619'
+alerts_114:
+  id: 24
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 02:47:21.712429'
+  updated_at: '2013-08-30 02:47:21.712429'
+alerts_115:
+  id: 23
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 3
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 02:46:32.340662'
+  updated_at: '2013-08-30 02:46:32.340662'
+alerts_116:
+  id: 22
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 3
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 02:43:59.605788'
+  updated_at: '2013-08-30 02:43:59.605788'
+alerts_117:
+  id: 21
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 3
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 02:43:08.534008'
+  updated_at: '2013-08-30 02:43:08.534008'
+alerts_118:
+  id: 20
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 2
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-30 02:43:07.911841'
+  updated_at: '2013-08-30 02:43:07.911841'
+alerts_119:
+  id: 15
+  checked: f
+  device_id: '4531004944'
+  driver_id: 
+  update_time: 1377819251
+  trip_start_at: 
+  latitude: 
+  longitude: 
+  event_type: 0
+  geofence_id: 
+  time_inside_geofence: 
+  created_at: '2013-08-29 23:40:51.922188'
+  updated_at: '2013-08-29 23:40:51.922188'

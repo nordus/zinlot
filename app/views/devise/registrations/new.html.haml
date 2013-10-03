@@ -1,20 +1,19 @@
 %h2 Sign up
-= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {class: 'pure-form pure-form-aligned'}) do |f|
+= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {class: 'form form-signin'}) do |f|
   = devise_error_messages!
-  %fieldset
-    .pure-control-group
-      = f.label :email
-      = f.email_field :email, :autofocus => true
+  .form-group
+    = f.label :email
+    = f.email_field :email, :autofocus => true, class: 'form-control'
 
-    .pure-control-group
-      = f.label :password
-      = f.password_field :password
+  .form-group
+    = f.label :password
+    = f.password_field :password, class: 'form-control'
 
-    .pure-control-group
-      = f.label :password_confirmation
-      = f.password_field :password_confirmation
+  .form-group
+    = f.label :password_confirmation
+    = f.password_field :password_confirmation, class: 'form-control'
 
-    .pure-controls
-      = f.submit "Sign up", class: 'pure-button pure-button-primary'
+  .pure-controls
+    = f.submit "Sign up", class: 'btn btn-primary'
 
-    = render "devise/shared/links"
+  = render "devise/shared/links"

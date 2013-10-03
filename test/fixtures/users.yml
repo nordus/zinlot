@@ -1,0 +1,35 @@
+---
+users_001:
+  id: 2
+  email: navseeker7@gmail.com
+  encrypted_password: $2a$10$RyKXVr9/jebiLD7870l67.5QIXKGKuHyOn/VPFKOnM92fzQygSkba
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 35
+  current_sign_in_at: '2013-10-01 02:47:28.132368'
+  last_sign_in_at: '2013-10-01 01:37:26.929975'
+  current_sign_in_ip: 192.168.1.1
+  last_sign_in_ip: 192.168.1.1
+  notification_emails: navseeker7@gmail.com,adhd360@me.com
+  notification_phone_nbrs: '4807880022'
+  email_notifications_mask: 31
+  sms_notifications_mask: 31
+  report_emails: 
+users_002:
+  id: 1
+  email: tgl@norduscapital.com
+  encrypted_password: $2a$10$jDH6qpbd8FZYkZB/TIeA/udB/xZHa/dUY4BCbSmr.iUchYNWuX02G
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: '2013-09-20 02:26:25.761752'
+  sign_in_count: 41
+  current_sign_in_at: '2013-09-27 22:34:58.321695'
+  last_sign_in_at: '2013-09-27 19:04:32.544981'
+  current_sign_in_ip: 64.134.238.190
+  last_sign_in_ip: 174.77.67.250
+  notification_emails: daniel@norduscapital.com,tgl@norduscapital.com
+  notification_phone_nbrs: '6023413321'
+  email_notifications_mask: 31
+  sms_notifications_mask: 31
+  report_emails: 

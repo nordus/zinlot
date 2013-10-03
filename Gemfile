@@ -5,6 +5,11 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
+gem 'bullet', :group => :development
+
+gem 'rails-perftest'
+gem 'ruby-prof'
+
 gem 'unicorn'
 
 gem 'quiet_assets'

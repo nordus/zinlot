@@ -13,6 +13,10 @@ class Device < ActiveRecord::Base
   
   scope :has_open_issues, -> { where(has_open_issue: true) }
 
+  def latest_trip
+    historical_trips.last
+  end
+
   def self.duration_time(duration: duration)
     time = Time.at(duration/1000).utc.strftime('%H:%M:%S')
     time.sub(/^00:/, '')
