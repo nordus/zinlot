@@ -7,6 +7,14 @@ class Campaign < ActiveRecord::Base
 
   scope :with_mileage_interval, -> { where(trigger: 'MILEAGE_INTERVAL') }
 
+  def set_target_mileage_to_next_interval device_id
+    puts ".. #{device_id} target mileage: #{target_mileages[device_id]}"
+    self.target_mileages[device_id] += (mileage_interval * mileage_interval_pct)
+    puts "-= TARGET_MILEAGES UPDATED =-"
+    puts "... #{device_id} updated target mileage: #{target_mileages[device_id]}"
+    save!
+  end
+
   def set_target_mileages
     if trigger == 'MILEAGE_INTERVAL'
       self.target_mileages = Device.all.each_with_object({}) {|d, hash, t = d.latest_trip| hash[d.imei] = (t.ending_mileage.round + (mileage_interval * mileage_interval_pct)) if t}

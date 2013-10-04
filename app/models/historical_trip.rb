@@ -16,6 +16,7 @@ class HistoricalTrip < ActiveRecord::Base
     campaigns_violated = Campaign.with_mileage_interval.each_with_object([]) do |c, array|
       if campaign_target_mileage = c.target_mileages[device_id]
         array.push(c)  if ending_mileage.to_i >= campaign_target_mileage.to_i
+        c.set_target_mileage_to_next_interval(device_id)
       end
     end
 

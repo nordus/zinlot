@@ -71,6 +71,10 @@
       %button.btn.btn-success{'ng-click' => 'saveCampaign()', 'ng-class' => '{disabled: invalid()}'} Save
       %button.btn{'ng-click' => 'campaign = newCampaign()', 'ng-show' => 'campaign.id'} Cancel
 
+
+%pre {{ campaign | json }}
+
+
 .panel.panel-default
   .panel-heading
     %h4 Listing campaigns
