@@ -25,6 +25,6 @@ class SendGridMailer < ActionMailer::Base
   end
 
   def campaign_target_mileage_message device_id, campaign
-    mail :to => 'tgl@norduscapital.com, navseeker7@gmail.com', :subject => campaign.name, :body => "#{device_imei} exceeded #{campaign.target_mileages[device_imei]} miles"
+    mail :to => 'tgl@norduscapital.com, navseeker7@gmail.com', :subject => campaign.name, :body => "#{device_id} exceeded #{campaign.target_mileages[device_id]} miles"
   end
 end
