@@ -13,8 +13,9 @@ class Campaign < ActiveRecord::Base
     next_target_mileage = previous_target_mileage + (mileage_interval * mileage_interval_pct)
     self.target_mileages[device_id] = next_target_mileage
     puts "-= TARGET_MILEAGES UPDATED =-"
-    puts "... #{device_id} updated target mileage: #{target_mileages[device_id]}"
     save!
+    puts "... next_target_mileage #{next_target_mileage}"
+    puts ".... #{device_id} updated target mileage: #{target_mileages[device_id]}"
   end
 
   def set_target_mileages
