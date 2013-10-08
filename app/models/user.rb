@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
   EVENTS = Alert::EVENTS
 
   def email_notifications=(events)
-    self.email_notifications_mask = (events & EVENTS).map { |e| 2**EVENTS.index(e) }.sum
+    self.email_notifications_mask = (events.to_a & EVENTS).map { |e| 2**EVENTS.index(e) }.sum
   end
 
   def email_notifications
@@ -25,7 +25,7 @@ class User < ActiveRecord::Base
   end
 
   def sms_notifications=(events)
-    self.sms_notifications_mask = (events & EVENTS).map { |e| 2**EVENTS.index(e) }.sum
+    self.sms_notifications_mask = (events.to_a & EVENTS).map { |e| 2**EVENTS.index(e) }.sum
   end
 
   def sms_notifications

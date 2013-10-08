@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    respond_with @user.update(params.permit(:notification_emails, :notification_phone_nbrs, email_notifications: [], sms_notifications: []))
+    respond_with @user.update(params.permit(:notification_emails, :notification_phone_nbrs, :email_notifications, :sms_notifications, email_notifications: [], sms_notifications: []))
   end
 
 end
